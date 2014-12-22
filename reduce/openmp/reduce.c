@@ -5,6 +5,7 @@
 #include <time.h>
 
 #define SIZE 1000000
+#define RUNS 1000
 
 main ()  {
 
@@ -12,7 +13,6 @@ int i;
 int n = SIZE;
 float result;
 float *array = (float *)malloc(sizeof(float)*SIZE);
-struct timeval start, end;
 
 /* Some initializations */
 result = 0.0;
@@ -23,13 +23,13 @@ omp_set_num_threads(236);
 for (i=0; i < n; i++)
   array[i] = rand();
 
-gettimeofday(&start, NULL);
-#pragma omp parallel for reduction(+:result)  
-  for (i=0; i < n; i++)
-    result = result + array[i];
-gettimeofday(&end, NULL);
+double start = omp_get_wtime();
+for (j=0; j<RUNS; j++) {
+  #pragma omp parallel for reduction(+:result)  
+    for (i=0; i < n; i++)
+      result = result + array[i];
+}
+double end= omp_get_wtime();
 
-float time = (end.tv_usec + 1000000 * end.tv_sec) - (start.tv_usec + 1000000 * start.tv_sec);
-printf("Time = %f ms\n", time/1000);
-
+printf("Time = %5.9lf s\n", (end - start)/RUNS);
 }

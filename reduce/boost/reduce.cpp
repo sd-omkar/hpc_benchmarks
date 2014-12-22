@@ -5,6 +5,7 @@
 //#define NUM_PLAT 0
 //#define NUM_DEV 1
 #define RUNS 100
+#define SIZE 1000000
 
 namespace compute = boost::compute;
 
@@ -19,28 +20,35 @@ int main()
 
     // create a compute context and command queue
     compute::context ctx(gpu);
-    compute::command_queue queue(ctx, gpu);
+    compute::command_queue queue(ctx, gpu, compute::command_queue::enable_profiling);
 
     // generate random numbers on the host
     srand(time(NULL));
-    std::vector<float> host_vector(1000000);
+    std::vector<float> host_vector(SIZE);
     std::generate(host_vector.begin(), host_vector.end(), rand);
     //std::fill(host_vector.begin(), host_vector.end(), 2);
 
     // timing
-    struct timeval start, end;
+    //struct timeval start, end;
+    compute::future<void> start;
+    uint64_t time=0;
     float sum;
     
     // create vector on the device
-    compute::vector<float> device_vector(1000000, ctx);
+    compute::vector<float> device_vector(SIZE, ctx);
 
     // copy data to the device
-    gettimeofday(&start, NULL);
+    //gettimeofday(&start, NULL);
 
     // reduce the data
     for (int i=0; i<RUNS; i++) {
-    compute::copy(host_vector.begin(), host_vector.end(), device_vector.begin(), queue);
+    start = compute::copy_async(host_vector.begin(), host_vector.end(), device_vector.begin(), queue);
     compute::reduce(device_vector.begin(), device_vector.end(), &sum, compute::plus<float>(), queue);
+    start.wait();
+     boost::chrono::nanoseconds duration =
+               start.get_event().duration<boost::chrono::nanoseconds>();
+    time += duration.count();
+
     /*
     // sort data on the device
     compute::sort(
@@ -54,9 +62,9 @@ int main()
     }
 
     // print time
-    gettimeofday(&end, NULL);
-    float time = (end.tv_usec + 1000000 * end.tv_sec) - (start.tv_usec + 1000000 * start.tv_sec);
-    std::cout << "Time = " << time/RUNS/1000 << " ms"<< std::endl;
+    //gettimeofday(&end, NULL);
+    //float time = (end.tv_usec + 1000000 * end.tv_sec) - (start.tv_usec + 1000000 * start.tv_sec);
+    std::cout << "Time = " << time/RUNS/1e6 << " ms"<< std::endl;
     //std::cout << "Sum = " << sum << std::endl;
     return 0;
 }

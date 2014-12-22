@@ -1,3 +1,7 @@
+BOOST  := /usr/include/boost/
+CL_INC := /opt/AMDAPPSDK-2.9-1/include/CL
+CL_LIB := /opt/AMDAPPSDK-2.9-1/lib/x86_64
+
 all: gpu cpu amd mic
 
 gpu:
