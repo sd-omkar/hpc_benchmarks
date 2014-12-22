@@ -54,15 +54,15 @@ Next meeting on Friday - 12/12
 **12/05**
 
 Description of platforms in terms of underlying H/W and execution environment supported.   
-|    Platform     |    H/W                  |    Environment       |
-|-----------------|-------------------------|----------------------|
-|    AMD CPU      |    AMD Opteron 6274     |    OpenMP, OpenCL    |
-|    Intel CPU    |    Xeon E5-2690v2       |    OpenMP, OpenCL    |
-|    MIC          |    Xeon Phi             |    OpenMP, OpenCL    |
-|    Tesla GPU    |    Tesla K20x           |    CUDA, OpenCL      |
-|    GTX GPU      |    GTX 770              |    CUDA, OpenCL      |
-|    Jetson       |    Kepler GK20A         |    CUDA, OpenCL      |
-|    APU          |    AMD A10-7850K        |    OpenCL            |
+|    Platform     |    H/W                  |    Environment       | 
+|-----------------|-------------------------|----------------------| 
+|    AMD CPU      |    AMD Opteron 6274     |    OpenMP, OpenCL    | 
+|    Intel CPU    |    Xeon E5-2690v2       |    OpenMP, OpenCL    | 
+|    MIC          |    Xeon Phi             |    OpenMP, OpenCL    | 
+|    Tesla GPU    |    Tesla K20x           |    CUDA, OpenCL      | 
+|    GTX GPU      |    GTX 770              |    CUDA, OpenCL      | 
+|    Jetson       |    Kepler GK20A         |    CUDA, OpenCL      | 
+|    APU          |    AMD A10-7850K        |    OpenCL            | 
 
 We will test for following set of problems, in terms of absolute FLOPs rate & memory bandwidth and  utilization w.r.t theoretical peak.
 - Matrix - Matrix multiplication
