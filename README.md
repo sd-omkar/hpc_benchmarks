@@ -44,17 +44,17 @@ Order in which we are going to benchmark:
 3. Sparse LU factorization . F/W B/W substitution
 4. Neighbor Search
 
-Keep code local until we publish results
-Both code and documents go on Github
-Make a directory in the repository for minutes and documents . Add progress log to documents
-**Link to SBEL project page**
+- Keep code local until we publish results
+- Both code and documents go on Github
+- Make a directory in the repository for minutes and documents . Add progress log to documents
+- **Link to SBEL project page**
 
 Next meeting on Friday - 12/12
 
 **12/05**
 
 Description of platforms in terms of underlying H/W and execution environment supported.  
-|  **Platform**   |  **H/W**                |  **Environment**     |
+|    Platform     |    H/W                  |    Environment       |
 |-----------------|-------------------------|----------------------|
 |    AMD CPU      |    AMD Opteron 6274     |    OpenMP, OpenCL    |
 |    Intel CPU    |    Xeon E5-2690v2       |    OpenMP, OpenCL    |
@@ -76,19 +76,19 @@ We will test for following set of problems, in terms of absolute FLOPs rate & me
 
 This gives, for each problem, 3 implementations - one each for OpenMP, OpenCL and CUDA. Depending upon platform, they may further need to be modified and used with respective tools and compiler settings. This results in 13 unique tests per problem (6 Native + 7 OpenCL), with 65 tests in total.
 
-**TODO:**
+**TODO:**  
 1. Decide whether these problems are relevant and if we need to add/remove anything to the list.
 2. While testing, we need to be mindful to only test with inputs that are important to us. Hammad, Ang and Arman to provide input matrices and test data.
 3. It is not clear to me how to make SPH part of this. From what I understand, the current bottleneck is not something we can build from smaller blocks that we can test across different platforms.
 
 **Repository structure:**
 
-**Top level :** 
+**Top level:**  
 1. Problems 
 2. Cumulative Results
 3. Progress log in SVN
 
-**Problems : **
+**Problems:**  
 - Will have separate folders for each problem/algorithm we are working on. 
 - Every problem folder will have folders for different H/W environment.
 - Every environment folder will have 
@@ -97,11 +97,11 @@ This gives, for each problem, 3 implementations - one each for OpenMP, OpenCL an
   *  Results (Text file or a table)
   *  README (Helps setting up the platform and running the code)
 
-**Cumulative Results :**
+**Cumulative Results:**  
 - Contains a table and graph comparing the results we have obtained.
 - Updated every time we obtain results from a new problem or hardware.
 
-**Other ideas:**
+**Other ideas:**  
 - We can convert the git repo to a web page
 - **SBEL project page**
 - Who all should have access to the repo? Private
