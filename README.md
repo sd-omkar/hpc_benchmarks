@@ -1,5 +1,24 @@
 **12/12**
-TODO: Naveen
+
+Took one problem : reduce. float array 1,000,000 values . got results in some platforms
+OpenMP is home-brewed code. Tried 3rd party library code on the rest of the platforms.
+
+Takeaways:
+OpenMP is faster . Thrust version is faster than our code implementation
+
+Run code for float and double
+Long and long long would be useful to us
+
+Xeon Phi is particularly bad . unexpected 
+
+Should we come up with a normalized metric? 
+For every platform, we will specify the metrics ( and compiler ) . Memory, clock, flop rate etc.
+
+Think about organize the results so we mine it. . But don.t do it now
+
+Take outputs for different sizes . up to 25M
+
+Generate a project webpage (like a blog) and populate results into it every once in a while. nice plots, clear, bulleted, short
 
 **12/07**
 
