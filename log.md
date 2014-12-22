@@ -53,7 +53,7 @@ Next meeting on Friday - 12/12
 
 **12/05**
 
-Description of platforms in terms of underlying H/W and execution environment supported.  
+Description of platforms in terms of underlying H/W and execution environment supported.   
 |    Platform     |    H/W                  |    Environment       |
 |-----------------|-------------------------|----------------------|
 |    AMD CPU      |    AMD Opteron 6274     |    OpenMP, OpenCL    |
