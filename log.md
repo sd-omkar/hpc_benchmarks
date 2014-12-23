@@ -1,3 +1,18 @@
+**12/22**
+
+Cleaned up on the code
+Updated MD file on github
+
+Update timelines
+
+What to present in SC conference? – Crux of the paper? - Push a skeleton of the paper on the github repository
+
+Work on reduce, scan, sort, matrix-vector multiplication, matrix-matrix multiplication
+
+Show a plot of the results to get clear on the axes that we are concentrating on
+
+Start working on technical reports for the problems
+
 **12/12**
 
 Took one problem : reduce. float array 1,000,000 values . got results in some platforms
