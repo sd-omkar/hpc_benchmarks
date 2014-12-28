@@ -1,0 +1,352 @@
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Reduction (float): 10485760
+  OpenCL:	    GFLOPS:    42.0245	    Bandwidth: 266.687
+  C++:	    GFLOPS:    1.91441
+  residue: 0.012933
+
+
+
+
+[Profile:           1.356 sec.] (100.00%)
+[ self:             0.461 sec.] ( 34.00%)
+[  float:           0.895 sec.] ( 66.00%)
+[    Reduction:     0.895 sec.] ( 66.00%)
+[     self:         0.142 sec.] ( 10.47%)
+[      Copy:        0.020 sec.] (  1.48%)
+[      OpenCL:      0.032 sec.] (  2.35%)
+[      C++:         0.701 sec.] ( 51.69%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Reduction (float): 11534336
+  OpenCL:	    GFLOPS:    42.042	    Bandwidth: 268.317
+  C++:	    GFLOPS:    1.91711
+  residue: 0.0153525
+
+
+
+
+[Profile:           1.395 sec.] (100.00%)
+[ self:             0.415 sec.] ( 29.77%)
+[  float:           0.980 sec.] ( 70.23%)
+[    Reduction:     0.980 sec.] ( 70.23%)
+[     self:         0.152 sec.] ( 10.92%)
+[      Copy:        0.022 sec.] (  1.58%)
+[      OpenCL:      0.035 sec.] (  2.52%)
+[      C++:         0.770 sec.] ( 55.21%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Reduction (float): 12582912
+  OpenCL:	    GFLOPS:    42.5504	    Bandwidth: 267.509
+  C++:	    GFLOPS:    1.91423
+  residue: 0.0173206
+
+
+
+
+[Profile:           1.483 sec.] (100.00%)
+[ self:             0.416 sec.] ( 28.03%)
+[  float:           1.068 sec.] ( 71.97%)
+[    Reduction:     1.068 sec.] ( 71.97%)
+[     self:         0.164 sec.] ( 11.07%)
+[      Copy:        0.024 sec.] (  1.62%)
+[      OpenCL:      0.038 sec.] (  2.55%)
+[      C++:         0.841 sec.] ( 56.72%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Reduction (float): 13631488
+  OpenCL:	    GFLOPS:    42.6387	    Bandwidth: 268.334
+  C++:	    GFLOPS:    1.91737
+  residue: 0.0190157
+
+
+
+
+[Profile:           1.570 sec.] (100.00%)
+[ self:             0.416 sec.] ( 26.48%)
+[  float:           1.154 sec.] ( 73.52%)
+[    Reduction:     1.154 sec.] ( 73.52%)
+[     self:         0.177 sec.] ( 11.28%)
+[      Copy:        0.026 sec.] (  1.66%)
+[      OpenCL:      0.041 sec.] (  2.61%)
+[      C++:         0.910 sec.] ( 57.97%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Reduction (float): 14680064
+  OpenCL:	    GFLOPS:    42.6423	    Bandwidth: 269.722
+  C++:	    GFLOPS:    1.91528
+  residue: 0.0204767
+
+
+
+
+[Profile:           1.655 sec.] (100.00%)
+[ self:             0.413 sec.] ( 24.95%)
+[  float:           1.242 sec.] ( 75.05%)
+[    Reduction:     1.242 sec.] ( 75.05%)
+[     self:         0.189 sec.] ( 11.42%)
+[      Copy:        0.028 sec.] (  1.68%)
+[      OpenCL:      0.044 sec.] (  2.66%)
+[      C++:         0.981 sec.] ( 59.29%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Reduction (float): 15728640
+  OpenCL:	    GFLOPS:    42.7276	    Bandwidth: 271.087
+  C++:	    GFLOPS:    1.91842
+  residue: 0.0217676
+
+
+
+
+[Profile:           1.736 sec.] (100.00%)
+[ self:             0.411 sec.] ( 23.66%)
+[  float:           1.325 sec.] ( 76.34%)
+[    Reduction:     1.325 sec.] ( 76.34%)
+[     self:         0.199 sec.] ( 11.46%)
+[      Copy:        0.030 sec.] (  1.71%)
+[      OpenCL:      0.047 sec.] (  2.71%)
+[      C++:         1.049 sec.] ( 60.46%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Reduction (float): 16777216
+  OpenCL:	    GFLOPS:    43.0583	    Bandwidth: 270.164
+  C++:	    GFLOPS:    1.918
+  residue: 0.0228714
+
+
+
+
+[Profile:           1.831 sec.] (100.00%)
+[ self:             0.415 sec.] ( 22.69%)
+[  float:           1.415 sec.] ( 77.31%)
+[    Reduction:     1.415 sec.] ( 77.31%)
+[     self:         0.214 sec.] ( 11.69%)
+[      Copy:        0.032 sec.] (  1.74%)
+[      OpenCL:      0.050 sec.] (  2.72%)
+[      C++:         1.120 sec.] ( 61.15%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Reduction (float): 17825792
+  OpenCL:	    GFLOPS:    43.0512	    Bandwidth: 269.916
+  C++:	    GFLOPS:    1.91424
+  residue: 0.0272426
+
+
+
+
+[Profile:           1.918 sec.] (100.00%)
+[ self:             0.415 sec.] ( 21.63%)
+[  float:           1.503 sec.] ( 78.37%)
+[    Reduction:     1.503 sec.] ( 78.37%)
+[     self:         0.224 sec.] ( 11.69%)
+[      Copy:        0.034 sec.] (  1.76%)
+[      OpenCL:      0.053 sec.] (  2.76%)
+[      C++:         1.192 sec.] ( 62.15%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Reduction (float): 18874368
+  OpenCL:	    GFLOPS:    43.0479	    Bandwidth: 270.439
+  C++:	    GFLOPS:    1.91716
+  residue: 0.0330568
+
+
+
+
+[Profile:           2.005 sec.] (100.00%)
+[ self:             0.414 sec.] ( 20.67%)
+[  float:           1.591 sec.] ( 79.33%)
+[    Reduction:     1.591 sec.] ( 79.33%)
+[     self:         0.239 sec.] ( 11.91%)
+[      Copy:        0.036 sec.] (  1.78%)
+[      OpenCL:      0.056 sec.] (  2.80%)
+[      C++:         1.260 sec.] ( 62.84%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Reduction (float): 19922944
+  OpenCL:	    GFLOPS:    43.0752	    Bandwidth: 270.355
+  C++:	    GFLOPS:    1.9154
+  residue: 0.0383257
+
+
+
+
+[Profile:           2.091 sec.] (100.00%)
+[ self:             0.414 sec.] ( 19.79%)
+[  float:           1.677 sec.] ( 80.21%)
+[    Reduction:     1.677 sec.] ( 80.21%)
+[     self:         0.249 sec.] ( 11.89%)
+[      Copy:        0.038 sec.] (  1.80%)
+[      OpenCL:      0.059 sec.] (  2.83%)
+[      C++:         1.331 sec.] ( 63.68%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Reduction (float): 20971520
+  OpenCL:	    GFLOPS:    43.2408	    Bandwidth: 271.723
+  C++:	    GFLOPS:    1.91865
+  residue: 0.0431337
+
+
+
+
+[Profile:           2.179 sec.] (100.00%)
+[ self:             0.415 sec.] ( 19.06%)
+[  float:           1.764 sec.] ( 80.94%)
+[    Reduction:     1.764 sec.] ( 80.94%)
+[     self:         0.263 sec.] ( 12.06%)
+[      Copy:        0.040 sec.] (  1.81%)
+[      OpenCL:      0.062 sec.] (  2.85%)
+[      C++:         1.399 sec.] ( 64.22%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Reduction (float): 22020096
+  OpenCL:	    GFLOPS:    43.1434	    Bandwidth: 271.167
+  C++:	    GFLOPS:    1.91895
+  residue: 0.0474239
+
+
+
+
+[Profile:           2.264 sec.] (100.00%)
+[ self:             0.413 sec.] ( 18.25%)
+[  float:           1.851 sec.] ( 81.75%)
+[    Reduction:     1.851 sec.] ( 81.75%)
+[     self:         0.275 sec.] ( 12.17%)
+[      Copy:        0.042 sec.] (  1.84%)
+[      OpenCL:      0.065 sec.] (  2.89%)
+[      C++:         1.469 sec.] ( 64.86%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Reduction (float): 23068672
+  OpenCL:	    GFLOPS:    43.3126	    Bandwidth: 271.317
+  C++:	    GFLOPS:    1.91901
+  residue: 0.0514173
+
+
+
+
+[Profile:           2.349 sec.] (100.00%)
+[ self:             0.411 sec.] ( 17.51%)
+[  float:           1.938 sec.] ( 82.49%)
+[    Reduction:     1.938 sec.] ( 82.49%)
+[     self:         0.287 sec.] ( 12.23%)
+[      Copy:        0.044 sec.] (  1.85%)
+[      OpenCL:      0.068 sec.] (  2.90%)
+[      C++:         1.539 sec.] ( 65.51%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Reduction (float): 24117248
+  OpenCL:	    GFLOPS:    43.2872	    Bandwidth: 270.932
+  C++:	    GFLOPS:    1.91303
+  residue: 0.0550761
+
+
+
+
+[Profile:           2.443 sec.] (100.00%)
+[ self:             0.412 sec.] ( 16.86%)
+[  float:           2.031 sec.] ( 83.14%)
+[    Reduction:     2.031 sec.] ( 83.14%)
+[     self:         0.300 sec.] ( 12.30%)
+[      Copy:        0.046 sec.] (  1.87%)
+[      OpenCL:      0.071 sec.] (  2.92%)
+[      C++:         1.614 sec.] ( 66.06%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Reduction (float): 25165824
+  OpenCL:	    GFLOPS:    43.3229	    Bandwidth: 271.417
+  C++:	    GFLOPS:    1.91709
+  residue: 0.0584833
+
+
+
+
+[Profile:           2.530 sec.] (100.00%)
+[ self:             0.415 sec.] ( 16.41%)
+[  float:           2.115 sec.] ( 83.59%)
+[    Reduction:     2.115 sec.] ( 83.59%)
+[     self:         0.313 sec.] ( 12.35%)
+[      Copy:        0.047 sec.] (  1.88%)
+[      OpenCL:      0.074 sec.] (  2.94%)
+[      C++:         1.680 sec.] ( 66.42%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Reduction (float): 26214400
+  OpenCL:	    GFLOPS:    43.3108	    Bandwidth: 271.624
+  C++:	    GFLOPS:    1.90935
+  residue: 0.0616107
+
+
+
+
+[Profile:           2.640 sec.] (100.00%)
+[ self:             0.422 sec.] ( 15.97%)
+[  float:           2.218 sec.] ( 84.03%)
+[    Reduction:     2.218 sec.] ( 84.03%)
+[     self:         0.334 sec.] ( 12.65%)
+[      Copy:        0.049 sec.] (  1.87%)
+[      OpenCL:      0.077 sec.] (  2.93%)
+[      C++:         1.757 sec.] ( 66.57%)
+

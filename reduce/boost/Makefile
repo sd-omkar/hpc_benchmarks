@@ -17,4 +17,4 @@ mic:
 	icpc -DNUM_PLAT=1 -DNUM_DEV=1 -I/opt/intel/opencl-sdk/include/CL/ -I/usr/local/boost/1.53.0/include/ -L/opt/intel/opencl/lib64 -lOpenCL reduce.cpp -o mic.out
 
 list:
-	g++ -I/opt/intel/opencl-sdk/include/CL/  -I/home/omkar/boost/include/ -L/opt/intel/opencl/lib64 -lOpenCL list_devices.cpp -o list.out
+	g++ -I/opt/intel/opencl-sdk/include/CL/  -I/usr/local/boost/1.53.0/include/ -L/opt/intel/opencl/lib64 -lOpenCL list_devices.cpp -o list.out

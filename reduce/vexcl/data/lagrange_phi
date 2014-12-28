@@ -1,0 +1,352 @@
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Reduction (float): 10485760
+  OpenCL:	    GFLOPS:    1.26306	    Bandwidth: 133.142
+  C++:	    GFLOPS:    1.7146
+  residue: 0.810203
+
+
+
+
+[Profile:           9.726 sec.] (100.00%)
+[ self:             7.346 sec.] ( 75.52%)
+[  float:           2.381 sec.] ( 24.48%)
+[    Reduction:     2.381 sec.] ( 24.48%)
+[     self:         0.495 sec.] (  5.09%)
+[      Copy:        0.040 sec.] (  0.41%)
+[      OpenCL:      1.063 sec.] ( 10.93%)
+[      C++:         0.783 sec.] (  8.05%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Reduction (float): 11534336
+  OpenCL:	    GFLOPS:    1.38219	    Bandwidth: 134.27
+  C++:	    GFLOPS:    1.72437
+  residue: 0.809757
+
+
+
+
+[Profile:           9.199 sec.] (100.00%)
+[ self:             6.559 sec.] ( 71.30%)
+[  float:           2.640 sec.] ( 28.70%)
+[    Reduction:     2.640 sec.] ( 28.70%)
+[     self:         0.672 sec.] (  7.30%)
+[      Copy:        0.044 sec.] (  0.48%)
+[      OpenCL:      1.068 sec.] ( 11.61%)
+[      C++:         0.856 sec.] (  9.31%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Reduction (float): 12582912
+  OpenCL:	    GFLOPS:    1.50772	    Bandwidth: 134.995
+  C++:	    GFLOPS:    1.74971
+  residue: 0.809361
+
+
+
+
+[Profile:           9.517 sec.] (100.00%)
+[ self:             6.957 sec.] ( 73.10%)
+[  float:           2.560 sec.] ( 26.90%)
+[    Reduction:     2.560 sec.] ( 26.90%)
+[     self:         0.524 sec.] (  5.50%)
+[      Copy:        0.048 sec.] (  0.50%)
+[      OpenCL:      1.068 sec.] ( 11.22%)
+[      C++:         0.921 sec.] (  9.67%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Reduction (float): 13631488
+  OpenCL:	    GFLOPS:    1.62007	    Bandwidth: 134.806
+  C++:	    GFLOPS:    1.75599
+  residue: 0.809065
+
+
+
+
+[Profile:          10.076 sec.] (100.00%)
+[ self:             7.398 sec.] ( 73.42%)
+[  float:           2.678 sec.] ( 26.58%)
+[    Reduction:     2.678 sec.] ( 26.58%)
+[     self:         0.556 sec.] (  5.51%)
+[      Copy:        0.052 sec.] (  0.51%)
+[      OpenCL:      1.077 sec.] ( 10.69%)
+[      C++:         0.994 sec.] (  9.86%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Reduction (float): 14680064
+  OpenCL:	    GFLOPS:    1.73321	    Bandwidth: 135.512
+  C++:	    GFLOPS:    1.76298
+  residue: 0.808757
+
+
+
+
+[Profile:           9.538 sec.] (100.00%)
+[ self:             6.758 sec.] ( 70.85%)
+[  float:           2.780 sec.] ( 29.15%)
+[    Reduction:     2.780 sec.] ( 29.15%)
+[     self:         0.575 sec.] (  6.03%)
+[      Copy:        0.055 sec.] (  0.58%)
+[      OpenCL:      1.084 sec.] ( 11.37%)
+[      C++:         1.066 sec.] ( 11.17%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Reduction (float): 15728640
+  OpenCL:	    GFLOPS:    1.82665	    Bandwidth: 135.421
+  C++:	    GFLOPS:    1.76257
+  residue: 0.808476
+
+
+
+
+[Profile:           9.613 sec.] (100.00%)
+[ self:             6.726 sec.] ( 69.97%)
+[  float:           2.887 sec.] ( 30.03%)
+[    Reduction:     2.887 sec.] ( 30.03%)
+[     self:         0.583 sec.] (  6.07%)
+[      Copy:        0.059 sec.] (  0.62%)
+[      OpenCL:      1.102 sec.] ( 11.46%)
+[      C++:         1.142 sec.] ( 11.88%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Reduction (float): 16777216
+  OpenCL:	    GFLOPS:    1.90454	    Bandwidth: 140.904
+  C++:	    GFLOPS:    1.77192
+  residue: 0.808264
+
+
+
+
+[Profile:           9.670 sec.] (100.00%)
+[ self:             6.653 sec.] ( 68.81%)
+[  float:           3.016 sec.] ( 31.19%)
+[    Reduction:     3.016 sec.] ( 31.19%)
+[     self:         0.616 sec.] (  6.37%)
+[      Copy:        0.061 sec.] (  0.63%)
+[      OpenCL:      1.128 sec.] ( 11.66%)
+[      C++:         1.212 sec.] ( 12.53%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Reduction (float): 17825792
+  OpenCL:	    GFLOPS:    1.98085	    Bandwidth: 143.267
+  C++:	    GFLOPS:    1.78441
+  residue: 0.807452
+
+
+
+
+[Profile:          11.104 sec.] (100.00%)
+[ self:             7.973 sec.] ( 71.80%)
+[  float:           3.131 sec.] ( 28.20%)
+[    Reduction:     3.131 sec.] ( 28.20%)
+[     self:         0.637 sec.] (  5.73%)
+[      Copy:        0.064 sec.] (  0.57%)
+[      OpenCL:      1.152 sec.] ( 10.37%)
+[      C++:         1.279 sec.] ( 11.52%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Reduction (float): 18874368
+  OpenCL:	    GFLOPS:    2.06464	    Bandwidth: 136.822
+  C++:	    GFLOPS:    1.78613
+  residue: 0.806384
+
+
+
+
+[Profile:          10.277 sec.] (100.00%)
+[ self:             7.010 sec.] ( 68.21%)
+[  float:           3.268 sec.] ( 31.79%)
+[    Reduction:     3.268 sec.] ( 31.79%)
+[     self:         0.674 sec.] (  6.56%)
+[      Copy:        0.071 sec.] (  0.69%)
+[      OpenCL:      1.170 sec.] ( 11.39%)
+[      C++:         1.353 sec.] ( 13.16%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Reduction (float): 19922944
+  OpenCL:	    GFLOPS:    2.14524	    Bandwidth: 151.425
+  C++:	    GFLOPS:    1.77981
+  residue: 0.805389
+
+
+
+
+[Profile:          10.048 sec.] (100.00%)
+[ self:             6.672 sec.] ( 66.40%)
+[  float:           3.376 sec.] ( 33.60%)
+[    Reduction:     3.376 sec.] ( 33.60%)
+[     self:         0.687 sec.] (  6.84%)
+[      Copy:        0.067 sec.] (  0.67%)
+[      OpenCL:      1.189 sec.] ( 11.83%)
+[      C++:         1.433 sec.] ( 14.26%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Reduction (float): 20971520
+  OpenCL:	    GFLOPS:    2.21883	    Bandwidth: 154.51
+  C++:	    GFLOPS:    1.78376
+  residue: 0.804494
+
+
+
+
+[Profile:          10.174 sec.] (100.00%)
+[ self:             6.687 sec.] ( 65.73%)
+[  float:           3.487 sec.] ( 34.27%)
+[    Reduction:     3.487 sec.] ( 34.27%)
+[     self:         0.702 sec.] (  6.90%)
+[      Copy:        0.069 sec.] (  0.68%)
+[      OpenCL:      1.210 sec.] ( 11.89%)
+[      C++:         1.505 sec.] ( 14.79%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Reduction (float): 22020096
+  OpenCL:	    GFLOPS:    2.28188	    Bandwidth: 152.125
+  C++:	    GFLOPS:    1.78852
+  residue: 0.803691
+
+
+
+
+[Profile:           9.804 sec.] (100.00%)
+[ self:             6.193 sec.] ( 63.16%)
+[  float:           3.612 sec.] ( 36.84%)
+[    Reduction:     3.612 sec.] ( 36.84%)
+[     self:         0.726 sec.] (  7.41%)
+[      Copy:        0.074 sec.] (  0.76%)
+[      OpenCL:      1.235 sec.] ( 12.60%)
+[      C++:         1.576 sec.] ( 16.07%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Reduction (float): 23068672
+  OpenCL:	    GFLOPS:    2.36744	    Bandwidth: 151.381
+  C++:	    GFLOPS:    1.79172
+  residue: 0.802922
+
+
+
+
+[Profile:          10.387 sec.] (100.00%)
+[ self:             6.680 sec.] ( 64.31%)
+[  float:           3.707 sec.] ( 35.69%)
+[    Reduction:     3.707 sec.] ( 35.69%)
+[     self:         0.734 sec.] (  7.07%)
+[      Copy:        0.078 sec.] (  0.75%)
+[      OpenCL:      1.247 sec.] ( 12.01%)
+[      C++:         1.648 sec.] ( 15.87%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Reduction (float): 24117248
+  OpenCL:	    GFLOPS:    2.41156	    Bandwidth: 152.341
+  C++:	    GFLOPS:    1.78873
+  residue: 0.802216
+
+
+
+
+[Profile:          11.085 sec.] (100.00%)
+[ self:             7.236 sec.] ( 65.28%)
+[  float:           3.849 sec.] ( 34.72%)
+[    Reduction:     3.849 sec.] ( 34.72%)
+[     self:         0.762 sec.] (  6.87%)
+[      Copy:        0.081 sec.] (  0.73%)
+[      OpenCL:      1.280 sec.] ( 11.55%)
+[      C++:         1.726 sec.] ( 15.57%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Reduction (float): 25165824
+  OpenCL:	    GFLOPS:    2.49104	    Bandwidth: 151.211
+  C++:	    GFLOPS:    1.79958
+  residue: 0.801585
+
+
+
+
+[Profile:          10.767 sec.] (100.00%)
+[ self:             6.824 sec.] ( 63.38%)
+[  float:           3.943 sec.] ( 36.62%)
+[    Reduction:     3.943 sec.] ( 36.62%)
+[     self:         0.775 sec.] (  7.19%)
+[      Copy:        0.085 sec.] (  0.79%)
+[      OpenCL:      1.293 sec.] ( 12.01%)
+[      C++:         1.790 sec.] ( 16.63%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Reduction (float): 26214400
+  OpenCL:	    GFLOPS:    2.55843	    Bandwidth: 152.247
+  C++:	    GFLOPS:    1.79387
+  residue: 0.800979
+
+
+
+
+[Profile:          10.764 sec.] (100.00%)
+[ self:             6.693 sec.] ( 62.18%)
+[  float:           4.071 sec.] ( 37.82%)
+[    Reduction:     4.071 sec.] ( 37.82%)
+[     self:         0.801 sec.] (  7.44%)
+[      Copy:        0.088 sec.] (  0.82%)
+[      OpenCL:      1.312 sec.] ( 12.18%)
+[      C++:         1.871 sec.] ( 17.38%)
+
