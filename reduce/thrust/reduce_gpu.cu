@@ -13,6 +13,14 @@
 
 using namespace std;
 
+// Multiplier functor
+struct multiplier{
+  __host__ __device__
+  float operator()(float x) {
+    return (x * x);
+  }
+};
+
 int main (int argc, char *argv[]) {
   // Basic error check
   if (argc != 2) {
@@ -21,10 +29,10 @@ int main (int argc, char *argv[]) {
   }
 
   // Select device
-  cudaSetDevice(0);
+  cudaSetDevice(1);
 
   // Get size
-  int size = atoi(argv[1]);
+  int size = 1024 * 1024 * (10 + atoi(argv[1]));
 
   // Initialize vectors
   thrust::host_vector<float> h_data(size);
@@ -47,17 +55,19 @@ int main (int argc, char *argv[]) {
   //thrust::fill(h_data.begin(), h_data.end(), 1);
 
   // Reduction
+  thrust::device_vector<float> d_data = h_data;
+  d_sum = thrust::transform_reduce(d_data.begin(), d_data.end(), multiplier(), (float)0, thrust::plus<float>());
+  
   cudaEventRecord(start_reduce, NULL);
   
   for (int i=0; i<RUNS; i++) {
-  thrust::device_vector<float> d_data = h_data;
-  d_sum = thrust::reduce(d_data.begin(), d_data.end(), (float)0, thrust::plus<float>());
+  d_sum = thrust::transform_reduce(d_data.begin(), d_data.end(), multiplier(), (float)0, thrust::plus<float>());
   }
 
   cudaEventRecord(end_reduce, NULL);
   cudaEventSynchronize(end_reduce);
   cudaEventElapsedTime(&time_reduce, start_reduce, end_reduce);
-  h_sum = thrust::reduce(h_data.begin(), h_data.end(), (float)0, thrust::plus<float>());
+  h_sum = thrust::transform_reduce(h_data.begin(), h_data.end(), multiplier(), (float)0, thrust::plus<float>());
 
   // Exclusive scan
   /*
@@ -73,9 +83,16 @@ int main (int argc, char *argv[]) {
   thrust::exclusive_scan(h_data.begin(), h_data.end(), h_data.begin());
   */
 
+  
   cout << "Reduction time: " << time_reduce/RUNS << " ms"<< endl;
+  float time_sec = time_reduce / RUNS / 1e3;
+  double gflops = 2 * size / time_sec / 1e9;
+  cout << "N:" << size << "\tGFLOPS: " << gflops << endl;
+
   //cout << "\tHost result: " << h_sum << endl;
   //cout << "\tDevice result: " << d_sum << endl;
+  float residue = (d_sum - h_sum) / h_sum;
+  cout << "Residue: " << residue << endl;
 
   /*
   if (thrust::equal(h_data.begin(), h_data.end(), h_result.begin())) {
