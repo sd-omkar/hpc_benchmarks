@@ -1,0 +1,384 @@
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+2. Tesla K20Xm (NVIDIA CUDA)
+3. Tesla K20Xm (NVIDIA CUDA)
+
+Reduction (float): 10485760
+  OpenCL:	    GFLOPS:    90.3483	    Bandwidth: 87.3382
+  C++:	    GFLOPS:    1.84973
+  residue: 0.0129331
+
+
+
+
+[Profile:           7.681 sec.] (100.00%)
+[ self:             6.679 sec.] ( 86.96%)
+[  float:           1.002 sec.] ( 13.04%)
+[    Reduction:     1.002 sec.] ( 13.04%)
+[     self:         0.200 sec.] (  2.60%)
+[      Copy:        0.061 sec.] (  0.80%)
+[      OpenCL:      0.015 sec.] (  0.19%)
+[      C++:         0.726 sec.] (  9.45%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+2. Tesla K20Xm (NVIDIA CUDA)
+3. Tesla K20Xm (NVIDIA CUDA)
+
+Reduction (float): 11534336
+  OpenCL:	    GFLOPS:    90.5186	    Bandwidth: 95.7482
+  C++:	    GFLOPS:    1.84937
+  residue: 0.0153525
+
+
+
+
+[Profile:           6.477 sec.] (100.00%)
+[ self:             5.386 sec.] ( 83.16%)
+[  float:           1.090 sec.] ( 16.84%)
+[    Reduction:     1.090 sec.] ( 16.84%)
+[     self:         0.214 sec.] (  3.31%)
+[      Copy:        0.062 sec.] (  0.95%)
+[      OpenCL:      0.016 sec.] (  0.25%)
+[      C++:         0.798 sec.] ( 12.33%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+2. Tesla K20Xm (NVIDIA CUDA)
+3. Tesla K20Xm (NVIDIA CUDA)
+
+Reduction (float): 12582912
+  OpenCL:	    GFLOPS:    93.2406	    Bandwidth: 96.145
+  C++:	    GFLOPS:    1.8504
+  residue: 0.0173206
+
+
+
+
+[Profile:           6.935 sec.] (100.00%)
+[ self:             5.754 sec.] ( 82.97%)
+[  float:           1.181 sec.] ( 17.03%)
+[    Reduction:     1.181 sec.] ( 17.03%)
+[     self:         0.226 sec.] (  3.26%)
+[      Copy:        0.067 sec.] (  0.97%)
+[      OpenCL:      0.017 sec.] (  0.25%)
+[      C++:         0.870 sec.] ( 12.55%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+2. Tesla K20Xm (NVIDIA CUDA)
+3. Tesla K20Xm (NVIDIA CUDA)
+
+Reduction (float): 13631488
+  OpenCL:	    GFLOPS:    93.988	    Bandwidth: 100.86
+  C++:	    GFLOPS:    1.84936
+  residue: 0.0190157
+
+
+
+
+[Profile:           6.938 sec.] (100.00%)
+[ self:             5.648 sec.] ( 81.42%)
+[  float:           1.289 sec.] ( 18.58%)
+[    Reduction:     1.289 sec.] ( 18.58%)
+[     self:         0.258 sec.] (  3.72%)
+[      Copy:        0.069 sec.] (  1.00%)
+[      OpenCL:      0.019 sec.] (  0.27%)
+[      C++:         0.943 sec.] ( 13.60%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+2. Tesla K20Xm (NVIDIA CUDA)
+3. Tesla K20Xm (NVIDIA CUDA)
+
+Reduction (float): 14680064
+  OpenCL:	    GFLOPS:    101.405	    Bandwidth: 100.618
+  C++:	    GFLOPS:    1.84965
+  residue: 0.0204765
+
+
+
+
+[Profile:           6.538 sec.] (100.00%)
+[ self:             5.157 sec.] ( 78.88%)
+[  float:           1.381 sec.] ( 21.12%)
+[    Reduction:     1.381 sec.] ( 21.12%)
+[     self:         0.272 sec.] (  4.16%)
+[      Copy:        0.075 sec.] (  1.14%)
+[      OpenCL:      0.019 sec.] (  0.28%)
+[      C++:         1.016 sec.] ( 15.54%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+2. Tesla K20Xm (NVIDIA CUDA)
+3. Tesla K20Xm (NVIDIA CUDA)
+
+Reduction (float): 15728640
+  OpenCL:	    GFLOPS:    97.1452	    Bandwidth: 110.121
+  C++:	    GFLOPS:    1.84999
+  residue: 0.0217675
+
+
+
+
+[Profile:           7.193 sec.] (100.00%)
+[ self:             5.723 sec.] ( 79.56%)
+[  float:           1.470 sec.] ( 20.44%)
+[    Reduction:     1.470 sec.] ( 20.44%)
+[     self:         0.288 sec.] (  4.00%)
+[      Copy:        0.073 sec.] (  1.02%)
+[      OpenCL:      0.021 sec.] (  0.29%)
+[      C++:         1.088 sec.] ( 15.13%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+2. Tesla K20Xm (NVIDIA CUDA)
+3. Tesla K20Xm (NVIDIA CUDA)
+
+Reduction (float): 16777216
+  OpenCL:	    GFLOPS:    103.498	    Bandwidth: 105.508
+  C++:	    GFLOPS:    1.85028
+  residue: 0.0228715
+
+
+
+
+[Profile:           7.201 sec.] (100.00%)
+[ self:             5.644 sec.] ( 78.38%)
+[  float:           1.557 sec.] ( 21.62%)
+[    Reduction:     1.557 sec.] ( 21.62%)
+[     self:         0.294 sec.] (  4.09%)
+[      Copy:        0.081 sec.] (  1.13%)
+[      OpenCL:      0.021 sec.] (  0.29%)
+[      C++:         1.161 sec.] ( 16.12%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+2. Tesla K20Xm (NVIDIA CUDA)
+3. Tesla K20Xm (NVIDIA CUDA)
+
+Reduction (float): 17825792
+  OpenCL:	    GFLOPS:    97.8778	    Bandwidth: 106.356
+  C++:	    GFLOPS:    1.85033
+  residue: 0.0272426
+
+
+
+
+[Profile:           7.368 sec.] (100.00%)
+[ self:             5.715 sec.] ( 77.56%)
+[  float:           1.653 sec.] ( 22.44%)
+[    Reduction:     1.653 sec.] ( 22.44%)
+[     self:         0.311 sec.] (  4.22%)
+[      Copy:        0.086 sec.] (  1.16%)
+[      OpenCL:      0.023 sec.] (  0.32%)
+[      C++:         1.233 sec.] ( 16.74%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+2. Tesla K20Xm (NVIDIA CUDA)
+3. Tesla K20Xm (NVIDIA CUDA)
+
+Reduction (float): 18874368
+  OpenCL:	    GFLOPS:    107.827	    Bandwidth: 109.093
+  C++:	    GFLOPS:    1.85002
+  residue: 0.0330568
+
+
+
+
+[Profile:           6.743 sec.] (100.00%)
+[ self:             4.998 sec.] ( 74.11%)
+[  float:           1.746 sec.] ( 25.89%)
+[    Reduction:     1.746 sec.] ( 25.89%)
+[     self:         0.329 sec.] (  4.88%)
+[      Copy:        0.089 sec.] (  1.31%)
+[      OpenCL:      0.022 sec.] (  0.33%)
+[      C++:         1.306 sec.] ( 19.37%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+2. Tesla K20Xm (NVIDIA CUDA)
+3. Tesla K20Xm (NVIDIA CUDA)
+
+Reduction (float): 19922944
+  OpenCL:	    GFLOPS:    110.166	    Bandwidth: 107.189
+  C++:	    GFLOPS:    1.85697
+  residue: 0.0383257
+
+
+
+
+[Profile:           7.407 sec.] (100.00%)
+[ self:             5.570 sec.] ( 75.20%)
+[  float:           1.837 sec.] ( 24.80%)
+[    Reduction:     1.837 sec.] ( 24.80%)
+[     self:         0.346 sec.] (  4.67%)
+[      Copy:        0.095 sec.] (  1.28%)
+[      OpenCL:      0.023 sec.] (  0.31%)
+[      C++:         1.373 sec.] ( 18.54%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+2. Tesla K20Xm (NVIDIA CUDA)
+3. Tesla K20Xm (NVIDIA CUDA)
+
+Reduction (float): 20971520
+  OpenCL:	    GFLOPS:    101.389	    Bandwidth: 117.203
+  C++:	    GFLOPS:    1.85237
+  residue: 0.0431337
+
+
+
+
+[Profile:           8.427 sec.] (100.00%)
+[ self:             6.479 sec.] ( 76.88%)
+[  float:           1.948 sec.] ( 23.12%)
+[    Reduction:     1.948 sec.] ( 23.12%)
+[     self:         0.381 sec.] (  4.52%)
+[      Copy:        0.092 sec.] (  1.09%)
+[      OpenCL:      0.026 sec.] (  0.31%)
+[      C++:         1.449 sec.] ( 17.20%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+2. Tesla K20Xm (NVIDIA CUDA)
+3. Tesla K20Xm (NVIDIA CUDA)
+
+Reduction (float): 22020096
+  OpenCL:	    GFLOPS:    110.588	    Bandwidth: 112.803
+  C++:	    GFLOPS:    1.8792
+  residue: 0.047424
+
+
+
+
+[Profile:           8.077 sec.] (100.00%)
+[ self:             6.052 sec.] ( 74.93%)
+[  float:           2.025 sec.] ( 25.07%)
+[    Reduction:     2.025 sec.] ( 25.07%)
+[     self:         0.400 sec.] (  4.95%)
+[      Copy:        0.100 sec.] (  1.24%)
+[      OpenCL:      0.025 sec.] (  0.32%)
+[      C++:         1.500 sec.] ( 18.57%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+2. Tesla K20Xm (NVIDIA CUDA)
+3. Tesla K20Xm (NVIDIA CUDA)
+
+Reduction (float): 23068672
+  OpenCL:	    GFLOPS:    107.856	    Bandwidth: 111.52
+  C++:	    GFLOPS:    1.88833
+  residue: 0.0514173
+
+
+
+
+[Profile:           7.526 sec.] (100.00%)
+[ self:             5.431 sec.] ( 72.16%)
+[  float:           2.096 sec.] ( 27.84%)
+[    Reduction:     2.096 sec.] ( 27.84%)
+[     self:         0.399 sec.] (  5.30%)
+[      Copy:        0.106 sec.] (  1.41%)
+[      OpenCL:      0.027 sec.] (  0.36%)
+[      C++:         1.564 sec.] ( 20.78%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+2. Tesla K20Xm (NVIDIA CUDA)
+3. Tesla K20Xm (NVIDIA CUDA)
+
+Reduction (float): 24117248
+  OpenCL:	    GFLOPS:    100.391	    Bandwidth: 113.512
+  C++:	    GFLOPS:    1.93824
+  residue: 0.0550761
+
+
+
+
+[Profile:           8.159 sec.] (100.00%)
+[ self:             6.010 sec.] ( 73.66%)
+[  float:           2.149 sec.] ( 26.34%)
+[    Reduction:     2.149 sec.] ( 26.34%)
+[     self:         0.416 sec.] (  5.10%)
+[      Copy:        0.109 sec.] (  1.33%)
+[      OpenCL:      0.031 sec.] (  0.38%)
+[      C++:         1.593 sec.] ( 19.52%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+2. Tesla K20Xm (NVIDIA CUDA)
+3. Tesla K20Xm (NVIDIA CUDA)
+
+Reduction (float): 25165824
+  OpenCL:	    GFLOPS:    101.225	    Bandwidth: 119.605
+  C++:	    GFLOPS:    1.93521
+  residue: 0.0584831
+
+
+
+
+[Profile:           7.870 sec.] (100.00%)
+[ self:             5.611 sec.] ( 71.30%)
+[  float:           2.258 sec.] ( 28.70%)
+[    Reduction:     2.258 sec.] ( 28.70%)
+[     self:         0.454 sec.] (  5.77%)
+[      Copy:        0.108 sec.] (  1.37%)
+[      OpenCL:      0.032 sec.] (  0.40%)
+[      C++:         1.665 sec.] ( 21.15%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+2. Tesla K20Xm (NVIDIA CUDA)
+3. Tesla K20Xm (NVIDIA CUDA)
+
+Reduction (float): 26214400
+  OpenCL:	    GFLOPS:    101.008	    Bandwidth: 109.597
+  C++:	    GFLOPS:    1.93359
+  residue: 0.0616106
+
+
+
+
+[Profile:           7.923 sec.] (100.00%)
+[ self:             5.557 sec.] ( 70.14%)
+[  float:           2.366 sec.] ( 29.86%)
+[    Reduction:     2.366 sec.] ( 29.86%)
+[     self:         0.475 sec.] (  6.00%)
+[      Copy:        0.122 sec.] (  1.55%)
+[      OpenCL:      0.033 sec.] (  0.42%)
+[      C++:         1.735 sec.] ( 21.90%)
+

@@ -1,0 +1,352 @@
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (float): 10485760
+  OpenCL:	    GFLOPS:    8.99931	    Bandwidth: 275.634
+  C++:	    GFLOPS:    1.90454
+  residue: 0.0129309
+
+
+
+
+[Profile:           2.066 sec.] (100.00%)
+[ self:             1.033 sec.] ( 50.00%)
+[  float:           1.033 sec.] ( 50.00%)
+[    Reduction:     1.033 sec.] ( 50.00%)
+[     self:         0.160 sec.] (  7.73%)
+[      Copy:        0.019 sec.] (  0.94%)
+[      OpenCL:      0.149 sec.] (  7.22%)
+[      C++:         0.705 sec.] ( 34.11%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (float): 11534336
+  OpenCL:	    GFLOPS:    9.32882	    Bandwidth: 276.204
+  C++:	    GFLOPS:    1.9097
+  residue: 0.0153508
+
+
+
+
+[Profile:           1.732 sec.] (100.00%)
+[ self:             0.617 sec.] ( 35.61%)
+[  float:           1.115 sec.] ( 64.39%)
+[    Reduction:     1.115 sec.] ( 64.39%)
+[     self:         0.162 sec.] (  9.38%)
+[      Copy:        0.021 sec.] (  1.23%)
+[      OpenCL:      0.158 sec.] (  9.14%)
+[      C++:         0.773 sec.] ( 44.64%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (float): 12582912
+  OpenCL:	    GFLOPS:    9.55675	    Bandwidth: 270.069
+  C++:	    GFLOPS:    1.91607
+  residue: 0.0173189
+
+
+
+
+[Profile:           2.141 sec.] (100.00%)
+[ self:             0.925 sec.] ( 43.19%)
+[  float:           1.216 sec.] ( 56.81%)
+[    Reduction:     1.216 sec.] ( 56.81%)
+[     self:         0.183 sec.] (  8.57%)
+[      Copy:        0.024 sec.] (  1.11%)
+[      OpenCL:      0.169 sec.] (  7.87%)
+[      C++:         0.841 sec.] ( 39.26%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (float): 13631488
+  OpenCL:	    GFLOPS:    9.41809	    Bandwidth: 277.027
+  C++:	    GFLOPS:    1.89523
+  residue: 0.0190122
+
+
+
+
+[Profile:           1.946 sec.] (100.00%)
+[ self:             0.633 sec.] ( 32.53%)
+[  float:           1.313 sec.] ( 67.47%)
+[    Reduction:     1.313 sec.] ( 67.47%)
+[     self:         0.182 sec.] (  9.34%)
+[      Copy:        0.025 sec.] (  1.29%)
+[      OpenCL:      0.185 sec.] (  9.52%)
+[      C++:         0.921 sec.] ( 47.32%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (float): 14680064
+  OpenCL:	    GFLOPS:    9.80046	    Bandwidth: 269.132
+  C++:	    GFLOPS:    1.89969
+  residue: 0.0204733
+
+
+
+
+[Profile:           2.070 sec.] (100.00%)
+[ self:             0.639 sec.] ( 30.87%)
+[  float:           1.431 sec.] ( 69.13%)
+[    Reduction:     1.431 sec.] ( 69.13%)
+[     self:         0.222 sec.] ( 10.74%)
+[      Copy:        0.028 sec.] (  1.35%)
+[      OpenCL:      0.192 sec.] (  9.26%)
+[      C++:         0.989 sec.] ( 47.78%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (float): 15728640
+  OpenCL:	    GFLOPS:    9.96397	    Bandwidth: 268.366
+  C++:	    GFLOPS:    1.91476
+  residue: 0.0217637
+
+
+
+
+[Profile:           3.614 sec.] (100.00%)
+[ self:             2.110 sec.] ( 58.39%)
+[  float:           1.504 sec.] ( 41.61%)
+[    Reduction:     1.504 sec.] ( 41.61%)
+[     self:         0.221 sec.] (  6.10%)
+[      Copy:        0.030 sec.] (  0.83%)
+[      OpenCL:      0.202 sec.] (  5.59%)
+[      C++:         1.051 sec.] ( 29.09%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (float): 16777216
+  OpenCL:	    GFLOPS:    10.4072	    Bandwidth: 273.764
+  C++:	    GFLOPS:    1.87009
+  residue: 0.0228682
+
+
+
+
+[Profile:           3.914 sec.] (100.00%)
+[ self:             2.293 sec.] ( 58.59%)
+[  float:           1.621 sec.] ( 41.41%)
+[    Reduction:     1.621 sec.] ( 41.41%)
+[     self:         0.235 sec.] (  6.00%)
+[      Copy:        0.031 sec.] (  0.80%)
+[      OpenCL:      0.206 sec.] (  5.27%)
+[      C++:         1.148 sec.] ( 29.34%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (float): 17825792
+  OpenCL:	    GFLOPS:    10.1342	    Bandwidth: 270.527
+  C++:	    GFLOPS:    1.91303
+  residue: 0.0272381
+
+
+
+
+[Profile:           2.863 sec.] (100.00%)
+[ self:             1.166 sec.] ( 40.74%)
+[  float:           1.697 sec.] ( 59.26%)
+[    Reduction:     1.697 sec.] ( 59.26%)
+[     self:         0.245 sec.] (  8.55%)
+[      Copy:        0.034 sec.] (  1.18%)
+[      OpenCL:      0.225 sec.] (  7.86%)
+[      C++:         1.193 sec.] ( 41.66%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (float): 18874368
+  OpenCL:	    GFLOPS:    10.0783	    Bandwidth: 274.01
+  C++:	    GFLOPS:    1.91431
+  residue: 0.0330507
+
+
+
+
+[Profile:           2.964 sec.] (100.00%)
+[ self:             1.157 sec.] ( 39.02%)
+[  float:           1.808 sec.] ( 60.98%)
+[    Reduction:     1.808 sec.] ( 60.98%)
+[     self:         0.271 sec.] (  9.13%)
+[      Copy:        0.035 sec.] (  1.19%)
+[      OpenCL:      0.240 sec.] (  8.09%)
+[      C++:         1.262 sec.] ( 42.57%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (float): 19922944
+  OpenCL:	    GFLOPS:    10.2917	    Bandwidth: 273.434
+  C++:	    GFLOPS:    1.9144
+  residue: 0.0383196
+
+
+
+
+[Profile:           2.518 sec.] (100.00%)
+[ self:             0.629 sec.] ( 24.97%)
+[  float:           1.889 sec.] ( 75.03%)
+[    Reduction:     1.889 sec.] ( 75.03%)
+[     self:         0.272 sec.] ( 10.80%)
+[      Copy:        0.037 sec.] (  1.48%)
+[      OpenCL:      0.248 sec.] (  9.84%)
+[      C++:         1.332 sec.] ( 52.91%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (float): 20971520
+  OpenCL:	    GFLOPS:    10.3742	    Bandwidth: 272.383
+  C++:	    GFLOPS:    1.90097
+  residue: 0.0431272
+
+
+
+
+[Profile:           2.563 sec.] (100.00%)
+[ self:             0.571 sec.] ( 22.27%)
+[  float:           1.992 sec.] ( 77.73%)
+[    Reduction:     1.992 sec.] ( 77.73%)
+[     self:         0.282 sec.] ( 11.00%)
+[      Copy:        0.039 sec.] (  1.54%)
+[      OpenCL:      0.259 sec.] ( 10.10%)
+[      C++:         1.412 sec.] ( 55.10%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (float): 22020096
+  OpenCL:	    GFLOPS:    10.4426	    Bandwidth: 274.263
+  C++:	    GFLOPS:    1.84762
+  residue: 0.0474174
+
+
+
+
+[Profile:           2.754 sec.] (100.00%)
+[ self:             0.620 sec.] ( 22.53%)
+[  float:           2.133 sec.] ( 77.47%)
+[    Reduction:     2.133 sec.] ( 77.47%)
+[     self:         0.297 sec.] ( 10.78%)
+[      Copy:        0.041 sec.] (  1.49%)
+[      OpenCL:      0.270 sec.] (  9.80%)
+[      C++:         1.526 sec.] ( 55.40%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (float): 23068672
+  OpenCL:	    GFLOPS:    10.2627	    Bandwidth: 271.947
+  C++:	    GFLOPS:    1.91539
+  residue: 0.0514083
+
+
+
+
+[Profile:           3.627 sec.] (100.00%)
+[ self:             1.470 sec.] ( 40.53%)
+[  float:           2.157 sec.] ( 59.47%)
+[    Reduction:     2.157 sec.] ( 59.47%)
+[     self:         0.284 sec.] (  7.84%)
+[      Copy:        0.043 sec.] (  1.20%)
+[      OpenCL:      0.288 sec.] (  7.93%)
+[      C++:         1.542 sec.] ( 42.50%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (float): 24117248
+  OpenCL:	    GFLOPS:    10.384	    Bandwidth: 272.704
+  C++:	    GFLOPS:    1.91499
+  residue: 0.0550685
+
+
+
+
+[Profile:           2.849 sec.] (100.00%)
+[ self:             0.586 sec.] ( 20.58%)
+[  float:           2.263 sec.] ( 79.42%)
+[    Reduction:     2.263 sec.] ( 79.42%)
+[     self:         0.308 sec.] ( 10.82%)
+[      Copy:        0.045 sec.] (  1.59%)
+[      OpenCL:      0.297 sec.] ( 10.43%)
+[      C++:         1.612 sec.] ( 56.58%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (float): 25165824
+  OpenCL:	    GFLOPS:    10.6941	    Bandwidth: 282.964
+  C++:	    GFLOPS:    1.915
+  residue: 0.0584739
+
+
+
+
+[Profile:           3.901 sec.] (100.00%)
+[ self:             1.581 sec.] ( 40.54%)
+[  float:           2.319 sec.] ( 59.46%)
+[    Reduction:     2.319 sec.] ( 59.46%)
+[     self:         0.291 sec.] (  7.45%)
+[      Copy:        0.046 sec.] (  1.17%)
+[      OpenCL:      0.301 sec.] (  7.72%)
+[      C++:         1.682 sec.] ( 43.12%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (float): 26214400
+  OpenCL:	    GFLOPS:    9.84511	    Bandwidth: 273.154
+  C++:	    GFLOPS:    1.81169
+  residue: 0.0616017
+
+
+
+
+[Profile:           3.213 sec.] (100.00%)
+[ self:             0.635 sec.] ( 19.76%)
+[  float:           2.578 sec.] ( 80.24%)
+[    Reduction:     2.578 sec.] ( 80.24%)
+[     self:         0.336 sec.] ( 10.46%)
+[      Copy:        0.049 sec.] (  1.53%)
+[      OpenCL:      0.341 sec.] ( 10.61%)
+[      C++:         1.852 sec.] ( 57.65%)
+

@@ -1,0 +1,352 @@
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Reduction (float): 10485760
+  OpenCL:	    GFLOPS:    31.5375	    Bandwidth: 59.7026
+  C++:	    GFLOPS:    0.833271
+  residue: 0.012933
+
+
+
+
+[Profile:           2.172 sec.] (100.00%)
+[ self:             0.039 sec.] (  1.78%)
+[  float:           2.133 sec.] ( 98.22%)
+[    Reduction:     2.133 sec.] ( 98.22%)
+[     self:         0.390 sec.] ( 17.96%)
+[      Copy:        0.090 sec.] (  4.14%)
+[      OpenCL:      0.043 sec.] (  1.96%)
+[      C++:         1.611 sec.] ( 74.16%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Reduction (float): 11534336
+  OpenCL:	    GFLOPS:    28.9707	    Bandwidth: 59.3214
+  C++:	    GFLOPS:    0.834975
+  residue: 0.0153526
+
+
+
+
+[Profile:           2.376 sec.] (100.00%)
+[ self:             0.039 sec.] (  1.66%)
+[  float:           2.337 sec.] ( 98.34%)
+[    Reduction:     2.337 sec.] ( 98.34%)
+[     self:         0.418 sec.] ( 17.59%)
+[      Copy:        0.100 sec.] (  4.19%)
+[      OpenCL:      0.051 sec.] (  2.14%)
+[      C++:         1.768 sec.] ( 74.41%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Reduction (float): 12582912
+  OpenCL:	    GFLOPS:    28.6201	    Bandwidth: 62.9215
+  C++:	    GFLOPS:    0.834514
+  residue: 0.0173206
+
+
+
+
+[Profile:           2.576 sec.] (100.00%)
+[ self:             0.041 sec.] (  1.61%)
+[  float:           2.534 sec.] ( 98.39%)
+[    Reduction:     2.534 sec.] ( 98.39%)
+[     self:         0.446 sec.] ( 17.31%)
+[      Copy:        0.102 sec.] (  3.97%)
+[      OpenCL:      0.056 sec.] (  2.18%)
+[      C++:         1.930 sec.] ( 74.93%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Reduction (float): 13631488
+  OpenCL:	    GFLOPS:    19.2581	    Bandwidth: 60.9587
+  C++:	    GFLOPS:    0.834034
+  residue: 0.0190157
+
+
+
+
+[Profile:           2.818 sec.] (100.00%)
+[ self:             0.044 sec.] (  1.57%)
+[  float:           2.774 sec.] ( 98.43%)
+[    Reduction:     2.774 sec.] ( 98.43%)
+[     self:         0.477 sec.] ( 16.92%)
+[      Copy:        0.114 sec.] (  4.06%)
+[      OpenCL:      0.091 sec.] (  3.22%)
+[      C++:         2.092 sec.] ( 74.24%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Reduction (float): 14680064
+  OpenCL:	    GFLOPS:    16.031	    Bandwidth: 64.1528
+  C++:	    GFLOPS:    0.388458
+  residue: 0.0204764
+
+
+
+
+[Profile:           5.611 sec.] (100.00%)
+[ self:             0.041 sec.] (  0.73%)
+[  float:           5.570 sec.] ( 99.27%)
+[    Reduction:     5.570 sec.] ( 99.27%)
+[     self:         0.498 sec.] (  8.88%)
+[      Copy:        0.117 sec.] (  2.09%)
+[      OpenCL:      0.117 sec.] (  2.09%)
+[      C++:         4.837 sec.] ( 86.21%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Reduction (float): 15728640
+  OpenCL:	    GFLOPS:    15.6476	    Bandwidth: 65.4108
+  C++:	    GFLOPS:    0.834989
+  residue: 0.0217676
+
+
+
+
+[Profile:           3.240 sec.] (100.00%)
+[ self:             0.045 sec.] (  1.38%)
+[  float:           3.196 sec.] ( 98.62%)
+[    Reduction:     3.196 sec.] ( 98.62%)
+[     self:         0.533 sec.] ( 16.44%)
+[      Copy:        0.123 sec.] (  3.80%)
+[      OpenCL:      0.129 sec.] (  3.97%)
+[      C++:         2.411 sec.] ( 74.41%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Reduction (float): 16777216
+  OpenCL:	    GFLOPS:    14.6526	    Bandwidth: 65.5824
+  C++:	    GFLOPS:    0.835387
+  residue: 0.0228714
+
+
+
+
+[Profile:           3.453 sec.] (100.00%)
+[ self:             0.042 sec.] (  1.22%)
+[  float:           3.411 sec.] ( 98.78%)
+[    Reduction:     3.411 sec.] ( 98.78%)
+[     self:         0.562 sec.] ( 16.29%)
+[      Copy:        0.131 sec.] (  3.79%)
+[      OpenCL:      0.147 sec.] (  4.24%)
+[      C++:         2.571 sec.] ( 74.45%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Reduction (float): 17825792
+  OpenCL:	    GFLOPS:    9.53567	    Bandwidth: 66.0159
+  C++:	    GFLOPS:    0.836714
+  residue: 0.0272425
+
+
+
+
+[Profile:           3.738 sec.] (100.00%)
+[ self:             0.043 sec.] (  1.14%)
+[  float:           3.695 sec.] ( 98.86%)
+[    Reduction:     3.695 sec.] ( 98.86%)
+[     self:         0.591 sec.] ( 15.81%)
+[      Copy:        0.138 sec.] (  3.70%)
+[      OpenCL:      0.239 sec.] (  6.40%)
+[      C++:         2.727 sec.] ( 72.95%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Reduction (float): 18874368
+  OpenCL:	    GFLOPS:    12.3348	    Bandwidth: 65.8327
+  C++:	    GFLOPS:    0.834372
+  residue: 0.033055
+
+
+
+
+[Profile:           3.901 sec.] (100.00%)
+[ self:             0.042 sec.] (  1.06%)
+[  float:           3.860 sec.] ( 98.94%)
+[    Reduction:     3.860 sec.] ( 98.93%)
+[     self:         0.622 sec.] ( 15.93%)
+[      Copy:        0.147 sec.] (  3.76%)
+[      OpenCL:      0.196 sec.] (  5.02%)
+[      C++:         2.895 sec.] ( 74.22%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Reduction (float): 19922944
+  OpenCL:	    GFLOPS:    11.8488	    Bandwidth: 66.2571
+  C++:	    GFLOPS:    0.834754
+  residue: 0.0383257
+
+
+
+
+[Profile:           4.115 sec.] (100.00%)
+[ self:             0.041 sec.] (  1.00%)
+[  float:           4.074 sec.] ( 99.00%)
+[    Reduction:     4.074 sec.] ( 99.00%)
+[     self:         0.650 sec.] ( 15.79%)
+[      Copy:        0.154 sec.] (  3.74%)
+[      OpenCL:      0.215 sec.] (  5.23%)
+[      C++:         3.055 sec.] ( 74.24%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Reduction (float): 20971520
+  OpenCL:	    GFLOPS:    11.2196	    Bandwidth: 66.4895
+  C++:	    GFLOPS:    0.834667
+  residue: 0.0431336
+
+
+
+
+[Profile:           4.340 sec.] (100.00%)
+[ self:             0.043 sec.] (  0.99%)
+[  float:           4.297 sec.] ( 99.01%)
+[    Reduction:     4.297 sec.] ( 99.01%)
+[     self:         0.680 sec.] ( 15.67%)
+[      Copy:        0.161 sec.] (  3.72%)
+[      OpenCL:      0.239 sec.] (  5.51%)
+[      C++:         3.216 sec.] ( 74.11%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Reduction (float): 22020096
+  OpenCL:	    GFLOPS:    11.2858	    Bandwidth: 67.3897
+  C++:	    GFLOPS:    0.834281
+  residue: 0.0474234
+
+
+
+
+[Profile:           4.546 sec.] (100.00%)
+[ self:             0.042 sec.] (  0.93%)
+[  float:           4.503 sec.] ( 99.07%)
+[    Reduction:     4.503 sec.] ( 99.07%)
+[     self:         0.708 sec.] ( 15.57%)
+[      Copy:        0.167 sec.] (  3.68%)
+[      OpenCL:      0.250 sec.] (  5.49%)
+[      C++:         3.378 sec.] ( 74.32%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Reduction (float): 23068672
+  OpenCL:	    GFLOPS:    11.1633	    Bandwidth: 67.1862
+  C++:	    GFLOPS:    0.836407
+  residue: 0.0514161
+
+
+
+
+[Profile:           4.749 sec.] (100.00%)
+[ self:             0.042 sec.] (  0.89%)
+[  float:           4.706 sec.] ( 99.11%)
+[    Reduction:     4.706 sec.] ( 99.11%)
+[     self:         0.736 sec.] ( 15.49%)
+[      Copy:        0.176 sec.] (  3.70%)
+[      OpenCL:      0.265 sec.] (  5.57%)
+[      C++:         3.530 sec.] ( 74.34%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Reduction (float): 24117248
+  OpenCL:	    GFLOPS:    11.1981	    Bandwidth: 67.7442
+  C++:	    GFLOPS:    0.834211
+  residue: 0.0550756
+
+
+
+
+[Profile:           4.965 sec.] (100.00%)
+[ self:             0.038 sec.] (  0.77%)
+[  float:           4.926 sec.] ( 99.23%)
+[    Reduction:     4.926 sec.] ( 99.22%)
+[     self:         0.768 sec.] ( 15.47%)
+[      Copy:        0.182 sec.] (  3.67%)
+[      OpenCL:      0.276 sec.] (  5.55%)
+[      C++:         3.701 sec.] ( 74.53%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Reduction (float): 25165824
+  OpenCL:	    GFLOPS:    10.7796	    Bandwidth: 67.9594
+  C++:	    GFLOPS:    0.835329
+  residue: 0.0584828
+
+
+
+
+[Profile:           5.178 sec.] (100.00%)
+[ self:             0.037 sec.] (  0.72%)
+[  float:           5.141 sec.] ( 99.28%)
+[    Reduction:     5.141 sec.] ( 99.28%)
+[     self:         0.797 sec.] ( 15.38%)
+[      Copy:        0.190 sec.] (  3.66%)
+[      OpenCL:      0.299 sec.] (  5.77%)
+[      C++:         3.856 sec.] ( 74.47%)
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Reduction (float): 26214400
+  OpenCL:	    GFLOPS:    10.8669	    Bandwidth: 68.3384
+  C++:	    GFLOPS:    0.835362
+  residue: 0.0616104
+
+
+
+
+[Profile:           5.392 sec.] (100.00%)
+[ self:             0.042 sec.] (  0.79%)
+[  float:           5.349 sec.] ( 99.21%)
+[    Reduction:     5.349 sec.] ( 99.21%)
+[     self:         0.827 sec.] ( 15.34%)
+[      Copy:        0.196 sec.] (  3.64%)
+[      OpenCL:      0.309 sec.] (  5.73%)
+[      C++:         4.017 sec.] ( 74.50%)
+
