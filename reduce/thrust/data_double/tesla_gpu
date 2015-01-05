@@ -1,0 +1,48 @@
+Reduction time: 0.72401 ms
+N:10485760	GFLOPS: 28.9658
+Residue: -2.80987e-14
+Reduction time: 0.769097 ms
+N:11534336	GFLOPS: 29.9945
+Residue: -1.51353e-13
+Reduction time: 0.818533 ms
+N:12582912	GFLOPS: 30.745
+Residue: -2.30803e-14
+Reduction time: 0.866396 ms
+N:13631488	GFLOPS: 31.4671
+Residue: -1.74872e-13
+Reduction time: 0.917116 ms
+N:14680064	GFLOPS: 32.0136
+Residue: -6.33894e-14
+Reduction time: 0.961513 ms
+N:15728640	GFLOPS: 32.7165
+Residue: -2.75043e-13
+Reduction time: 1.01008 ms
+N:16777216	GFLOPS: 33.2195
+Residue: -5.24628e-14
+Reduction time: 1.05913 ms
+N:17825792	GFLOPS: 33.6612
+Residue: 4.34139e-14
+Reduction time: 1.10463 ms
+N:18874368	GFLOPS: 34.1732
+Residue: 2.27967e-14
+Reduction time: 1.14891 ms
+N:19922944	GFLOPS: 34.6814
+Residue: -6.9998e-14
+Reduction time: 1.19966 ms
+N:20971520	GFLOPS: 34.9625
+Residue: -2.66479e-16
+Reduction time: 1.24185 ms
+N:22020096	GFLOPS: 35.4634
+Residue: -5.86124e-14
+Reduction time: 1.3103 ms
+N:23068672	GFLOPS: 35.2113
+Residue: -1.0199e-13
+Reduction time: 1.35536 ms
+N:24117248	GFLOPS: 35.588
+Residue: -3.1635e-14
+Reduction time: 1.39008 ms
+N:25165824	GFLOPS: 36.2077
+Residue: -6.5067e-14
+Reduction time: 1.43397 ms
+N:26214400	GFLOPS: 36.5619
+Residue: 3.71037e-14

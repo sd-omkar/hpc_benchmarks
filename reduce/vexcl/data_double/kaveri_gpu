@@ -1,0 +1,352 @@
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Reduction (double): 10485760
+  OpenCL:	    GFLOPS:    2.1054	    Bandwidth: 16.8432
+  C++:	    GFLOPS:    1.23381
+  residue: 3.74696e-14
+
+
+
+
+[Profile:           2.400 sec.] (100.00%)
+[ self:             0.184 sec.] (  7.65%)
+[  double:          2.217 sec.] ( 92.35%)
+[    Reduction:     2.217 sec.] ( 92.35%)
+[     self:         0.418 sec.] ( 17.41%)
+[      Copy:        0.073 sec.] (  3.05%)
+[      OpenCL:      0.637 sec.] ( 26.56%)
+[      C++:         1.088 sec.] ( 45.32%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Reduction (double): 11534336
+  OpenCL:	    GFLOPS:    2.22669	    Bandwidth: 17.8135
+  C++:	    GFLOPS:    1.23763
+  residue: 3.87486e-15
+
+
+
+
+[Profile:           2.563 sec.] (100.00%)
+[ self:             0.178 sec.] (  6.94%)
+[  double:          2.386 sec.] ( 93.06%)
+[    Reduction:     2.386 sec.] ( 93.06%)
+[     self:         0.449 sec.] ( 17.53%)
+[      Copy:        0.080 sec.] (  3.13%)
+[      OpenCL:      0.663 sec.] ( 25.87%)
+[      C++:         1.193 sec.] ( 46.54%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Reduction (double): 12582912
+  OpenCL:	    GFLOPS:    2.2476	    Bandwidth: 17.9808
+  C++:	    GFLOPS:    1.20353
+  residue: 5.65392e-14
+
+
+
+
+[Profile:           2.806 sec.] (100.00%)
+[ self:             0.179 sec.] (  6.38%)
+[  double:          2.627 sec.] ( 93.62%)
+[    Reduction:     2.627 sec.] ( 93.62%)
+[     self:         0.486 sec.] ( 17.31%)
+[      Copy:        0.087 sec.] (  3.08%)
+[      OpenCL:      0.717 sec.] ( 25.54%)
+[      C++:         1.338 sec.] ( 47.69%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Reduction (double): 13631488
+  OpenCL:	    GFLOPS:    2.21709	    Bandwidth: 17.7367
+  C++:	    GFLOPS:    1.23695
+  residue: 1.31164e-14
+
+
+
+
+[Profile:           2.996 sec.] (100.00%)
+[ self:             0.179 sec.] (  5.98%)
+[  double:          2.817 sec.] ( 94.02%)
+[    Reduction:     2.817 sec.] ( 94.02%)
+[     self:         0.525 sec.] ( 17.52%)
+[      Copy:        0.095 sec.] (  3.16%)
+[      OpenCL:      0.787 sec.] ( 26.26%)
+[      C++:         1.411 sec.] ( 47.08%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Reduction (double): 14680064
+  OpenCL:	    GFLOPS:    2.23244	    Bandwidth: 17.8595
+  C++:	    GFLOPS:    1.23641
+  residue: 6.09014e-15
+
+
+
+
+[Profile:           3.192 sec.] (100.00%)
+[ self:             0.176 sec.] (  5.50%)
+[  double:          3.016 sec.] ( 94.50%)
+[    Reduction:     3.016 sec.] ( 94.50%)
+[     self:         0.553 sec.] ( 17.32%)
+[      Copy:        0.102 sec.] (  3.19%)
+[      OpenCL:      0.842 sec.] ( 26.37%)
+[      C++:         1.520 sec.] ( 47.62%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Reduction (double): 15728640
+  OpenCL:	    GFLOPS:    2.24172	    Bandwidth: 17.9338
+  C++:	    GFLOPS:    1.23658
+  residue: 2.2143e-14
+
+
+
+
+[Profile:           3.403 sec.] (100.00%)
+[ self:             0.178 sec.] (  5.23%)
+[  double:          3.225 sec.] ( 94.77%)
+[    Reduction:     3.225 sec.] ( 94.77%)
+[     self:         0.590 sec.] ( 17.33%)
+[      Copy:        0.109 sec.] (  3.21%)
+[      OpenCL:      0.898 sec.] ( 26.39%)
+[      C++:         1.628 sec.] ( 47.84%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Reduction (double): 16777216
+  OpenCL:	    GFLOPS:    2.24758	    Bandwidth: 17.9807
+  C++:	    GFLOPS:    1.23803
+  residue: 4.10754e-14
+
+
+
+
+[Profile:           3.609 sec.] (100.00%)
+[ self:             0.179 sec.] (  4.96%)
+[  double:          3.430 sec.] ( 95.04%)
+[    Reduction:     3.430 sec.] ( 95.04%)
+[     self:         0.623 sec.] ( 17.26%)
+[      Copy:        0.117 sec.] (  3.23%)
+[      OpenCL:      0.955 sec.] ( 26.48%)
+[      C++:         1.735 sec.] ( 48.07%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Reduction (double): 17825792
+  OpenCL:	    GFLOPS:    2.28862	    Bandwidth: 18.309
+  C++:	    GFLOPS:    1.23553
+  residue: 8.58825e-14
+
+
+
+
+[Profile:           3.809 sec.] (100.00%)
+[ self:             0.178 sec.] (  4.67%)
+[  double:          3.631 sec.] ( 95.33%)
+[    Reduction:     3.631 sec.] ( 95.33%)
+[     self:         0.663 sec.] ( 17.42%)
+[      Copy:        0.123 sec.] (  3.24%)
+[      OpenCL:      0.997 sec.] ( 26.18%)
+[      C++:         1.847 sec.] ( 48.49%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Reduction (double): 18874368
+  OpenCL:	    GFLOPS:    2.33225	    Bandwidth: 18.658
+  C++:	    GFLOPS:    1.23779
+  residue: 1.06765e-13
+
+
+
+
+[Profile:           3.989 sec.] (100.00%)
+[ self:             0.176 sec.] (  4.40%)
+[  double:          3.813 sec.] ( 95.60%)
+[    Reduction:     3.813 sec.] ( 95.60%)
+[     self:         0.695 sec.] ( 17.42%)
+[      Copy:        0.131 sec.] (  3.28%)
+[      OpenCL:      1.036 sec.] ( 25.97%)
+[      C++:         1.952 sec.] ( 48.93%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Reduction (double): 19922944
+  OpenCL:	    GFLOPS:    2.28206	    Bandwidth: 18.2565
+  C++:	    GFLOPS:    1.2333
+  residue: 6.24438e-14
+
+
+
+
+[Profile:           4.224 sec.] (100.00%)
+[ self:             0.177 sec.] (  4.19%)
+[  double:          4.047 sec.] ( 95.81%)
+[    Reduction:     4.047 sec.] ( 95.81%)
+[     self:         0.724 sec.] ( 17.14%)
+[      Copy:        0.138 sec.] (  3.26%)
+[      OpenCL:      1.117 sec.] ( 26.45%)
+[      C++:         2.068 sec.] ( 48.95%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Reduction (double): 20971520
+  OpenCL:	    GFLOPS:    2.3169	    Bandwidth: 18.5352
+  C++:	    GFLOPS:    1.23412
+  residue: 1.30728e-13
+
+
+
+
+[Profile:           4.414 sec.] (100.00%)
+[ self:             0.177 sec.] (  4.01%)
+[  double:          4.237 sec.] ( 95.99%)
+[    Reduction:     4.237 sec.] ( 95.99%)
+[     self:         0.759 sec.] ( 17.18%)
+[      Copy:        0.145 sec.] (  3.29%)
+[      OpenCL:      1.159 sec.] ( 26.25%)
+[      C++:         2.175 sec.] ( 49.27%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Reduction (double): 22020096
+  OpenCL:	    GFLOPS:    2.31855	    Bandwidth: 18.5484
+  C++:	    GFLOPS:    1.2323
+  residue: 4.31342e-14
+
+
+
+
+[Profile:           4.637 sec.] (100.00%)
+[ self:             0.179 sec.] (  3.87%)
+[  double:          4.458 sec.] ( 96.13%)
+[    Reduction:     4.458 sec.] ( 96.13%)
+[     self:         0.803 sec.] ( 17.31%)
+[      Copy:        0.152 sec.] (  3.28%)
+[      OpenCL:      1.216 sec.] ( 26.22%)
+[      C++:         2.287 sec.] ( 49.32%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Reduction (double): 23068672
+  OpenCL:	    GFLOPS:    2.31315	    Bandwidth: 18.5052
+  C++:	    GFLOPS:    1.21417
+  residue: 7.10431e-15
+
+
+
+
+[Profile:           4.879 sec.] (100.00%)
+[ self:             0.182 sec.] (  3.73%)
+[  double:          4.697 sec.] ( 96.27%)
+[    Reduction:     4.697 sec.] ( 96.27%)
+[     self:         0.829 sec.] ( 16.99%)
+[      Copy:        0.159 sec.] (  3.27%)
+[      OpenCL:      1.277 sec.] ( 26.16%)
+[      C++:         2.432 sec.] ( 49.84%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Reduction (double): 24117248
+  OpenCL:	    GFLOPS:    2.36486	    Bandwidth: 18.9189
+  C++:	    GFLOPS:    1.23233
+  residue: 5.55972e-15
+
+
+
+
+[Profile:           5.025 sec.] (100.00%)
+[ self:             0.177 sec.] (  3.53%)
+[  double:          4.848 sec.] ( 96.47%)
+[    Reduction:     4.848 sec.] ( 96.47%)
+[     self:         0.871 sec.] ( 17.33%)
+[      Copy:        0.167 sec.] (  3.31%)
+[      OpenCL:      1.305 sec.] ( 25.97%)
+[      C++:         2.505 sec.] ( 49.85%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Reduction (double): 25165824
+  OpenCL:	    GFLOPS:    2.37705	    Bandwidth: 19.0164
+  C++:	    GFLOPS:    1.23239
+  residue: 9.3837e-14
+
+
+
+
+[Profile:           5.221 sec.] (100.00%)
+[ self:             0.177 sec.] (  3.40%)
+[  double:          5.044 sec.] ( 96.60%)
+[    Reduction:     5.044 sec.] ( 96.60%)
+[     self:         0.901 sec.] ( 17.26%)
+[      Copy:        0.174 sec.] (  3.33%)
+[      OpenCL:      1.355 sec.] ( 25.95%)
+[      C++:         2.614 sec.] ( 50.06%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Reduction (double): 26214400
+  OpenCL:	    GFLOPS:    2.3413	    Bandwidth: 18.7304
+  C++:	    GFLOPS:    1.23191
+  residue: 2.42962e-14
+
+
+
+
+[Profile:           5.451 sec.] (100.00%)
+[ self:             0.178 sec.] (  3.27%)
+[  double:          5.273 sec.] ( 96.73%)
+[    Reduction:     5.273 sec.] ( 96.73%)
+[     self:         0.935 sec.] ( 17.15%)
+[      Copy:        0.181 sec.] (  3.32%)
+[      OpenCL:      1.433 sec.] ( 26.29%)
+[      C++:         2.724 sec.] ( 49.97%)
+

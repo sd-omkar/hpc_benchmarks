@@ -1,0 +1,384 @@
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+3. Tesla K20Xm
+
+Reduction (double): 10485760
+  OpenCL:	    GFLOPS:    54.9354	    Bandwidth: 439.483
+  C++:	    GFLOPS:    1.53774
+  residue: 3.7292e-14
+
+
+
+
+[Profile:           6.915 sec.] (100.00%)
+[ self:             5.600 sec.] ( 80.98%)
+[  double:          1.315 sec.] ( 19.02%)
+[    Reduction:     1.315 sec.] ( 19.02%)
+[     self:         0.335 sec.] (  4.84%)
+[      Copy:        0.083 sec.] (  1.20%)
+[      OpenCL:      0.024 sec.] (  0.35%)
+[      C++:         0.873 sec.] ( 12.62%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+3. Tesla K20Xm
+
+Reduction (double): 11534336
+  OpenCL:	    GFLOPS:    48.6874	    Bandwidth: 389.5
+  C++:	    GFLOPS:    1.538
+  residue: 3.87486e-15
+
+
+
+
+[Profile:           7.445 sec.] (100.00%)
+[ self:             5.999 sec.] ( 80.57%)
+[  double:          1.446 sec.] ( 19.43%)
+[    Reduction:     1.446 sec.] ( 19.43%)
+[     self:         0.367 sec.] (  4.93%)
+[      Copy:        0.089 sec.] (  1.20%)
+[      OpenCL:      0.030 sec.] (  0.41%)
+[      C++:         0.960 sec.] ( 12.89%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+3. Tesla K20Xm
+
+Reduction (double): 12582912
+  OpenCL:	    GFLOPS:    49.2049	    Bandwidth: 393.639
+  C++:	    GFLOPS:    1.53744
+  residue: 5.68352e-14
+
+
+
+
+[Profile:           7.036 sec.] (100.00%)
+[ self:             5.451 sec.] ( 77.48%)
+[  double:          1.584 sec.] ( 22.52%)
+[    Reduction:     1.584 sec.] ( 22.52%)
+[     self:         0.401 sec.] (  5.69%)
+[      Copy:        0.103 sec.] (  1.47%)
+[      OpenCL:      0.033 sec.] (  0.47%)
+[      C++:         1.048 sec.] ( 14.89%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+3. Tesla K20Xm
+
+Reduction (double): 13631488
+  OpenCL:	    GFLOPS:    52.0063	    Bandwidth: 416.05
+  C++:	    GFLOPS:    1.53769
+  residue: 1.29797e-14
+
+
+
+
+[Profile:           7.206 sec.] (100.00%)
+[ self:             5.525 sec.] ( 76.68%)
+[  double:          1.680 sec.] ( 23.32%)
+[    Reduction:     1.680 sec.] ( 23.32%)
+[     self:         0.432 sec.] (  5.99%)
+[      Copy:        0.080 sec.] (  1.11%)
+[      OpenCL:      0.034 sec.] (  0.47%)
+[      C++:         1.135 sec.] ( 15.75%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+3. Tesla K20Xm
+
+Reduction (double): 14680064
+  OpenCL:	    GFLOPS:    51.3887	    Bandwidth: 411.109
+  C++:	    GFLOPS:    1.32221
+  residue: 2.53756e-15
+
+
+
+
+[Profile:           7.645 sec.] (100.00%)
+[ self:             5.629 sec.] ( 73.62%)
+[  double:          2.016 sec.] ( 26.38%)
+[    Reduction:     2.016 sec.] ( 26.38%)
+[     self:         0.468 sec.] (  6.13%)
+[      Copy:        0.090 sec.] (  1.18%)
+[      OpenCL:      0.037 sec.] (  0.48%)
+[      C++:         1.421 sec.] ( 18.59%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+3. Tesla K20Xm
+
+Reduction (double): 15728640
+  OpenCL:	    GFLOPS:    50.4974	    Bandwidth: 403.979
+  C++:	    GFLOPS:    1.54427
+  residue: 2.2143e-14
+
+
+
+
+[Profile:           7.577 sec.] (100.00%)
+[ self:             5.620 sec.] ( 74.17%)
+[  double:          1.957 sec.] ( 25.83%)
+[    Reduction:     1.957 sec.] ( 25.83%)
+[     self:         0.497 sec.] (  6.56%)
+[      Copy:        0.117 sec.] (  1.54%)
+[      OpenCL:      0.040 sec.] (  0.53%)
+[      C++:         1.304 sec.] ( 17.21%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+3. Tesla K20Xm
+
+Reduction (double): 16777216
+  OpenCL:	    GFLOPS:    58.9552	    Bandwidth: 471.642
+  C++:	    GFLOPS:    1.57414
+  residue: 3.7523e-14
+
+
+
+
+[Profile:           7.451 sec.] (100.00%)
+[ self:             5.425 sec.] ( 72.81%)
+[  double:          2.026 sec.] ( 27.19%)
+[    Reduction:     2.026 sec.] ( 27.19%)
+[     self:         0.529 sec.] (  7.10%)
+[      Copy:        0.096 sec.] (  1.29%)
+[      OpenCL:      0.036 sec.] (  0.49%)
+[      C++:         1.364 sec.] ( 18.31%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+3. Tesla K20Xm
+
+Reduction (double): 17825792
+  OpenCL:	    GFLOPS:    59.7259	    Bandwidth: 477.807
+  C++:	    GFLOPS:    1.57385
+  residue: 8.58825e-14
+
+
+
+
+[Profile:           7.688 sec.] (100.00%)
+[ self:             5.507 sec.] ( 71.63%)
+[  double:          2.181 sec.] ( 28.37%)
+[    Reduction:     2.181 sec.] ( 28.37%)
+[     self:         0.562 sec.] (  7.31%)
+[      Copy:        0.131 sec.] (  1.71%)
+[      OpenCL:      0.038 sec.] (  0.50%)
+[      C++:         1.450 sec.] ( 18.86%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+3. Tesla K20Xm
+
+Reduction (double): 18874368
+  OpenCL:	    GFLOPS:    52.7174	    Bandwidth: 421.739
+  C++:	    GFLOPS:    1.58863
+  residue: 1.06765e-13
+
+
+
+
+[Profile:           8.751 sec.] (100.00%)
+[ self:             6.452 sec.] ( 73.73%)
+[  double:          2.299 sec.] ( 26.27%)
+[    Reduction:     2.299 sec.] ( 26.27%)
+[     self:         0.594 sec.] (  6.79%)
+[      Copy:        0.138 sec.] (  1.58%)
+[      OpenCL:      0.046 sec.] (  0.52%)
+[      C++:         1.521 sec.] ( 17.38%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+3. Tesla K20Xm
+
+Reduction (double): 19922944
+  OpenCL:	    GFLOPS:    60.933	    Bandwidth: 487.464
+  C++:	    GFLOPS:    1.59225
+  residue: 6.24438e-14
+
+
+
+
+[Profile:           7.969 sec.] (100.00%)
+[ self:             5.576 sec.] ( 69.97%)
+[  double:          2.393 sec.] ( 30.03%)
+[    Reduction:     2.393 sec.] ( 30.03%)
+[     self:         0.630 sec.] (  7.91%)
+[      Copy:        0.119 sec.] (  1.50%)
+[      OpenCL:      0.042 sec.] (  0.53%)
+[      C++:         1.602 sec.] ( 20.10%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+3. Tesla K20Xm
+
+Reduction (double): 20971520
+  OpenCL:	    GFLOPS:    52.1226	    Bandwidth: 416.981
+  C++:	    GFLOPS:    1.59845
+  residue: 1.30906e-13
+
+
+
+
+[Profile:           8.004 sec.] (100.00%)
+[ self:             5.461 sec.] ( 68.22%)
+[  double:          2.544 sec.] ( 31.78%)
+[    Reduction:     2.544 sec.] ( 31.78%)
+[     self:         0.661 sec.] (  8.25%)
+[      Copy:        0.152 sec.] (  1.90%)
+[      OpenCL:      0.052 sec.] (  0.64%)
+[      C++:         1.679 sec.] ( 20.98%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+3. Tesla K20Xm
+
+Reduction (double): 22020096
+  OpenCL:	    GFLOPS:    60.9185	    Bandwidth: 487.348
+  C++:	    GFLOPS:    1.6097
+  residue: 4.31342e-14
+
+
+
+
+[Profile:           8.260 sec.] (100.00%)
+[ self:             5.609 sec.] ( 67.91%)
+[  double:          2.651 sec.] ( 32.09%)
+[    Reduction:     2.651 sec.] ( 32.09%)
+[     self:         0.691 sec.] (  8.37%)
+[      Copy:        0.163 sec.] (  1.97%)
+[      OpenCL:      0.046 sec.] (  0.56%)
+[      C++:         1.751 sec.] ( 21.20%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+3. Tesla K20Xm
+
+Reduction (double): 23068672
+  OpenCL:	    GFLOPS:    53.2358	    Bandwidth: 425.886
+  C++:	    GFLOPS:    1.61591
+  residue: 7.10431e-15
+
+
+
+
+[Profile:           8.764 sec.] (100.00%)
+[ self:             6.026 sec.] ( 68.76%)
+[  double:          2.738 sec.] ( 31.24%)
+[    Reduction:     2.738 sec.] ( 31.24%)
+[     self:         0.724 sec.] (  8.26%)
+[      Copy:        0.131 sec.] (  1.50%)
+[      OpenCL:      0.055 sec.] (  0.63%)
+[      C++:         1.827 sec.] ( 20.85%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+3. Tesla K20Xm
+
+Reduction (double): 24117248
+  OpenCL:	    GFLOPS:    53.3913	    Bandwidth: 427.13
+  C++:	    GFLOPS:    1.62398
+  residue: 5.55972e-15
+
+
+
+
+[Profile:           8.348 sec.] (100.00%)
+[ self:             5.457 sec.] ( 65.37%)
+[  double:          2.891 sec.] ( 34.63%)
+[    Reduction:     2.891 sec.] ( 34.63%)
+[     self:         0.758 sec.] (  9.08%)
+[      Copy:        0.174 sec.] (  2.09%)
+[      OpenCL:      0.058 sec.] (  0.69%)
+[      C++:         1.901 sec.] ( 22.77%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+3. Tesla K20Xm
+
+Reduction (double): 25165824
+  OpenCL:	    GFLOPS:    55.4998	    Bandwidth: 443.999
+  C++:	    GFLOPS:    1.63404
+  residue: 9.3837e-14
+
+
+
+
+[Profile:           9.045 sec.] (100.00%)
+[ self:             6.090 sec.] ( 67.32%)
+[  double:          2.956 sec.] ( 32.68%)
+[    Reduction:     2.956 sec.] ( 32.68%)
+[     self:         0.789 sec.] (  8.72%)
+[      Copy:        0.137 sec.] (  1.52%)
+[      OpenCL:      0.058 sec.] (  0.64%)
+[      C++:         1.971 sec.] ( 21.79%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+3. Tesla K20Xm
+
+Reduction (double): 26214400
+  OpenCL:	    GFLOPS:    54.083	    Bandwidth: 432.664
+  C++:	    GFLOPS:    1.63483
+  residue: 2.42962e-14
+
+
+
+
+[Profile:           8.712 sec.] (100.00%)
+[ self:             5.587 sec.] ( 64.12%)
+[  double:          3.126 sec.] ( 35.88%)
+[    Reduction:     3.126 sec.] ( 35.88%)
+[     self:         0.822 sec.] (  9.43%)
+[      Copy:        0.189 sec.] (  2.17%)
+[      OpenCL:      0.062 sec.] (  0.71%)
+[      C++:         2.052 sec.] ( 23.56%)
+

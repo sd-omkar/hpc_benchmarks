@@ -1,0 +1,368 @@
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+2. Tesla K40c
+
+Reduction (double): 10485760
+  OpenCL:	    GFLOPS:    38.8818	    Bandwidth: 311.055
+  C++:	    GFLOPS:    1.16709
+  residue: 3.7292e-14
+
+
+
+
+[Profile:           2.179 sec.] (100.00%)
+[ self:             0.562 sec.] ( 25.79%)
+[  double:          1.617 sec.] ( 74.21%)
+[    Reduction:     1.617 sec.] ( 74.21%)
+[     self:         0.358 sec.] ( 16.41%)
+[      Copy:        0.075 sec.] (  3.43%)
+[      OpenCL:      0.035 sec.] (  1.58%)
+[      C++:         1.150 sec.] ( 52.79%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+2. Tesla K40c
+
+Reduction (double): 11534336
+  OpenCL:	    GFLOPS:    43.0779	    Bandwidth: 344.623
+  C++:	    GFLOPS:    1.42629
+  residue: 3.87486e-15
+
+
+
+
+[Profile:           2.069 sec.] (100.00%)
+[ self:             0.527 sec.] ( 25.48%)
+[  double:          1.542 sec.] ( 74.52%)
+[    Reduction:     1.542 sec.] ( 74.52%)
+[     self:         0.392 sec.] ( 18.94%)
+[      Copy:        0.081 sec.] (  3.89%)
+[      OpenCL:      0.034 sec.] (  1.66%)
+[      C++:         1.035 sec.] ( 50.03%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+2. Tesla K40c
+
+Reduction (double): 12582912
+  OpenCL:	    GFLOPS:    43.2851	    Bandwidth: 346.281
+  C++:	    GFLOPS:    1.44382
+  residue: 5.68352e-14
+
+
+
+
+[Profile:           2.195 sec.] (100.00%)
+[ self:             0.529 sec.] ( 24.08%)
+[  double:          1.666 sec.] ( 75.92%)
+[    Reduction:     1.666 sec.] ( 75.91%)
+[     self:         0.427 sec.] ( 19.43%)
+[      Copy:        0.087 sec.] (  3.96%)
+[      OpenCL:      0.037 sec.] (  1.70%)
+[      C++:         1.116 sec.] ( 50.82%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+2. Tesla K40c
+
+Reduction (double): 13631488
+  OpenCL:	    GFLOPS:    39.152	    Bandwidth: 313.216
+  C++:	    GFLOPS:    1.43273
+  residue: 1.31164e-14
+
+
+
+
+[Profile:           2.346 sec.] (100.00%)
+[ self:             0.527 sec.] ( 22.48%)
+[  double:          1.819 sec.] ( 77.52%)
+[    Reduction:     1.819 sec.] ( 77.52%)
+[     self:         0.462 sec.] ( 19.71%)
+[      Copy:        0.094 sec.] (  4.00%)
+[      OpenCL:      0.045 sec.] (  1.90%)
+[      C++:         1.218 sec.] ( 51.91%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+2. Tesla K40c
+
+Reduction (double): 14680064
+  OpenCL:	    GFLOPS:    43.799	    Bandwidth: 350.392
+  C++:	    GFLOPS:    1.43062
+  residue: 2.53756e-15
+
+
+
+
+[Profile:           2.482 sec.] (100.00%)
+[ self:             0.528 sec.] ( 21.28%)
+[  double:          1.954 sec.] ( 78.72%)
+[    Reduction:     1.954 sec.] ( 78.72%)
+[     self:         0.497 sec.] ( 20.03%)
+[      Copy:        0.100 sec.] (  4.04%)
+[      OpenCL:      0.043 sec.] (  1.73%)
+[      C++:         1.313 sec.] ( 52.93%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+2. Tesla K40c
+
+Reduction (double): 15728640
+  OpenCL:	    GFLOPS:    39.9087	    Bandwidth: 319.269
+  C++:	    GFLOPS:    1.43597
+  residue: 2.2143e-14
+
+
+
+
+[Profile:           2.619 sec.] (100.00%)
+[ self:             0.529 sec.] ( 20.19%)
+[  double:          2.091 sec.] ( 79.81%)
+[    Reduction:     2.091 sec.] ( 79.81%)
+[     self:         0.532 sec.] ( 20.31%)
+[      Copy:        0.106 sec.] (  4.05%)
+[      OpenCL:      0.050 sec.] (  1.93%)
+[      C++:         1.402 sec.] ( 53.53%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+2. Tesla K40c
+
+Reduction (double): 16777216
+  OpenCL:	    GFLOPS:    40.1184	    Bandwidth: 320.947
+  C++:	    GFLOPS:    1.43517
+  residue: 4.10754e-14
+
+
+
+
+[Profile:           2.762 sec.] (100.00%)
+[ self:             0.530 sec.] ( 19.18%)
+[  double:          2.232 sec.] ( 80.82%)
+[    Reduction:     2.232 sec.] ( 80.82%)
+[     self:         0.567 sec.] ( 20.54%)
+[      Copy:        0.115 sec.] (  4.17%)
+[      OpenCL:      0.054 sec.] (  1.94%)
+[      C++:         1.496 sec.] ( 54.17%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+2. Tesla K40c
+
+Reduction (double): 17825792
+  OpenCL:	    GFLOPS:    40.4619	    Bandwidth: 323.695
+  C++:	    GFLOPS:    1.4363
+  residue: 8.58825e-14
+
+
+
+
+[Profile:           2.906 sec.] (100.00%)
+[ self:             0.530 sec.] ( 18.25%)
+[  double:          2.376 sec.] ( 81.75%)
+[    Reduction:     2.376 sec.] ( 81.75%)
+[     self:         0.610 sec.] ( 20.98%)
+[      Copy:        0.121 sec.] (  4.17%)
+[      OpenCL:      0.056 sec.] (  1.94%)
+[      C++:         1.589 sec.] ( 54.66%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+2. Tesla K40c
+
+Reduction (double): 18874368
+  OpenCL:	    GFLOPS:    40.5076	    Bandwidth: 324.061
+  C++:	    GFLOPS:    1.43404
+  residue: 1.06765e-13
+
+
+
+
+[Profile:           3.039 sec.] (100.00%)
+[ self:             0.531 sec.] ( 17.45%)
+[  double:          2.509 sec.] ( 82.55%)
+[    Reduction:     2.509 sec.] ( 82.54%)
+[     self:         0.636 sec.] ( 20.94%)
+[      Copy:        0.128 sec.] (  4.22%)
+[      OpenCL:      0.060 sec.] (  1.96%)
+[      C++:         1.685 sec.] ( 55.43%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+2. Tesla K40c
+
+Reduction (double): 19922944
+  OpenCL:	    GFLOPS:    40.2295	    Bandwidth: 321.836
+  C++:	    GFLOPS:    1.4378
+  residue: 6.24438e-14
+
+
+
+
+[Profile:           3.196 sec.] (100.00%)
+[ self:             0.529 sec.] ( 16.54%)
+[  double:          2.667 sec.] ( 83.46%)
+[    Reduction:     2.667 sec.] ( 83.46%)
+[     self:         0.697 sec.] ( 21.82%)
+[      Copy:        0.133 sec.] (  4.16%)
+[      OpenCL:      0.063 sec.] (  1.98%)
+[      C++:         1.774 sec.] ( 55.50%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+2. Tesla K40c
+
+Reduction (double): 20971520
+  OpenCL:	    GFLOPS:    40.5132	    Bandwidth: 324.106
+  C++:	    GFLOPS:    1.43054
+  residue: 1.30906e-13
+
+
+
+
+[Profile:           3.317 sec.] (100.00%)
+[ self:             0.528 sec.] ( 15.91%)
+[  double:          2.790 sec.] ( 84.09%)
+[    Reduction:     2.790 sec.] ( 84.09%)
+[     self:         0.708 sec.] ( 21.34%)
+[      Copy:        0.139 sec.] (  4.18%)
+[      OpenCL:      0.066 sec.] (  2.00%)
+[      C++:         1.876 sec.] ( 56.57%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+2. Tesla K40c
+
+Reduction (double): 22020096
+  OpenCL:	    GFLOPS:    44.6057	    Bandwidth: 356.846
+  C++:	    GFLOPS:    1.44106
+  residue: 4.31342e-14
+
+
+
+
+[Profile:           3.437 sec.] (100.00%)
+[ self:             0.530 sec.] ( 15.41%)
+[  double:          2.908 sec.] ( 84.59%)
+[    Reduction:     2.908 sec.] ( 84.59%)
+[     self:         0.742 sec.] ( 21.60%)
+[      Copy:        0.146 sec.] (  4.25%)
+[      OpenCL:      0.063 sec.] (  1.84%)
+[      C++:         1.956 sec.] ( 56.90%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+2. Tesla K40c
+
+Reduction (double): 23068672
+  OpenCL:	    GFLOPS:    40.8715	    Bandwidth: 326.972
+  C++:	    GFLOPS:    1.43348
+  residue: 6.94284e-15
+
+
+
+
+[Profile:           3.590 sec.] (100.00%)
+[ self:             0.527 sec.] ( 14.69%)
+[  double:          3.063 sec.] ( 85.31%)
+[    Reduction:     3.063 sec.] ( 85.31%)
+[     self:         0.778 sec.] ( 21.67%)
+[      Copy:        0.152 sec.] (  4.24%)
+[      OpenCL:      0.072 sec.] (  2.01%)
+[      C++:         2.060 sec.] ( 57.38%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+2. Tesla K40c
+
+Reduction (double): 24117248
+  OpenCL:	    GFLOPS:    40.7408	    Bandwidth: 325.927
+  C++:	    GFLOPS:    1.43761
+  residue: 5.55972e-15
+
+
+
+
+[Profile:           3.728 sec.] (100.00%)
+[ self:             0.529 sec.] ( 14.20%)
+[  double:          3.198 sec.] ( 85.80%)
+[    Reduction:     3.198 sec.] ( 85.80%)
+[     self:         0.814 sec.] ( 21.83%)
+[      Copy:        0.161 sec.] (  4.33%)
+[      OpenCL:      0.076 sec.] (  2.03%)
+[      C++:         2.147 sec.] ( 57.60%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+2. Tesla K40c
+
+Reduction (double): 25165824
+  OpenCL:	    GFLOPS:    41.7017	    Bandwidth: 333.613
+  C++:	    GFLOPS:    1.43517
+  residue: 9.3837e-14
+
+
+
+
+[Profile:           3.867 sec.] (100.00%)
+[ self:             0.531 sec.] ( 13.74%)
+[  double:          3.336 sec.] ( 86.26%)
+[    Reduction:     3.336 sec.] ( 86.26%)
+[     self:         0.848 sec.] ( 21.92%)
+[      Copy:        0.167 sec.] (  4.31%)
+[      OpenCL:      0.077 sec.] (  2.00%)
+[      C++:         2.244 sec.] ( 58.04%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+2. Tesla K40c
+
+Reduction (double): 26214400
+  OpenCL:	    GFLOPS:    40.8573	    Bandwidth: 326.858
+  C++:	    GFLOPS:    1.44629
+  residue: 2.42962e-14
+
+
+
+
+[Profile:           3.988 sec.] (100.00%)
+[ self:             0.531 sec.] ( 13.30%)
+[  double:          3.458 sec.] ( 86.70%)
+[    Reduction:     3.458 sec.] ( 86.70%)
+[     self:         0.883 sec.] ( 22.15%)
+[      Copy:        0.172 sec.] (  4.32%)
+[      OpenCL:      0.082 sec.] (  2.06%)
+[      C++:         2.320 sec.] ( 58.17%)
+
