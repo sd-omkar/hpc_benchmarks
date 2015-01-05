@@ -1,11 +1,12 @@
 **01/02**
+
 Checked-in results for reductions of array of floats. TODO:
  - Get results for double
  - Calc. B/W and accuracy
  - After that work on prefix-scan
 
-Naveen: To work on SpMV. Use Hammad's work as a base and build on it
-Vennila: Get upto speed and running.
+Naveen: To work on SpMV. Use Hammad's work as a base and build on it  
+Vennila: Get upto speed and running.  
 
 Other issues:
  - SC15 paper outline
