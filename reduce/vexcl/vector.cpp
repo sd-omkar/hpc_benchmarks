@@ -246,7 +246,7 @@ std::pair<double, double> benchmark_reductor(
     time_flops = prof.toc("OpenCL");
 
     double gflops = 2.0 * N * M / time_flops / 1e9;
-    double bwidth = 2.0 * N * M * sizeof(real) / time_bw / 1e9;
+    double bwidth = 2.0 * N * M * sizeof(real) / time_flops / 1e9;
 
     std::cout
         << "Reduction (" << vex::type_name<real>() << "): " << N << "\n"
@@ -999,15 +999,15 @@ int main(int argc, char *argv[]) {
         vex::profiler<> prof;
         int n_size = atoi(argv[1]);
 
-        /*{
-            vex::Context ctx(vex::Filter::Env && vex::Filter::DoublePrecision);
-            if (ctx) run_tests<double>(ctx, prof);
-        }*/
-
         {
+            vex::Context ctx(vex::Filter::Env && vex::Filter::DoublePrecision);
+            if (ctx) run_tests<double>(ctx, prof, n_size);
+        }
+
+        /*{
             vex::Context ctx(vex::Filter::Env);
             if (ctx) run_tests<float>(ctx, prof, n_size);
-        }
+        }*/
 
         std::cout << prof << std::endl;
     } catch (const vex::error &e) {

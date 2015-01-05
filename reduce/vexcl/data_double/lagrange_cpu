@@ -1,0 +1,352 @@
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 10485760
+  OpenCL:	    GFLOPS:    2.79908	    Bandwidth: 22.3926
+  C++:	    GFLOPS:    1.07247
+  residue: 3.80023e-14
+
+
+
+
+[Profile:           7.632 sec.] (100.00%)
+[ self:             5.452 sec.] ( 71.43%)
+[  double:          2.181 sec.] ( 28.57%)
+[    Reduction:     2.180 sec.] ( 28.57%)
+[     self:         0.371 sec.] (  4.86%)
+[      Copy:        0.079 sec.] (  1.03%)
+[      OpenCL:      0.480 sec.] (  6.28%)
+[      C++:         1.251 sec.] ( 16.40%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 11534336
+  OpenCL:	    GFLOPS:    2.8277	    Bandwidth: 22.6216
+  C++:	    GFLOPS:    1.65857
+  residue: 4.19777e-15
+
+
+
+
+[Profile:           6.440 sec.] (100.00%)
+[ self:             4.541 sec.] ( 70.51%)
+[  double:          1.899 sec.] ( 29.49%)
+[    Reduction:     1.899 sec.] ( 29.49%)
+[     self:         0.406 sec.] (  6.31%)
+[      Copy:        0.081 sec.] (  1.25%)
+[      OpenCL:      0.522 sec.] (  8.11%)
+[      C++:         0.890 sec.] ( 13.82%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 12582912
+  OpenCL:	    GFLOPS:    2.81483	    Bandwidth: 22.5186
+  C++:	    GFLOPS:    1.68091
+  residue: 5.65392e-14
+
+
+
+
+[Profile:           6.865 sec.] (100.00%)
+[ self:             4.813 sec.] ( 70.11%)
+[  double:          2.052 sec.] ( 29.89%)
+[    Reduction:     2.052 sec.] ( 29.89%)
+[     self:         0.433 sec.] (  6.31%)
+[      Copy:        0.089 sec.] (  1.29%)
+[      OpenCL:      0.572 sec.] (  8.33%)
+[      C++:         0.958 sec.] ( 13.96%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 13631488
+  OpenCL:	    GFLOPS:    2.82754	    Bandwidth: 22.6203
+  C++:	    GFLOPS:    1.14166
+  residue: 1.12036e-14
+
+
+
+
+[Profile:           8.121 sec.] (100.00%)
+[ self:             5.392 sec.] ( 66.39%)
+[  double:          2.729 sec.] ( 33.61%)
+[    Reduction:     2.729 sec.] ( 33.61%)
+[     self:         0.482 sec.] (  5.93%)
+[      Copy:        0.102 sec.] (  1.26%)
+[      OpenCL:      0.617 sec.] (  7.60%)
+[      C++:         1.528 sec.] ( 18.82%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 14680064
+  OpenCL:	    GFLOPS:    2.82759	    Bandwidth: 22.6207
+  C++:	    GFLOPS:    1.64325
+  residue: 6.21702e-15
+
+
+
+
+[Profile:           7.337 sec.] (100.00%)
+[ self:             4.918 sec.] ( 67.03%)
+[  double:          2.419 sec.] ( 32.97%)
+[    Reduction:     2.419 sec.] ( 32.97%)
+[     self:         0.502 sec.] (  6.84%)
+[      Copy:        0.109 sec.] (  1.49%)
+[      OpenCL:      0.665 sec.] (  9.06%)
+[      C++:         1.143 sec.] ( 15.58%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 15728640
+  OpenCL:	    GFLOPS:    2.83838	    Bandwidth: 22.7071
+  C++:	    GFLOPS:    1.65572
+  residue: 2.23798e-14
+
+
+
+
+[Profile:           7.952 sec.] (100.00%)
+[ self:             5.382 sec.] ( 67.69%)
+[  double:          2.569 sec.] ( 32.31%)
+[    Reduction:     2.569 sec.] ( 32.31%)
+[     self:         0.544 sec.] (  6.84%)
+[      Copy:        0.100 sec.] (  1.26%)
+[      OpenCL:      0.709 sec.] (  8.92%)
+[      C++:         1.216 sec.] ( 15.29%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 16777216
+  OpenCL:	    GFLOPS:    2.59196	    Bandwidth: 20.7357
+  C++:	    GFLOPS:    1.64719
+  residue: 3.7523e-14
+
+
+
+
+[Profile:           7.659 sec.] (100.00%)
+[ self:             4.822 sec.] ( 62.96%)
+[  double:          2.837 sec.] ( 37.04%)
+[    Reduction:     2.837 sec.] ( 37.04%)
+[     self:         0.580 sec.] (  7.57%)
+[      Copy:        0.125 sec.] (  1.64%)
+[      OpenCL:      0.829 sec.] ( 10.82%)
+[      C++:         1.304 sec.] ( 17.02%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 17825792
+  OpenCL:	    GFLOPS:    2.83302	    Bandwidth: 22.6641
+  C++:	    GFLOPS:    1.13585
+  residue: 8.58825e-14
+
+
+
+
+[Profile:           8.532 sec.] (100.00%)
+[ self:             4.983 sec.] ( 58.41%)
+[  double:          3.549 sec.] ( 41.59%)
+[    Reduction:     3.549 sec.] ( 41.59%)
+[     self:         0.612 sec.] (  7.17%)
+[      Copy:        0.123 sec.] (  1.44%)
+[      OpenCL:      0.805 sec.] (  9.44%)
+[      C++:         2.009 sec.] ( 23.54%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 18874368
+  OpenCL:	    GFLOPS:    2.76463	    Bandwidth: 22.117
+  C++:	    GFLOPS:    1.05712
+  residue: 1.05976e-13
+
+
+
+
+[Profile:           9.255 sec.] (100.00%)
+[ self:             5.340 sec.] ( 57.70%)
+[  double:          3.915 sec.] ( 42.30%)
+[    Reduction:     3.915 sec.] ( 42.30%)
+[     self:         0.630 sec.] (  6.81%)
+[      Copy:        0.126 sec.] (  1.36%)
+[      OpenCL:      0.874 sec.] (  9.44%)
+[      C++:         2.285 sec.] ( 24.69%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 19922944
+  OpenCL:	    GFLOPS:    2.86163	    Bandwidth: 22.893
+  C++:	    GFLOPS:    1.65984
+  residue: 6.24438e-14
+
+
+
+
+[Profile:           7.987 sec.] (100.00%)
+[ self:             4.758 sec.] ( 59.57%)
+[  double:          3.229 sec.] ( 40.43%)
+[    Reduction:     3.229 sec.] ( 40.43%)
+[     self:         0.668 sec.] (  8.37%)
+[      Copy:        0.133 sec.] (  1.66%)
+[      OpenCL:      0.891 sec.] ( 11.16%)
+[      C++:         1.536 sec.] ( 19.24%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 20971520
+  OpenCL:	    GFLOPS:    2.83409	    Bandwidth: 22.6727
+  C++:	    GFLOPS:    1.65999
+  residue: 1.30728e-13
+
+
+
+
+[Profile:           8.189 sec.] (100.00%)
+[ self:             4.787 sec.] ( 58.46%)
+[  double:          3.402 sec.] ( 41.54%)
+[    Reduction:     3.402 sec.] ( 41.54%)
+[     self:         0.692 sec.] (  8.45%)
+[      Copy:        0.145 sec.] (  1.78%)
+[      OpenCL:      0.947 sec.] ( 11.57%)
+[      C++:         1.617 sec.] ( 19.75%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 22020096
+  OpenCL:	    GFLOPS:    2.86087	    Bandwidth: 22.887
+  C++:	    GFLOPS:    1.67748
+  residue: 4.31342e-14
+
+
+
+
+[Profile:           8.867 sec.] (100.00%)
+[ self:             5.295 sec.] ( 59.72%)
+[  double:          3.571 sec.] ( 40.28%)
+[    Reduction:     3.571 sec.] ( 40.28%)
+[     self:         0.745 sec.] (  8.40%)
+[      Copy:        0.161 sec.] (  1.81%)
+[      OpenCL:      0.985 sec.] ( 11.11%)
+[      C++:         1.680 sec.] ( 18.95%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 23068672
+  OpenCL:	    GFLOPS:    2.86528	    Bandwidth: 22.9222
+  C++:	    GFLOPS:    1.66265
+  residue: 7.10431e-15
+
+
+
+
+[Profile:           8.553 sec.] (100.00%)
+[ self:             4.836 sec.] ( 56.54%)
+[  double:          3.717 sec.] ( 43.46%)
+[    Reduction:     3.717 sec.] ( 43.46%)
+[     self:         0.763 sec.] (  8.92%)
+[      Copy:        0.148 sec.] (  1.73%)
+[      OpenCL:      1.031 sec.] ( 12.05%)
+[      C++:         1.776 sec.] ( 20.76%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 24117248
+  OpenCL:	    GFLOPS:    2.77352	    Bandwidth: 22.1882
+  C++:	    GFLOPS:    1.06511
+  residue: 3.86091e-15
+
+
+
+
+[Profile:           9.922 sec.] (100.00%)
+[ self:             4.951 sec.] ( 49.90%)
+[  double:          4.971 sec.] ( 50.10%)
+[    Reduction:     4.971 sec.] ( 50.10%)
+[     self:         0.795 sec.] (  8.01%)
+[      Copy:        0.165 sec.] (  1.67%)
+[      OpenCL:      1.113 sec.] ( 11.22%)
+[      C++:         2.898 sec.] ( 29.21%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 25165824
+  OpenCL:	    GFLOPS:    2.67033	    Bandwidth: 21.3626
+  C++:	    GFLOPS:    1.10374
+  residue: 9.3837e-14
+
+
+
+
+[Profile:          10.145 sec.] (100.00%)
+[ self:             5.026 sec.] ( 49.54%)
+[  double:          5.119 sec.] ( 50.46%)
+[    Reduction:     5.119 sec.] ( 50.46%)
+[     self:         0.827 sec.] (  8.15%)
+[      Copy:        0.167 sec.] (  1.65%)
+[      OpenCL:      1.206 sec.] ( 11.89%)
+[      C++:         2.918 sec.] ( 28.77%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 26214400
+  OpenCL:	    GFLOPS:    2.79617	    Bandwidth: 22.3693
+  C++:	    GFLOPS:    1.05658
+  residue: 2.42962e-14
+
+
+
+
+[Profile:          10.328 sec.] (100.00%)
+[ self:             4.928 sec.] ( 47.71%)
+[  double:          5.400 sec.] ( 52.29%)
+[    Reduction:     5.400 sec.] ( 52.29%)
+[     self:         0.851 sec.] (  8.23%)
+[      Copy:        0.174 sec.] (  1.69%)
+[      OpenCL:      1.200 sec.] ( 11.62%)
+[      C++:         3.176 sec.] ( 30.75%)
+

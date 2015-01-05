@@ -1,0 +1,352 @@
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Reduction (double): 10485760
+  OpenCL:	    GFLOPS:    21.7834	    Bandwidth: 174.267
+  C++:	    GFLOPS:    1.73691
+  residue: 3.74696e-14
+
+
+
+
+[Profile:           1.521 sec.] (100.00%)
+[ self:             0.433 sec.] ( 28.49%)
+[  double:          1.088 sec.] ( 71.51%)
+[    Reduction:     1.088 sec.] ( 71.51%)
+[     self:         0.236 sec.] ( 15.51%)
+[      Copy:        0.018 sec.] (  1.16%)
+[      OpenCL:      0.062 sec.] (  4.05%)
+[      C++:         0.773 sec.] ( 50.79%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Reduction (double): 11534336
+  OpenCL:	    GFLOPS:    21.816	    Bandwidth: 174.528
+  C++:	    GFLOPS:    1.75504
+  residue: 4.03631e-15
+
+
+
+
+[Profile:           1.595 sec.] (100.00%)
+[ self:             0.411 sec.] ( 25.78%)
+[  double:          1.184 sec.] ( 74.22%)
+[    Reduction:     1.184 sec.] ( 74.22%)
+[     self:         0.255 sec.] ( 16.02%)
+[      Copy:        0.019 sec.] (  1.21%)
+[      OpenCL:      0.068 sec.] (  4.24%)
+[      C++:         0.841 sec.] ( 52.75%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Reduction (double): 12582912
+  OpenCL:	    GFLOPS:    21.8951	    Bandwidth: 175.161
+  C++:	    GFLOPS:    1.74192
+  residue: 5.68352e-14
+
+
+
+
+[Profile:           1.713 sec.] (100.00%)
+[ self:             0.413 sec.] ( 24.12%)
+[  double:          1.300 sec.] ( 75.88%)
+[    Reduction:     1.299 sec.] ( 75.88%)
+[     self:         0.280 sec.] ( 16.36%)
+[      Copy:        0.021 sec.] (  1.24%)
+[      OpenCL:      0.074 sec.] (  4.30%)
+[      C++:         0.925 sec.] ( 53.99%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Reduction (double): 13631488
+  OpenCL:	    GFLOPS:    21.8736	    Bandwidth: 174.989
+  C++:	    GFLOPS:    1.7547
+  residue: 1.29797e-14
+
+
+
+
+[Profile:           1.809 sec.] (100.00%)
+[ self:             0.412 sec.] ( 22.76%)
+[  double:          1.397 sec.] ( 77.24%)
+[    Reduction:     1.397 sec.] ( 77.23%)
+[     self:         0.300 sec.] ( 16.57%)
+[      Copy:        0.023 sec.] (  1.28%)
+[      OpenCL:      0.080 sec.] (  4.41%)
+[      C++:         0.994 sec.] ( 54.98%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Reduction (double): 14680064
+  OpenCL:	    GFLOPS:    21.8719	    Bandwidth: 174.976
+  C++:	    GFLOPS:    1.74321
+  residue: 2.53756e-15
+
+
+
+
+[Profile:           1.926 sec.] (100.00%)
+[ self:             0.413 sec.] ( 21.45%)
+[  double:          1.513 sec.] ( 78.55%)
+[    Reduction:     1.513 sec.] ( 78.55%)
+[     self:         0.325 sec.] ( 16.86%)
+[      Copy:        0.025 sec.] (  1.28%)
+[      OpenCL:      0.086 sec.] (  4.46%)
+[      C++:         1.078 sec.] ( 55.96%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Reduction (double): 15728640
+  OpenCL:	    GFLOPS:    21.9496	    Bandwidth: 175.597
+  C++:	    GFLOPS:    1.74936
+  residue: 2.2143e-14
+
+
+
+
+[Profile:           2.029 sec.] (100.00%)
+[ self:             0.413 sec.] ( 20.36%)
+[  double:          1.616 sec.] ( 79.64%)
+[    Reduction:     1.615 sec.] ( 79.64%)
+[     self:         0.347 sec.] ( 17.09%)
+[      Copy:        0.026 sec.] (  1.29%)
+[      OpenCL:      0.092 sec.] (  4.52%)
+[      C++:         1.151 sec.] ( 56.73%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Reduction (double): 16777216
+  OpenCL:	    GFLOPS:    21.906	    Bandwidth: 175.248
+  C++:	    GFLOPS:    1.73837
+  residue: 4.10754e-14
+
+
+
+
+[Profile:           2.142 sec.] (100.00%)
+[ self:             0.411 sec.] ( 19.20%)
+[  double:          1.731 sec.] ( 80.80%)
+[    Reduction:     1.731 sec.] ( 80.80%)
+[     self:         0.369 sec.] ( 17.24%)
+[      Copy:        0.028 sec.] (  1.32%)
+[      OpenCL:      0.098 sec.] (  4.58%)
+[      C++:         1.235 sec.] ( 57.67%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Reduction (double): 17825792
+  OpenCL:	    GFLOPS:    21.886	    Bandwidth: 175.088
+  C++:	    GFLOPS:    1.73023
+  residue: 8.50466e-14
+
+
+
+
+[Profile:           2.250 sec.] (100.00%)
+[ self:             0.411 sec.] ( 18.25%)
+[  double:          1.839 sec.] ( 81.75%)
+[    Reduction:     1.839 sec.] ( 81.75%)
+[     self:         0.387 sec.] ( 17.19%)
+[      Copy:        0.030 sec.] (  1.32%)
+[      OpenCL:      0.104 sec.] (  4.63%)
+[      C++:         1.319 sec.] ( 58.62%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Reduction (double): 18874368
+  OpenCL:	    GFLOPS:    21.9293	    Bandwidth: 175.434
+  C++:	    GFLOPS:    1.73839
+  residue: 1.06765e-13
+
+
+
+
+[Profile:           2.382 sec.] (100.00%)
+[ self:             0.439 sec.] ( 18.44%)
+[  double:          1.942 sec.] ( 81.56%)
+[    Reduction:     1.942 sec.] ( 81.56%)
+[     self:         0.411 sec.] ( 17.26%)
+[      Copy:        0.031 sec.] (  1.32%)
+[      OpenCL:      0.110 sec.] (  4.63%)
+[      C++:         1.390 sec.] ( 58.35%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Reduction (double): 19922944
+  OpenCL:	    GFLOPS:    21.9801	    Bandwidth: 175.841
+  C++:	    GFLOPS:    1.73948
+  residue: 6.24438e-14
+
+
+
+
+[Profile:           2.461 sec.] (100.00%)
+[ self:             0.411 sec.] ( 16.69%)
+[  double:          2.050 sec.] ( 83.31%)
+[    Reduction:     2.050 sec.] ( 83.30%)
+[     self:         0.435 sec.] ( 17.69%)
+[      Copy:        0.033 sec.] (  1.34%)
+[      OpenCL:      0.116 sec.] (  4.71%)
+[      C++:         1.466 sec.] ( 59.56%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Reduction (double): 20971520
+  OpenCL:	    GFLOPS:    21.9076	    Bandwidth: 175.26
+  C++:	    GFLOPS:    1.73021
+  residue: 1.30906e-13
+
+
+
+
+[Profile:           2.576 sec.] (100.00%)
+[ self:             0.411 sec.] ( 15.95%)
+[  double:          2.165 sec.] ( 84.05%)
+[    Reduction:     2.165 sec.] ( 84.05%)
+[     self:         0.457 sec.] ( 17.73%)
+[      Copy:        0.035 sec.] (  1.35%)
+[      OpenCL:      0.123 sec.] (  4.76%)
+[      C++:         1.551 sec.] ( 60.22%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Reduction (double): 22020096
+  OpenCL:	    GFLOPS:    21.938	    Bandwidth: 175.504
+  C++:	    GFLOPS:    1.74287
+  residue: 4.31342e-14
+
+
+
+
+[Profile:           2.669 sec.] (100.00%)
+[ self:             0.409 sec.] ( 15.34%)
+[  double:          2.259 sec.] ( 84.66%)
+[    Reduction:     2.259 sec.] ( 84.66%)
+[     self:         0.477 sec.] ( 17.88%)
+[      Copy:        0.036 sec.] (  1.37%)
+[      OpenCL:      0.128 sec.] (  4.81%)
+[      C++:         1.617 sec.] ( 60.59%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Reduction (double): 23068672
+  OpenCL:	    GFLOPS:    21.9871	    Bandwidth: 175.897
+  C++:	    GFLOPS:    1.74311
+  residue: 7.10431e-15
+
+
+
+
+[Profile:           2.775 sec.] (100.00%)
+[ self:             0.409 sec.] ( 14.73%)
+[  double:          2.367 sec.] ( 85.27%)
+[    Reduction:     2.366 sec.] ( 85.27%)
+[     self:         0.500 sec.] ( 18.02%)
+[      Copy:        0.038 sec.] (  1.37%)
+[      OpenCL:      0.134 sec.] (  4.84%)
+[      C++:         1.694 sec.] ( 61.04%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Reduction (double): 24117248
+  OpenCL:	    GFLOPS:    21.8764	    Bandwidth: 175.011
+  C++:	    GFLOPS:    1.74345
+  residue: 5.71415e-15
+
+
+
+
+[Profile:           2.885 sec.] (100.00%)
+[ self:             0.411 sec.] ( 14.24%)
+[  double:          2.475 sec.] ( 85.76%)
+[    Reduction:     2.475 sec.] ( 85.76%)
+[     self:         0.523 sec.] ( 18.14%)
+[      Copy:        0.039 sec.] (  1.36%)
+[      OpenCL:      0.141 sec.] (  4.89%)
+[      C++:         1.771 sec.] ( 61.37%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Reduction (double): 25165824
+  OpenCL:	    GFLOPS:    21.9853	    Bandwidth: 175.883
+  C++:	    GFLOPS:    1.73501
+  residue: 9.3837e-14
+
+
+
+
+[Profile:           3.003 sec.] (100.00%)
+[ self:             0.413 sec.] ( 13.75%)
+[  double:          2.590 sec.] ( 86.25%)
+[    Reduction:     2.590 sec.] ( 86.25%)
+[     self:         0.546 sec.] ( 18.17%)
+[      Copy:        0.042 sec.] (  1.38%)
+[      OpenCL:      0.147 sec.] (  4.88%)
+[      C++:         1.857 sec.] ( 61.82%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Reduction (double): 26214400
+  OpenCL:	    GFLOPS:    21.9645	    Bandwidth: 175.716
+  C++:	    GFLOPS:    1.74349
+  residue: 2.42962e-14
+
+
+
+
+[Profile:           3.104 sec.] (100.00%)
+[ self:             0.414 sec.] ( 13.32%)
+[  double:          2.690 sec.] ( 86.68%)
+[    Reduction:     2.690 sec.] ( 86.68%)
+[     self:         0.570 sec.] ( 18.38%)
+[      Copy:        0.043 sec.] (  1.37%)
+[      OpenCL:      0.153 sec.] (  4.92%)
+[      C++:         1.925 sec.] ( 62.00%)
+

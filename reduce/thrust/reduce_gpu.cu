@@ -16,7 +16,7 @@ using namespace std;
 // Multiplier functor
 struct multiplier{
   __host__ __device__
-  float operator()(float x) {
+  double operator()(double x) {
     return (x * x);
   }
 };
@@ -35,13 +35,13 @@ int main (int argc, char *argv[]) {
   int size = 1024 * 1024 * (10 + atoi(argv[1]));
 
   // Initialize vectors
-  thrust::host_vector<float> h_data(size);
-  thrust::host_vector<float> h_result(size);
-  float h_sum, d_sum;
+  thrust::host_vector<double> h_data(size);
+  thrust::host_vector<double> h_result(size);
+  double h_sum, d_sum;
 
   // Timing varibles
   float time_reduce; 
-  //float time_scan;
+  //double time_scan;
   cudaEvent_t start_reduce, end_reduce;
   //cudaEvent_t start_scan, end_scan;
   cudaEventCreate(&start_reduce);
@@ -55,24 +55,24 @@ int main (int argc, char *argv[]) {
   //thrust::fill(h_data.begin(), h_data.end(), 1);
 
   // Reduction
-  thrust::device_vector<float> d_data = h_data;
-  d_sum = thrust::transform_reduce(d_data.begin(), d_data.end(), multiplier(), (float)0, thrust::plus<float>());
+  thrust::device_vector<double> d_data = h_data;
+  d_sum = thrust::transform_reduce(d_data.begin(), d_data.end(), multiplier(), (double)0, thrust::plus<double>());
   
   cudaEventRecord(start_reduce, NULL);
   
   for (int i=0; i<RUNS; i++) {
-  d_sum = thrust::transform_reduce(d_data.begin(), d_data.end(), multiplier(), (float)0, thrust::plus<float>());
+  d_sum = thrust::transform_reduce(d_data.begin(), d_data.end(), multiplier(), (double)0, thrust::plus<double>());
   }
 
   cudaEventRecord(end_reduce, NULL);
   cudaEventSynchronize(end_reduce);
   cudaEventElapsedTime(&time_reduce, start_reduce, end_reduce);
-  h_sum = thrust::transform_reduce(h_data.begin(), h_data.end(), multiplier(), (float)0, thrust::plus<float>());
+  h_sum = thrust::transform_reduce(h_data.begin(), h_data.end(), multiplier(), (double)0, thrust::plus<double>());
 
   // Exclusive scan
   /*
   cudaEventRecord(start_scan, NULL);
-  thrust::device_vector<float> d_result = h_data;
+  thrust::device_vector<double> d_result = h_data;
   thrust::exclusive_scan(d_result.begin(), d_result.end(), d_result.begin());
 
   thrust::copy(d_result.begin(), d_result.end(), h_result.begin());
@@ -85,13 +85,13 @@ int main (int argc, char *argv[]) {
 
   
   cout << "Reduction time: " << time_reduce/RUNS << " ms"<< endl;
-  float time_sec = time_reduce / RUNS / 1e3;
+  double time_sec = time_reduce / RUNS / 1e3;
   double gflops = 2 * size / time_sec / 1e9;
   cout << "N:" << size << "\tGFLOPS: " << gflops << endl;
 
   //cout << "\tHost result: " << h_sum << endl;
   //cout << "\tDevice result: " << d_sum << endl;
-  float residue = (d_sum - h_sum) / h_sum;
+  double residue = (d_sum - h_sum) / h_sum;
   cout << "Residue: " << residue << endl;
 
   /*
@@ -103,7 +103,7 @@ int main (int argc, char *argv[]) {
   else {
     printf("Mismatch in scan results\n");
     // Only for debugging
-    for(std::vector<float>::size_type i = 0; i != h_data.size(); i++) 
+    for(std::vector<double>::size_type i = 0; i != h_data.size(); i++) 
     {
       cout << h_data[i] << endl;
       cout << h_result[i] << endl;
