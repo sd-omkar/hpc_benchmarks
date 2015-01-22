@@ -40,88 +40,66 @@ int main (int argc, char *argv[]) {
 
   // Initialize vectors
   thrust::host_vector<double> h_data(size);
-  thrust::host_vector<double> h_result(size);
-  double h_sum;
-  //double d_sum;
+  thrust::host_vector<long> h_scan(size);
+  thrust::host_vector<int> h_sort(size);
+  //double h_sum, d_sum;
 
   // Timing varibles
-  double time_reduce; 
-  struct timeval start, end;
-  //double time_scan;
+  //float time_reduce;
   //cudaEvent_t start_reduce, end_reduce;
-  //cudaEvent_t start_scan, end_scan;
-  //cudaEventCreate(&start_reduce);
-  //cudaEventCreate(&end_reduce);
-  //cudaEventCreate(&start_scan);
-  //cudaEventCreate(&end_scan);
+  double time_sort, time_scan;
+  struct timeval start_scan, end_scan;
+  struct timeval start_sort, end_sort;
 
   // Ready host and device data
   srand(time(NULL));
   thrust::generate(h_data.begin(), h_data.end(), rand);
   //thrust::fill(h_data.begin(), h_data.end(), 1);
 
-  // Reduction
-  //cudaEventRecord(start_reduce, NULL);
-  h_sum = thrust::transform_reduce(h_data.begin(), h_data.end(), multiplier(), (double)0, thrust::plus<double>());
-  
-  gettimeofday(&start, NULL);
-  
-  for (int i=0; i<RUNS; i++) {
-  //thrust::device_vector<double> d_data = h_data;
-  //d_sum = thrust::reduce(d_data.begin(), d_data.end(), (double)0, thrust::plus<double>());
-  h_sum = thrust::transform_reduce(h_data.begin(), h_data.end(), multiplier(), (double)0, thrust::plus<double>());
-  //cout << h_sum << endl;
-  }
-
-  gettimeofday(&end, NULL);
-  time_reduce = (end.tv_usec + 1000000 * end.tv_sec) - (start.tv_usec + 1000000 * start.tv_sec);
-  //cudaEventRecord(end_reduce, NULL);
-  //cudaEventSynchronize(end_reduce);
-  //cudaEventElapsedTime(&time_reduce, start_reduce, end_reduce);
-
   // Exclusive scan
-  /*
-  cudaEventRecord(start_scan, NULL);
-  thrust::device_vector<double> d_result = h_data;
-  thrust::exclusive_scan(d_result.begin(), d_result.end(), d_result.begin());
+  std::default_random_engine rng( std::rand() );
+  std::uniform_int_distribution<long> rnd_long;
 
-  thrust::copy(d_result.begin(), d_result.end(), h_result.begin());
-
-  cudaEventRecord(end_scan, NULL);
-  cudaEventSynchronize(end_scan);
-  cudaEventElapsedTime(&time_scan, start_scan, end_scan);
-  thrust::exclusive_scan(h_data.begin(), h_data.end(), h_data.begin());
-  */
-
-  cout << "Reduction time: " << time_reduce/1000/RUNS << " ms"<< endl;
-  double time_sec = time_reduce / RUNS / 1e6;
-  double gflops = 2 * size / time_sec / 1e9;
-  cout << "N:" << size << "\tGFLOPS: " << gflops << endl;
-
-  //cout << "\tHost result: " << h_sum << endl;
-  //cout << "\tDevice result: " << d_sum << endl;
-  double sum_cpp;
-  sum_cpp = std::inner_product(h_data.begin(), h_data.end(), h_data.begin(), static_cast<double>(0));
+  thrust::generate(h_scan.begin(), h_scan.end(), [&]() { return rnd_long(rng); });
+  thrust::host_vector<long> d_scan = h_scan;
+  thrust::exclusive_scan(d_scan.begin(), d_scan.end(), d_scan.begin());
   
-  double residue = (h_sum - sum_cpp) / sum_cpp;
-  cout << "Residue: " << residue << endl;
+  gettimeofday(&start_scan, NULL);
 
-  /*
-  if (thrust::equal(h_data.begin(), h_data.end(), h_result.begin())) {
-  cout << "Prefix scan time: " << time_scan << endl;
-  cout << "\tHost result: " << h_data[size-1] << endl;
-  cout << "\tDevice result: " << h_result[size-1] << endl;
-  }
-  else {
-    printf("Mismatch in scan results\n");
-    // Only for debugging
-    for(std::vector<double>::size_type i = 0; i != h_data.size(); i++) 
-    {
-      cout << h_data[i] << endl;
-      cout << h_result[i] << endl;
-    }
-  }
-  */
+  for (int i=0; i<RUNS; i++)
+      thrust::exclusive_scan(d_scan.begin(), d_scan.end(), d_scan.begin());
+
+  gettimeofday(&end_scan, NULL);
+
+  time_scan = (end_scan.tv_usec + 1000000 * end_scan.tv_sec)
+                - (start_scan.tv_usec + 1000000 * start_scan.tv_sec);
+  time_scan /= 1000;
+  
+  cout << "Scan time: " << time_scan/RUNS << " ms"<< endl;
+  double time_sec = time_scan / RUNS / 1e3;
+  cout << "Scan N:" << size << "\tkeys/sec: " << size / time_sec << endl;
+
+  // Sort
+  std::uniform_int_distribution<long> rnd_int;
+
+  thrust::generate(h_sort.begin(), h_sort.end(), [&]() { return rnd_int(rng); });
+  thrust::host_vector<int> d_sort = h_sort;
+  thrust::sort(d_sort.begin(), d_sort.end());
+  
+  gettimeofday(&start_sort, NULL);
+
+  for (int i=0; i<RUNS; i++)
+      thrust::sort(d_sort.begin(), d_sort.end());
+
+  gettimeofday(&end_sort, NULL);
+
+  time_sort = (end_sort.tv_usec + 1000000 * end_sort.tv_sec)
+                - (start_sort.tv_usec + 1000000 * start_sort.tv_sec);
+  time_sort /= 1000;
+
+  cout << "Sort time: " << time_sort/RUNS << " ms"<< endl;
+  time_sec = time_sort / RUNS / 1e3;
+  cout << "Sort N:" << size << "\tkeys/sec: " << size / time_sec << endl;
 
   return 0;
 }
