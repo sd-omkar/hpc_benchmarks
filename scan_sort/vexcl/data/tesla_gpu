@@ -1,0 +1,240 @@
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (uint)
+    VexCL:         5.1846e+08 keys/sec
+    STL:           1.17287e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.55215e+09 keys/sec
+    CPU:           8.23437e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (uint)
+    VexCL:         5.26271e+08 keys/sec
+    STL:           1.17623e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.55334e+09 keys/sec
+    CPU:           8.23815e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (uint)
+    VexCL:         5.04203e+08 keys/sec
+    STL:           1.15297e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.55559e+09 keys/sec
+    CPU:           8.21539e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (uint)
+    VexCL:         5.01551e+08 keys/sec
+    STL:           1.15185e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.55546e+09 keys/sec
+    CPU:           8.2088e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (uint)
+    VexCL:         5.0152e+08 keys/sec
+    STL:           9.82907e+06 keys/sec
+
+Scan (ulong)
+    VexCL:         2.55679e+09 keys/sec
+    CPU:           7.98551e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (uint)
+    VexCL:         5.10005e+08 keys/sec
+    STL:           1.14776e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.55866e+09 keys/sec
+    CPU:           8.25422e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (uint)
+    VexCL:         5.04158e+08 keys/sec
+    STL:           1.13817e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.56008e+09 keys/sec
+    CPU:           8.22775e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (uint)
+    VexCL:         5.05442e+08 keys/sec
+    STL:           1.13331e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.55998e+09 keys/sec
+    CPU:           8.19169e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (uint)
+    VexCL:         5.08782e+08 keys/sec
+    STL:           1.12776e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.56146e+09 keys/sec
+    CPU:           8.26564e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (uint)
+    VexCL:         5.04329e+08 keys/sec
+    STL:           1.13071e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.5616e+09 keys/sec
+    CPU:           8.21792e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (uint)
+    VexCL:         5.07363e+08 keys/sec
+    STL:           1.1313e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.59579e+09 keys/sec
+    CPU:           8.21991e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (uint)
+    VexCL:         5.09084e+08 keys/sec
+    STL:           1.12577e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.56278e+09 keys/sec
+    CPU:           8.25806e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (uint)
+    VexCL:         5.04166e+08 keys/sec
+    STL:           1.11595e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.53451e+09 keys/sec
+    CPU:           8.27577e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (uint)
+    VexCL:         4.84696e+08 keys/sec
+    STL:           1.11845e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.55311e+09 keys/sec
+    CPU:           8.25602e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (uint)
+    VexCL:         4.884e+08 keys/sec
+    STL:           1.11773e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.56364e+09 keys/sec
+    CPU:           8.26067e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (uint)
+    VexCL:         4.85101e+08 keys/sec
+    STL:           1.11801e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.55451e+09 keys/sec
+    CPU:           8.25244e+08 keys/sec
+
+
+

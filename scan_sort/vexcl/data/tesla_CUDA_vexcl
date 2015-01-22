@@ -1,0 +1,240 @@
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Sort (uint)
+    VexCL:         5.31781e+08 keys/sec
+    STL:           1.18529e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.65384e+09 keys/sec
+    CPU:           8.16087e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Sort (uint)
+    VexCL:         5.42821e+08 keys/sec
+    STL:           1.18901e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.66673e+09 keys/sec
+    CPU:           8.21812e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Sort (uint)
+    VexCL:         5.27869e+08 keys/sec
+    STL:           1.17078e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.68056e+09 keys/sec
+    CPU:           8.21754e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Sort (uint)
+    VexCL:         5.26757e+08 keys/sec
+    STL:           1.16246e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.68591e+09 keys/sec
+    CPU:           6.95336e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Sort (uint)
+    VexCL:         5.33773e+08 keys/sec
+    STL:           1.16556e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.70208e+09 keys/sec
+    CPU:           8.22687e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Sort (uint)
+    VexCL:         5.43155e+08 keys/sec
+    STL:           1.15957e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.71149e+09 keys/sec
+    CPU:           8.25101e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Sort (uint)
+    VexCL:         5.40631e+08 keys/sec
+    STL:           1.14912e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.71816e+09 keys/sec
+    CPU:           8.18355e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Sort (uint)
+    VexCL:         5.45253e+08 keys/sec
+    STL:           1.14452e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.72567e+09 keys/sec
+    CPU:           8.2421e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Sort (uint)
+    VexCL:         5.53161e+08 keys/sec
+    STL:           1.13857e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.73092e+09 keys/sec
+    CPU:           8.18333e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Sort (uint)
+    VexCL:         5.50265e+08 keys/sec
+    STL:           1.14319e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.73283e+09 keys/sec
+    CPU:           8.23778e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Sort (uint)
+    VexCL:         5.53934e+08 keys/sec
+    STL:           1.14253e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.74029e+09 keys/sec
+    CPU:           8.2293e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Sort (uint)
+    VexCL:         5.57637e+08 keys/sec
+    STL:           1.13851e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.74501e+09 keys/sec
+    CPU:           8.21537e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Sort (uint)
+    VexCL:         5.57915e+08 keys/sec
+    STL:           1.12779e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.68318e+09 keys/sec
+    CPU:           8.22119e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Sort (uint)
+    VexCL:         5.33491e+08 keys/sec
+    STL:           1.12947e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.73157e+09 keys/sec
+    CPU:           8.26442e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Sort (uint)
+    VexCL:         5.38934e+08 keys/sec
+    STL:           1.12958e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.67567e+09 keys/sec
+    CPU:           8.20775e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Sort (uint)
+    VexCL:         5.4075e+08 keys/sec
+    STL:           1.1311e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.69917e+09 keys/sec
+    CPU:           8.21457e+08 keys/sec
+
+
+

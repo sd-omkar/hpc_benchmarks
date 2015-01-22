@@ -1,0 +1,240 @@
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         5.66413e+08 keys/sec
+    STL:           1.40274e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.83743e+09 keys/sec
+    CPU:           6.37908e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         5.76678e+08 keys/sec
+    STL:           1.40727e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.0754e+09 keys/sec
+    CPU:           6.66496e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         5.55488e+08 keys/sec
+    STL:           1.4093e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.95343e+09 keys/sec
+    CPU:           6.70303e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         5.63099e+08 keys/sec
+    STL:           1.38561e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.97188e+09 keys/sec
+    CPU:           6.75448e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         5.67562e+08 keys/sec
+    STL:           1.4032e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.16111e+09 keys/sec
+    CPU:           6.69511e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         5.72846e+08 keys/sec
+    STL:           1.39563e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.16968e+09 keys/sec
+    CPU:           6.70102e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         5.78143e+08 keys/sec
+    STL:           1.38942e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.1838e+09 keys/sec
+    CPU:           6.72363e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         5.80177e+08 keys/sec
+    STL:           1.38972e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.11785e+09 keys/sec
+    CPU:           6.70903e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         5.84571e+08 keys/sec
+    STL:           1.381e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.20346e+09 keys/sec
+    CPU:           6.71144e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         5.88205e+08 keys/sec
+    STL:           1.38454e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.18786e+09 keys/sec
+    CPU:           6.68454e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         5.85544e+08 keys/sec
+    STL:           1.35958e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.19817e+09 keys/sec
+    CPU:           6.67301e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         5.9242e+08 keys/sec
+    STL:           1.37629e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.21468e+09 keys/sec
+    CPU:           6.70888e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         5.92416e+08 keys/sec
+    STL:           1.35895e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.11386e+09 keys/sec
+    CPU:           6.69305e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         5.68674e+08 keys/sec
+    STL:           1.36415e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.14401e+09 keys/sec
+    CPU:           6.65535e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         5.7229e+08 keys/sec
+    STL:           1.36121e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.1519e+09 keys/sec
+    CPU:           6.66893e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         5.73033e+08 keys/sec
+    STL:           1.35877e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.12236e+09 keys/sec
+    CPU:           6.60036e+08 keys/sec
+
+
+

@@ -1,0 +1,304 @@
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         1.36988e+08 keys/sec
+    Boost.Compute: 4.6814e+07 keys/sec
+    STL:           1.26527e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         7.5255e+08 keys/sec
+    Boost.Compute: 5.62465e+08 keys/sec
+    CPU:           4.57113e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         1.36956e+08 keys/sec
+    Boost.Compute: 4.69059e+07 keys/sec
+    STL:           1.26976e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         7.55124e+08 keys/sec
+    Boost.Compute: 5.6251e+08 keys/sec
+    CPU:           4.57781e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         1.28703e+08 keys/sec
+    Boost.Compute: 4.6883e+07 keys/sec
+    STL:           1.22711e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         7.47821e+08 keys/sec
+    Boost.Compute: 5.60664e+08 keys/sec
+    CPU:           4.59498e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         1.29335e+08 keys/sec
+    Boost.Compute: 4.69201e+07 keys/sec
+    STL:           1.21771e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         7.51416e+08 keys/sec
+    Boost.Compute: 5.63726e+08 keys/sec
+    CPU:           4.49733e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         1.29252e+08 keys/sec
+    Boost.Compute: 4.69718e+07 keys/sec
+    STL:           1.21881e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         7.505e+08 keys/sec
+    Boost.Compute: 5.6283e+08 keys/sec
+    CPU:           4.58798e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         1.2944e+08 keys/sec
+    Boost.Compute: 4.70406e+07 keys/sec
+    STL:           1.23449e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         7.53603e+08 keys/sec
+    Boost.Compute: 5.64905e+08 keys/sec
+    CPU:           4.59685e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         1.29355e+08 keys/sec
+    Boost.Compute: 4.7028e+07 keys/sec
+    STL:           1.2029e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         7.47477e+08 keys/sec
+    Boost.Compute: 5.62213e+08 keys/sec
+    CPU:           4.58228e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         1.29128e+08 keys/sec
+    Boost.Compute: 4.71374e+07 keys/sec
+    STL:           1.19804e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         7.51893e+08 keys/sec
+    Boost.Compute: 5.6243e+08 keys/sec
+    CPU:           4.58397e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         1.29512e+08 keys/sec
+    Boost.Compute: 4.71587e+07 keys/sec
+    STL:           1.21122e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         7.52893e+08 keys/sec
+    Boost.Compute: 5.61658e+08 keys/sec
+    CPU:           4.57874e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         1.2954e+08 keys/sec
+    Boost.Compute: 4.71851e+07 keys/sec
+    STL:           1.21262e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         7.53717e+08 keys/sec
+    Boost.Compute: 5.62299e+08 keys/sec
+    CPU:           4.61029e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         1.29528e+08 keys/sec
+    Boost.Compute: 4.71552e+07 keys/sec
+    STL:           1.21216e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         7.47219e+08 keys/sec
+    Boost.Compute: 5.60321e+08 keys/sec
+    CPU:           4.58145e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         1.29745e+08 keys/sec
+    Boost.Compute: 4.71313e+07 keys/sec
+    STL:           1.20523e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         7.541e+08 keys/sec
+    Boost.Compute: 5.62558e+08 keys/sec
+    CPU:           4.59422e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         1.29626e+08 keys/sec
+    Boost.Compute: 4.71942e+07 keys/sec
+    STL:           1.17877e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         7.52266e+08 keys/sec
+    Boost.Compute: 5.62693e+08 keys/sec
+    CPU:           4.60339e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         1.22344e+08 keys/sec
+    Boost.Compute: 4.71994e+07 keys/sec
+    STL:           1.19704e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         7.5332e+08 keys/sec
+    Boost.Compute: 5.6276e+08 keys/sec
+    CPU:           4.60219e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         1.22378e+08 keys/sec
+    Boost.Compute: 4.72068e+07 keys/sec
+    STL:           1.17969e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         7.46033e+08 keys/sec
+    Boost.Compute: 5.62168e+08 keys/sec
+    CPU:           4.60129e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         1.2236e+08 keys/sec
+    Boost.Compute: 4.72119e+07 keys/sec
+    STL:           1.18354e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         7.52419e+08 keys/sec
+    Boost.Compute: 5.63172e+08 keys/sec
+    CPU:           4.59827e+08 keys/sec
+
+
+

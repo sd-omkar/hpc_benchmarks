@@ -1,0 +1,272 @@
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         4.39595e+07 keys/sec
+    Boost.Compute: 6.06984e+07 keys/sec
+    STL:           1.41161e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.79245e+08 keys/sec
+    Boost.Compute: 6.3946e+08 keys/sec
+    CPU:           6.52268e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         4.26335e+07 keys/sec
+    Boost.Compute: 6.06624e+07 keys/sec
+    STL:           1.4147e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.77908e+08 keys/sec
+    Boost.Compute: 6.28884e+08 keys/sec
+    CPU:           7.37916e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         4.39111e+07 keys/sec
+    Boost.Compute: 6.14277e+07 keys/sec
+    STL:           1.41414e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.72928e+08 keys/sec
+    Boost.Compute: 5.76602e+08 keys/sec
+    CPU:           6.73966e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         4.55587e+07 keys/sec
+    Boost.Compute: 6.20452e+07 keys/sec
+    STL:           1.39075e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.84135e+08 keys/sec
+    Boost.Compute: 6.23198e+08 keys/sec
+    CPU:           6.64732e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         4.51512e+07 keys/sec
+    Boost.Compute: 6.1818e+07 keys/sec
+    STL:           1.41106e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.8348e+08 keys/sec
+    Boost.Compute: 6.25663e+08 keys/sec
+    CPU:           7.73336e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         4.62996e+07 keys/sec
+    Boost.Compute: 6.19705e+07 keys/sec
+    STL:           1.40335e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.84987e+08 keys/sec
+    Boost.Compute: 6.60994e+08 keys/sec
+    CPU:           7.42719e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         4.62473e+07 keys/sec
+    Boost.Compute: 6.17809e+07 keys/sec
+    STL:           1.38776e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.83155e+08 keys/sec
+    Boost.Compute: 6.47485e+08 keys/sec
+    CPU:           6.60889e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         4.752e+07 keys/sec
+    Boost.Compute: 6.23055e+07 keys/sec
+    STL:           1.38741e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.86385e+08 keys/sec
+    Boost.Compute: 6.37891e+08 keys/sec
+    CPU:           6.6487e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         4.57152e+07 keys/sec
+    Boost.Compute: 6.23885e+07 keys/sec
+    STL:           1.37748e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.91751e+08 keys/sec
+    Boost.Compute: 5.97982e+08 keys/sec
+    CPU:           6.64641e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         4.74653e+07 keys/sec
+    Boost.Compute: 6.26517e+07 keys/sec
+    STL:           1.38122e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.89532e+08 keys/sec
+    Boost.Compute: 6.26338e+08 keys/sec
+    CPU:           6.73106e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         4.77194e+07 keys/sec
+    Boost.Compute: 6.27066e+07 keys/sec
+    STL:           1.3635e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.00161e+08 keys/sec
+    Boost.Compute: 6.35988e+08 keys/sec
+    CPU:           6.66039e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         4.8531e+07 keys/sec
+    Boost.Compute: 6.26402e+07 keys/sec
+    STL:           1.3744e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.93034e+08 keys/sec
+    Boost.Compute: 6.34031e+08 keys/sec
+    CPU:           6.6895e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         4.78399e+07 keys/sec
+    Boost.Compute: 6.26317e+07 keys/sec
+    STL:           1.35744e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.05465e+08 keys/sec
+    Boost.Compute: 6.27347e+08 keys/sec
+    CPU:           6.69002e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         4.63e+07 keys/sec
+    Boost.Compute: 6.24336e+07 keys/sec
+    STL:           1.36124e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.02601e+08 keys/sec
+    Boost.Compute: 6.30921e+08 keys/sec
+    CPU:           6.67299e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         4.65614e+07 keys/sec
+    Boost.Compute: 6.28496e+07 keys/sec
+    STL:           1.35752e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.06565e+08 keys/sec
+    Boost.Compute: 6.17561e+08 keys/sec
+    CPU:           6.6144e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         4.72512e+07 keys/sec
+    Boost.Compute: 6.29896e+07 keys/sec
+    STL:           1.35991e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.94062e+08 keys/sec
+    Boost.Compute: 6.26502e+08 keys/sec
+    CPU:           6.66136e+08 keys/sec
+
+
+

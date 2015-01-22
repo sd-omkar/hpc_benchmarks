@@ -1,0 +1,592 @@
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 10485760
+  OpenCL:	    GFLOPS:    5.64582	    Bandwidth: 45.1666
+  C++:	    GFLOPS:    1.73636
+  residue: 3.74696e-14
+
+
+
+
+[Profile:           2.305 sec.] (100.00%)
+[ self:             0.993 sec.] ( 43.09%)
+[  double:          1.311 sec.] ( 56.91%)
+[    Reduction:     1.311 sec.] ( 56.91%)
+[     self:         0.261 sec.] ( 11.34%)
+[      Copy:        0.040 sec.] (  1.71%)
+[      OpenCL:      0.238 sec.] ( 10.32%)
+[      C++:         0.773 sec.] ( 33.54%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 11534336
+  OpenCL:	    GFLOPS:    5.68035	    Bandwidth: 45.4428
+  C++:	    GFLOPS:    1.74193
+  residue: 4.03631e-15
+
+
+
+
+[Profile:           3.065 sec.] (100.00%)
+[ self:             1.625 sec.] ( 53.00%)
+[  double:          1.440 sec.] ( 47.00%)
+[    Reduction:     1.440 sec.] ( 46.99%)
+[     self:         0.290 sec.] (  9.45%)
+[      Copy:        0.043 sec.] (  1.41%)
+[      OpenCL:      0.260 sec.] (  8.48%)
+[      C++:         0.848 sec.] ( 27.65%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 12582912
+  OpenCL:	    GFLOPS:    5.72162	    Bandwidth: 45.773
+  C++:	    GFLOPS:    1.74584
+  residue: 5.63912e-14
+
+
+
+
+[Profile:           2.192 sec.] (100.00%)
+[ self:             0.612 sec.] ( 27.94%)
+[  double:          1.579 sec.] ( 72.06%)
+[    Reduction:     1.579 sec.] ( 72.06%)
+[     self:         0.328 sec.] ( 14.96%)
+[      Copy:        0.047 sec.] (  2.15%)
+[      OpenCL:      0.281 sec.] ( 12.84%)
+[      C++:         0.923 sec.] ( 42.10%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 13631488
+  OpenCL:	    GFLOPS:    5.74626	    Bandwidth: 45.9701
+  C++:	    GFLOPS:    1.73781
+  residue: 1.16134e-14
+
+
+
+
+[Profile:           2.536 sec.] (100.00%)
+[ self:             0.859 sec.] ( 33.89%)
+[  double:          1.676 sec.] ( 66.11%)
+[    Reduction:     1.676 sec.] ( 66.11%)
+[     self:         0.318 sec.] ( 12.53%)
+[      Copy:        0.051 sec.] (  2.01%)
+[      OpenCL:      0.304 sec.] ( 11.97%)
+[      C++:         1.004 sec.] ( 39.59%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 14680064
+  OpenCL:	    GFLOPS:    5.77373	    Bandwidth: 46.1899
+  C++:	    GFLOPS:    1.64502
+  residue: 2.41068e-15
+
+
+
+
+[Profile:           3.030 sec.] (100.00%)
+[ self:             1.148 sec.] ( 37.88%)
+[  double:          1.882 sec.] ( 62.12%)
+[    Reduction:     1.882 sec.] ( 62.12%)
+[     self:         0.360 sec.] ( 11.87%)
+[      Copy:        0.055 sec.] (  1.82%)
+[      OpenCL:      0.325 sec.] ( 10.74%)
+[      C++:         1.142 sec.] ( 37.70%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 15728640
+  OpenCL:	    GFLOPS:    5.77325	    Bandwidth: 46.186
+  C++:	    GFLOPS:    1.74255
+  residue: 2.2143e-14
+
+
+
+
+[Profile:           2.585 sec.] (100.00%)
+[ self:             0.599 sec.] ( 23.17%)
+[  double:          1.986 sec.] ( 76.83%)
+[    Reduction:     1.986 sec.] ( 76.83%)
+[     self:         0.423 sec.] ( 16.36%)
+[      Copy:        0.059 sec.] (  2.28%)
+[      OpenCL:      0.349 sec.] ( 13.49%)
+[      C++:         1.155 sec.] ( 44.70%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 16777216
+  OpenCL:	    GFLOPS:    5.76577	    Bandwidth: 46.1261
+  C++:	    GFLOPS:    1.74298
+  residue: 3.73009e-14
+
+
+
+
+[Profile:           2.747 sec.] (100.00%)
+[ self:             0.646 sec.] ( 23.51%)
+[  double:          2.102 sec.] ( 76.49%)
+[    Reduction:     2.102 sec.] ( 76.49%)
+[     self:         0.434 sec.] ( 15.80%)
+[      Copy:        0.063 sec.] (  2.29%)
+[      OpenCL:      0.372 sec.] ( 13.56%)
+[      C++:         1.232 sec.] ( 44.85%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 17825792
+  OpenCL:	    GFLOPS:    5.78308	    Bandwidth: 46.2646
+  C++:	    GFLOPS:    1.73898
+  residue: 8.58825e-14
+
+
+
+
+[Profile:           3.264 sec.] (100.00%)
+[ self:             1.064 sec.] ( 32.59%)
+[  double:          2.201 sec.] ( 67.41%)
+[    Reduction:     2.201 sec.] ( 67.41%)
+[     self:         0.427 sec.] ( 13.09%)
+[      Copy:        0.067 sec.] (  2.04%)
+[      OpenCL:      0.395 sec.] ( 12.09%)
+[      C++:         1.312 sec.] ( 40.19%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 18874368
+  OpenCL:	    GFLOPS:    5.78468	    Bandwidth: 46.2775
+  C++:	    GFLOPS:    1.737
+  residue: 1.09725e-13
+
+
+
+
+[Profile:           3.940 sec.] (100.00%)
+[ self:             1.608 sec.] ( 40.82%)
+[  double:          2.331 sec.] ( 59.18%)
+[    Reduction:     2.331 sec.] ( 59.18%)
+[     self:         0.452 sec.] ( 11.48%)
+[      Copy:        0.071 sec.] (  1.79%)
+[      OpenCL:      0.418 sec.] ( 10.60%)
+[      C++:         1.391 sec.] ( 35.30%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 19922944
+  OpenCL:	    GFLOPS:    0.0124529	    Bandwidth: 0.0996229
+  C++:	    GFLOPS:    1.73795
+  residue: 6.00133e-14
+
+
+
+
+[Profile:         208.252 sec.] (100.00%)
+[ self:             1.457 sec.] (  0.70%)
+[  double:        206.795 sec.] ( 99.30%)
+[    Reduction:   206.795 sec.] ( 99.30%)
+[     self:         0.470 sec.] (  0.23%)
+[      Copy:        0.075 sec.] (  0.04%)
+[      OpenCL:    204.783 sec.] ( 98.33%)
+[      C++:         1.467 sec.] (  0.70%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 20971520
+  OpenCL:	    GFLOPS:    5.82212	    Bandwidth: 46.5769
+  C++:	    GFLOPS:    1.73511
+  residue: 1.27709e-13
+
+
+
+
+[Profile:           3.722 sec.] (100.00%)
+[ self:             1.137 sec.] ( 30.54%)
+[  double:          2.585 sec.] ( 69.46%)
+[    Reduction:     2.585 sec.] ( 69.46%)
+[     self:         0.499 sec.] ( 13.41%)
+[      Copy:        0.078 sec.] (  2.10%)
+[      OpenCL:      0.461 sec.] ( 12.39%)
+[      C++:         1.547 sec.] ( 41.57%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 22020096
+  OpenCL:	    GFLOPS:    5.78891	    Bandwidth: 46.3113
+  C++:	    GFLOPS:    1.7407
+  residue: 4.19501e-14
+
+
+
+
+[Profile:           3.735 sec.] (100.00%)
+[ self:             1.028 sec.] ( 27.53%)
+[  double:          2.707 sec.] ( 72.47%)
+[    Reduction:     2.707 sec.] ( 72.47%)
+[     self:         0.519 sec.] ( 13.90%)
+[      Copy:        0.082 sec.] (  2.19%)
+[      OpenCL:      0.487 sec.] ( 13.03%)
+[      C++:         1.619 sec.] ( 43.35%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 23068672
+  OpenCL:	    GFLOPS:    5.71485	    Bandwidth: 45.7188
+  C++:	    GFLOPS:    1.73896
+  residue: 9.68769e-15
+
+
+
+
+[Profile:           4.219 sec.] (100.00%)
+[ self:             1.397 sec.] ( 33.11%)
+[  double:          2.822 sec.] ( 66.89%)
+[    Reduction:     2.822 sec.] ( 66.89%)
+[     self:         0.522 sec.] ( 12.36%)
+[      Copy:        0.086 sec.] (  2.04%)
+[      OpenCL:      0.517 sec.] ( 12.25%)
+[      C++:         1.698 sec.] ( 40.24%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 24117248
+  OpenCL:	    GFLOPS:    5.88607	    Bandwidth: 47.0885
+  C++:	    GFLOPS:    1.66131
+  residue: 6.17746e-15
+
+
+
+
+[Profile:           3.682 sec.] (100.00%)
+[ self:             0.592 sec.] ( 16.07%)
+[  double:          3.090 sec.] ( 83.93%)
+[    Reduction:     3.090 sec.] ( 83.93%)
+[     self:         0.617 sec.] ( 16.76%)
+[      Copy:        0.090 sec.] (  2.45%)
+[      OpenCL:      0.524 sec.] ( 14.25%)
+[      C++:         1.858 sec.] ( 50.47%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 25165824
+  OpenCL:	    GFLOPS:    5.852	    Bandwidth: 46.816
+  C++:	    GFLOPS:    1.73409
+  residue: 9.33929e-14
+
+
+
+
+[Profile:           3.851 sec.] (100.00%)
+[ self:             0.763 sec.] ( 19.81%)
+[  double:          3.088 sec.] ( 80.19%)
+[    Reduction:     3.088 sec.] ( 80.19%)
+[     self:         0.587 sec.] ( 15.23%)
+[      Copy:        0.094 sec.] (  2.43%)
+[      OpenCL:      0.550 sec.] ( 14.29%)
+[      C++:         1.858 sec.] ( 48.23%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Reduction (double): 26214400
+  OpenCL:	    GFLOPS:    5.84963	    Bandwidth: 46.797
+  C++:	    GFLOPS:    1.77924
+  residue: 2.28753e-14
+
+
+
+
+[Profile:           3.883 sec.] (100.00%)
+[ self:             0.717 sec.] ( 18.46%)
+[  double:          3.166 sec.] ( 81.54%)
+[    Reduction:     3.166 sec.] ( 81.54%)
+[     self:         0.609 sec.] ( 15.69%)
+[      Copy:        0.098 sec.] (  2.52%)
+[      OpenCL:      0.574 sec.] ( 14.77%)
+[      C++:         1.886 sec.] ( 48.57%)
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         3.24403e+07 keys/sec
+    STL:           1.24643e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.35207e+08 keys/sec
+    CPU:           8.27186e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         3.2581e+07 keys/sec
+    STL:           1.14939e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.24902e+08 keys/sec
+    CPU:           8.14783e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         3.1338e+07 keys/sec
+    STL:           1.05668e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.22707e+08 keys/sec
+    CPU:           8.1812e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         3.13775e+07 keys/sec
+    STL:           1.09217e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.22928e+08 keys/sec
+    CPU:           8.19698e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         3.14187e+07 keys/sec
+    STL:           1.19811e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.20494e+08 keys/sec
+    CPU:           8.19763e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         3.12733e+07 keys/sec
+    STL:           1.03112e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.2455e+08 keys/sec
+    CPU:           8.13027e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         382047 keys/sec
+    STL:           1.17182e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.24463e+08 keys/sec
+    CPU:           8.24392e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         3.14091e+07 keys/sec
+    STL:           1.021e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.23985e+08 keys/sec
+    CPU:           8.23877e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         3.13324e+07 keys/sec
+    STL:           9.75304e+06 keys/sec
+
+Scan (ulong)
+    VexCL:         1.29484e+08 keys/sec
+    CPU:           8.23923e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         3.13462e+07 keys/sec
+    STL:           1.1739e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.30868e+08 keys/sec
+    CPU:           8.19899e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         3.05902e+07 keys/sec
+    STL:           1.00892e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.32708e+08 keys/sec
+    CPU:           8.20618e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         3.13042e+07 keys/sec
+    STL:           1.18605e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.32597e+08 keys/sec
+    CPU:           8.1456e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         3.13128e+07 keys/sec
+    STL:           1.14426e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.36201e+08 keys/sec
+    CPU:           8.19687e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         3.02097e+07 keys/sec
+    STL:           1.15481e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.3448e+08 keys/sec
+    CPU:           8.19658e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         3.02146e+07 keys/sec
+    STL:           1.1479e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.36569e+08 keys/sec
+    CPU:           8.23034e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         3.02069e+07 keys/sec
+    STL:           1.12025e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         1.37503e+08 keys/sec
+    CPU:           8.21742e+08 keys/sec
+
+
+

@@ -1,0 +1,240 @@
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+
+Sort (uint)
+    VexCL:         5.81391e+08 keys/sec
+    STL:           1.10427e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.3673e+09 keys/sec
+    CPU:           6.731e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+
+Sort (uint)
+    VexCL:         5.99428e+08 keys/sec
+    STL:           1.10438e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.37939e+09 keys/sec
+    CPU:           6.72082e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+
+Sort (uint)
+    VexCL:         5.78732e+08 keys/sec
+    STL:           1.10237e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.41474e+09 keys/sec
+    CPU:           6.78017e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+
+Sort (uint)
+    VexCL:         5.88784e+08 keys/sec
+    STL:           1.0831e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.45977e+09 keys/sec
+    CPU:           6.70766e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+
+Sort (uint)
+    VexCL:         5.9331e+08 keys/sec
+    STL:           1.09442e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.47741e+09 keys/sec
+    CPU:           6.75123e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+
+Sort (uint)
+    VexCL:         6.02788e+08 keys/sec
+    STL:           1.089e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.48761e+09 keys/sec
+    CPU:           6.74946e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+
+Sort (uint)
+    VexCL:         6.04523e+08 keys/sec
+    STL:           1.07988e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.51288e+09 keys/sec
+    CPU:           6.75976e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+
+Sort (uint)
+    VexCL:         6.07226e+08 keys/sec
+    STL:           1.08185e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.524e+09 keys/sec
+    CPU:           6.74134e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+
+Sort (uint)
+    VexCL:         6.13807e+08 keys/sec
+    STL:           1.07186e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.53975e+09 keys/sec
+    CPU:           6.76161e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+
+Sort (uint)
+    VexCL:         6.1571e+08 keys/sec
+    STL:           1.0699e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.54725e+09 keys/sec
+    CPU:           6.79829e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+
+Sort (uint)
+    VexCL:         6.19959e+08 keys/sec
+    STL:           1.05986e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.56287e+09 keys/sec
+    CPU:           6.76856e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+
+Sort (uint)
+    VexCL:         6.20348e+08 keys/sec
+    STL:           1.0689e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.57295e+09 keys/sec
+    CPU:           6.76094e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+
+Sort (uint)
+    VexCL:         6.22445e+08 keys/sec
+    STL:           1.05579e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.4215e+09 keys/sec
+    CPU:           6.77028e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+
+Sort (uint)
+    VexCL:         5.9653e+08 keys/sec
+    STL:           1.05858e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.45124e+09 keys/sec
+    CPU:           6.79871e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+
+Sort (uint)
+    VexCL:         5.98991e+08 keys/sec
+    STL:           1.0572e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.4662e+09 keys/sec
+    CPU:           6.76231e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Tesla K40c
+
+Sort (uint)
+    VexCL:         6.01912e+08 keys/sec
+    STL:           1.05749e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         3.47957e+09 keys/sec
+    CPU:           6.76239e+08 keys/sec
+
+
+

@@ -1,0 +1,272 @@
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         7.25322e+06 keys/sec
+    Boost.Compute: 1.59436e+07 keys/sec
+    STL:           8.24324e+06 keys/sec
+
+Scan (ulong)
+    VexCL:         2.02175e+07 keys/sec
+    Boost.Compute: 2.52149e+08 keys/sec
+    CPU:           2.37125e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         8.23516e+06 keys/sec
+    Boost.Compute: 2.13538e+07 keys/sec
+    STL:           8.21006e+06 keys/sec
+
+Scan (ulong)
+    VexCL:         2.10253e+07 keys/sec
+    Boost.Compute: 2.52548e+08 keys/sec
+    CPU:           2.37214e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         7.50802e+06 keys/sec
+    Boost.Compute: 2.00831e+07 keys/sec
+    STL:           8.18786e+06 keys/sec
+
+Scan (ulong)
+    VexCL:         2.1452e+07 keys/sec
+    Boost.Compute: 2.51484e+08 keys/sec
+    CPU:           2.36114e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         7.42977e+06 keys/sec
+    Boost.Compute: 1.9517e+07 keys/sec
+    STL:           8.08423e+06 keys/sec
+
+Scan (ulong)
+    VexCL:         2.25958e+07 keys/sec
+    Boost.Compute: 2.52114e+08 keys/sec
+    CPU:           2.37052e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         7.40593e+06 keys/sec
+    Boost.Compute: 1.89148e+07 keys/sec
+    STL:           8.14205e+06 keys/sec
+
+Scan (ulong)
+    VexCL:         2.26061e+07 keys/sec
+    Boost.Compute: 2.52048e+08 keys/sec
+    CPU:           2.41087e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         7.43887e+06 keys/sec
+    Boost.Compute: 1.84547e+07 keys/sec
+    STL:           8.11355e+06 keys/sec
+
+Scan (ulong)
+    VexCL:         2.278e+07 keys/sec
+    Boost.Compute: 2.52643e+08 keys/sec
+    CPU:           2.37042e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         8.99779e+06 keys/sec
+    Boost.Compute: 2.29819e+07 keys/sec
+    STL:           8.025e+06 keys/sec
+
+Scan (ulong)
+    VexCL:         2.31135e+07 keys/sec
+    Boost.Compute: 2.52663e+08 keys/sec
+    CPU:           2.41172e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         8.97883e+06 keys/sec
+    Boost.Compute: 2.2013e+07 keys/sec
+    STL:           8.02391e+06 keys/sec
+
+Scan (ulong)
+    VexCL:         2.34601e+07 keys/sec
+    Boost.Compute: 2.51955e+08 keys/sec
+    CPU:           2.37322e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         8.88687e+06 keys/sec
+    Boost.Compute: 2.12036e+07 keys/sec
+    STL:           7.97029e+06 keys/sec
+
+Scan (ulong)
+    VexCL:         2.39596e+07 keys/sec
+    Boost.Compute: 2.51452e+08 keys/sec
+    CPU:           2.39472e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         8.58138e+06 keys/sec
+    Boost.Compute: 2.06494e+07 keys/sec
+    STL:           7.99584e+06 keys/sec
+
+Scan (ulong)
+    VexCL:         2.3953e+07 keys/sec
+    Boost.Compute: 2.51667e+08 keys/sec
+    CPU:           2.3792e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         8.65407e+06 keys/sec
+    Boost.Compute: 2.40916e+07 keys/sec
+    STL:           7.86612e+06 keys/sec
+
+Scan (ulong)
+    VexCL:         2.40917e+07 keys/sec
+    Boost.Compute: 2.51509e+08 keys/sec
+    CPU:           2.37116e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         9.75698e+06 keys/sec
+    Boost.Compute: 2.29311e+07 keys/sec
+    STL:           7.9348e+06 keys/sec
+
+Scan (ulong)
+    VexCL:         2.45958e+07 keys/sec
+    Boost.Compute: 2.51204e+08 keys/sec
+    CPU:           2.3717e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         1.07461e+07 keys/sec
+    Boost.Compute: 2.22752e+07 keys/sec
+    STL:           7.84487e+06 keys/sec
+
+Scan (ulong)
+    VexCL:         2.48221e+07 keys/sec
+    Boost.Compute: 2.52099e+08 keys/sec
+    CPU:           2.39036e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         9.38316e+06 keys/sec
+    Boost.Compute: 2.19652e+07 keys/sec
+    STL:           7.81684e+06 keys/sec
+
+Scan (ulong)
+    VexCL:         2.47208e+07 keys/sec
+    Boost.Compute: 2.52293e+08 keys/sec
+    CPU:           2.41357e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         9.51789e+06 keys/sec
+    Boost.Compute: 2.50758e+07 keys/sec
+    STL:           7.85559e+06 keys/sec
+
+Scan (ulong)
+    VexCL:         2.54706e+07 keys/sec
+    Boost.Compute: 2.51538e+08 keys/sec
+    CPU:           2.38014e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Sort (uint)
+    VexCL:         9.45871e+06 keys/sec
+    Boost.Compute: 2.38493e+07 keys/sec
+    STL:           7.83166e+06 keys/sec
+
+Scan (ulong)
+    VexCL:         2.58147e+07 keys/sec
+    Boost.Compute: 2.52175e+08 keys/sec
+    CPU:           2.41209e+08 keys/sec
+
+
+

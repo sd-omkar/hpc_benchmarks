@@ -1,0 +1,272 @@
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         2.93977e+07 keys/sec
+    Boost.Compute: 2.27542e+07 keys/sec
+    STL:           1.40896e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.45857e+08 keys/sec
+    Boost.Compute: 5.01523e+08 keys/sec
+    CPU:           4.44309e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         2.97635e+07 keys/sec
+    Boost.Compute: 2.28352e+07 keys/sec
+    STL:           1.40759e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.52381e+08 keys/sec
+    Boost.Compute: 5.20172e+08 keys/sec
+    CPU:           4.42208e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         2.87644e+07 keys/sec
+    Boost.Compute: 2.16265e+07 keys/sec
+    STL:           1.40963e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.60729e+08 keys/sec
+    Boost.Compute: 5.27201e+08 keys/sec
+    CPU:           4.48139e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         2.87361e+07 keys/sec
+    Boost.Compute: 2.47414e+07 keys/sec
+    STL:           1.38753e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.63117e+08 keys/sec
+    Boost.Compute: 5.54266e+08 keys/sec
+    CPU:           4.52896e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         2.88454e+07 keys/sec
+    Boost.Compute: 2.30199e+07 keys/sec
+    STL:           1.40248e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.73005e+08 keys/sec
+    Boost.Compute: 5.63225e+08 keys/sec
+    CPU:           4.49038e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         2.80262e+07 keys/sec
+    Boost.Compute: 2.47433e+07 keys/sec
+    STL:           1.39513e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.65918e+08 keys/sec
+    Boost.Compute: 5.64709e+08 keys/sec
+    CPU:           4.49724e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         2.91855e+07 keys/sec
+    Boost.Compute: 2.48877e+07 keys/sec
+    STL:           1.38503e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.61603e+08 keys/sec
+    Boost.Compute: 2.89678e+08 keys/sec
+    CPU:           4.54479e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         2.91857e+07 keys/sec
+    Boost.Compute: 2.54871e+07 keys/sec
+    STL:           1.38416e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.74806e+08 keys/sec
+    Boost.Compute: 5.70446e+08 keys/sec
+    CPU:           4.52709e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         2.88415e+07 keys/sec
+    Boost.Compute: 2.70707e+07 keys/sec
+    STL:           1.37366e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.71622e+08 keys/sec
+    Boost.Compute: 5.9709e+08 keys/sec
+    CPU:           4.54731e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         2.94066e+07 keys/sec
+    Boost.Compute: 2.35234e+07 keys/sec
+    STL:           1.3757e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.80435e+08 keys/sec
+    Boost.Compute: 5.89227e+08 keys/sec
+    CPU:           4.52887e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         2.9407e+07 keys/sec
+    Boost.Compute: 2.82653e+07 keys/sec
+    STL:           1.3578e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.80947e+08 keys/sec
+    Boost.Compute: 5.9989e+08 keys/sec
+    CPU:           6.36198e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         2.99543e+07 keys/sec
+    Boost.Compute: 2.85704e+07 keys/sec
+    STL:           1.36951e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.80624e+08 keys/sec
+    Boost.Compute: 6.15338e+08 keys/sec
+    CPU:           4.55745e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         2.88767e+07 keys/sec
+    Boost.Compute: 2.75828e+07 keys/sec
+    STL:           1.35326e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.86859e+08 keys/sec
+    Boost.Compute: 6.19824e+08 keys/sec
+    CPU:           6.42322e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         2.82965e+07 keys/sec
+    Boost.Compute: 2.80259e+07 keys/sec
+    STL:           1.35412e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.87009e+08 keys/sec
+    Boost.Compute: 6.2938e+08 keys/sec
+    CPU:           6.43802e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         2.83127e+07 keys/sec
+    Boost.Compute: 2.53361e+07 keys/sec
+    STL:           1.3553e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.85925e+08 keys/sec
+    Boost.Compute: 6.43057e+08 keys/sec
+    CPU:           4.58536e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "double" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (uint)
+    VexCL:         2.842e+07 keys/sec
+    Boost.Compute: 2.77757e+07 keys/sec
+    STL:           1.35646e+07 keys/sec
+
+Scan (ulong)
+    VexCL:         2.26779e+08 keys/sec
+    Boost.Compute: 6.36292e+08 keys/sec
+    CPU:           4.59822e+08 keys/sec
+
+
+
