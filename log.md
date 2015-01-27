@@ -7,7 +7,7 @@ With:
  - Thrust (OMP + CUDA)
  - VexCL (CPU + GPU + CUDA) 
  - MKL (Intel CPUs + Phi)
- - Blaze (OMP)
+ - Blaze (OMP)  
 Run:  
  - Reduce (float, double)
  - Scan, Sort (int, long)
@@ -25,8 +25,7 @@ Naveen:
  - SPMV in CUDA and MKL libraries
  - VexCL and ViennaCL implementations for Hammad and Ang's input data on GPUs.
 
-Dominik:  
-Use AMPI with PETSc:
+Dominik: Use AMPI with PETSc:
  - Carry out smpv, saxpy, reduce, sort, scan on one node (shared memory)
 - Carry out smpv, saxpy, reduce, sort, scan on multiple nodes
 - Carry out scaling analysis
