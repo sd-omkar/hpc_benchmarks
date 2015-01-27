@@ -1,3 +1,41 @@
+**01/26**
+
+Current plan of action:  
+
+Omkar:  
+With:  
+ - Thrust (OMP + CUDA)
+ - VexCL (CPU + GPU + CUDA) 
+ - MKL (Intel CPUs + Phi)
+ - Blaze (OMP)  
+
+Run:  
+ - Reduce (float, double)
+ - Scan, Sort (int, long)
+ - SAXPY (float, double)
+
+Hammad:  
+ - OpenCL for sort, scan, reduce, saxpy and SPMV using VexCL (using the VexCL benchmark)
+ - OpenCL for SPMV with fording matrices 
+ - Blaze for SPMV with fording matrices
+
+Ang:  
+ - Focus on running SPMV with ViennaCL for both Hammad's fording matrices and those from UF collection
+
+Naveen:  
+ - SPMV in CUDA and MKL libraries
+ - VexCL and ViennaCL implementations for Hammad and Ang's input data on GPUs.
+
+Dominik: Use AMPI with PETSc:
+ - Carry out smpv, saxpy, reduce, sort, scan on one node (shared memory)
+- Carry out smpv, saxpy, reduce, sort, scan on multiple nodes
+- Carry out scaling analysis
+  * Increase problem size
+  * For multi-node, mix up hardware architectures (AMD w/ Intel)  
+ 
+Vennila: ???
+
+
 **01/02**
 
 Checked-in results for reductions of array of floats. TODO:
