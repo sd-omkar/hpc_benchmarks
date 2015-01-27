@@ -1,0 +1,80 @@
+Scan time: 196.046 ms
+Scan N:10485760	keys/sec: 5.34861e+07
+Sort time: 1174.39 ms
+Sort N:10485760	keys/sec: 8.92865e+06
+
+Scan time: 215.606 ms
+Scan N:11534336	keys/sec: 5.34972e+07
+Sort time: 1310.49 ms
+Sort N:11534336	keys/sec: 8.80152e+06
+
+Scan time: 235.981 ms
+Scan N:12582912	keys/sec: 5.33216e+07
+Sort time: 1348.88 ms
+Sort N:12582912	keys/sec: 9.32841e+06
+
+Scan time: 254.756 ms
+Scan N:13631488	keys/sec: 5.3508e+07
+Sort time: 1437.59 ms
+Sort N:13631488	keys/sec: 9.48219e+06
+
+Scan time: 274.342 ms
+Scan N:14680064	keys/sec: 5.35101e+07
+Sort time: 1545.97 ms
+Sort N:14680064	keys/sec: 9.49573e+06
+
+Scan time: 293.944 ms
+Scan N:15728640	keys/sec: 5.3509e+07
+Sort time: 1692.41 ms
+Sort N:15728640	keys/sec: 9.29361e+06
+
+Scan time: 313.58 ms
+Scan N:16777216	keys/sec: 5.35022e+07
+Sort time: 1777.12 ms
+Sort N:16777216	keys/sec: 9.4407e+06
+
+Scan time: 333.208 ms
+Scan N:17825792	keys/sec: 5.34975e+07
+Sort time: 1878.19 ms
+Sort N:17825792	keys/sec: 9.49095e+06
+
+Scan time: 352.774 ms
+Scan N:18874368	keys/sec: 5.35027e+07
+Sort time: 1976.5 ms
+Sort N:18874368	keys/sec: 9.54938e+06
+
+Scan time: 372.233 ms
+Scan N:19922944	keys/sec: 5.35228e+07
+Sort time: 2063.63 ms
+Sort N:19922944	keys/sec: 9.6543e+06
+
+Scan time: 391.957 ms
+Scan N:20971520	keys/sec: 5.35047e+07
+Sort time: 2279.25 ms
+Sort N:20971520	keys/sec: 9.20106e+06
+
+Scan time: 415.986 ms
+Scan N:22020096	keys/sec: 5.29347e+07
+Sort time: 2285.52 ms
+Sort N:22020096	keys/sec: 9.63463e+06
+
+Scan time: 431.145 ms
+Scan N:23068672	keys/sec: 5.35056e+07
+Sort time: 2439.34 ms
+Sort N:23068672	keys/sec: 9.45695e+06
+
+Scan time: 450.611 ms
+Scan N:24117248	keys/sec: 5.35212e+07
+Sort time: 2356.25 ms
+Sort N:24117248	keys/sec: 1.02354e+07
+
+Scan time: 470.487 ms
+Scan N:25165824	keys/sec: 5.34889e+07
+Sort time: 2452.44 ms
+Sort N:25165824	keys/sec: 1.02615e+07
+
+Scan time: 489.893 ms
+Scan N:26214400	keys/sec: 5.35104e+07
+Sort time: 2553.84 ms
+Sort N:26214400	keys/sec: 1.02647e+07
+

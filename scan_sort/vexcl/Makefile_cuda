@@ -10,7 +10,7 @@ LIB_CUDA	:= /usr/local/cuda/6.5.11/cuda/lib64/
 all: ocl
 
 ocl:
-	$(CC) $(CFLAGS) -I$(INC_CL) -I$(INC_BOOST) -I$(INC_CUDA) -o ocl.out vector.cpp -L$(LIB_CL) -lOpenCL -L$(LIB_BOOST) -lboost_program_options -lboost_system -lboost_thread -lboost_filesystem -lcuda -L$(LIB_CUDA) -lcusparse
+	$(CC) $(CFLAGS) -I$(INC_CL) -I$(INC_BOOST) -I$(INC_CUDA) -o ocl_CUDA.out vector.cpp -L$(LIB_CL) -lOpenCL -L$(LIB_BOOST) -lboost_program_options -lboost_system -lboost_thread -lboost_filesystem -lcuda -L$(LIB_CUDA) -lcusparse
 
 bench:
 	$(CC) $(CFLAGS) -I$(INC_CL) -I$(INC_BOOST) -o bench.out benchmark.cpp -L$(LIB_CL) -lOpenCL -L$(LIB_BOOST) -lboost_program_options -lboost_system -lboost_thread

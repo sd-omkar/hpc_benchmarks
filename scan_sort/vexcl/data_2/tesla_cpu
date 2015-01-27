@@ -1,0 +1,208 @@
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    N: 10485760 : 2.52095e+07 keys/sec
+
+Scan (uint)
+    N: 10485760 : 1.72438e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    N: 11534336 : 2.52284e+07 keys/sec
+
+Scan (uint)
+    N: 11534336 : 1.42699e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    N: 12582912 : 2.51655e+07 keys/sec
+
+Scan (uint)
+    N: 12582912 : 1.35529e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    N: 13631488 : 2.45915e+07 keys/sec
+
+Scan (uint)
+    N: 13631488 : 1.3886e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    N: 14680064 : 2.50315e+07 keys/sec
+
+Scan (uint)
+    N: 14680064 : 1.33548e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    N: 15728640 : 2.38201e+07 keys/sec
+
+Scan (uint)
+    N: 15728640 : 1.32519e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    N: 16777216 : 2.40633e+07 keys/sec
+
+Scan (uint)
+    N: 16777216 : 1.33606e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    N: 17825792 : 2.41198e+07 keys/sec
+
+Scan (uint)
+    N: 17825792 : 1.35671e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    N: 18874368 : 2.41018e+07 keys/sec
+
+Scan (uint)
+    N: 18874368 : 1.35941e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    N: 19922944 : 2.40975e+07 keys/sec
+
+Scan (uint)
+    N: 19922944 : 1.38443e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    N: 20971520 : 2.40461e+07 keys/sec
+
+Scan (uint)
+    N: 20971520 : 1.37885e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    N: 22020096 : 2.40323e+07 keys/sec
+
+Scan (uint)
+    N: 22020096 : 1.40397e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    N: 23068672 : 2.3889e+07 keys/sec
+
+Scan (uint)
+    N: 23068672 : 1.4259e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    N: 24117248 : 2.36599e+07 keys/sec
+
+Scan (uint)
+    N: 24117248 : 1.44295e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    N: 25165824 : 2.38062e+07 keys/sec
+
+Scan (uint)
+    N: 25165824 : 1.43671e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    N: 26214400 : 2.37597e+07 keys/sec
+
+Scan (uint)
+    N: 26214400 : 1.4461e+08 keys/sec
+
+
+

@@ -1,0 +1,208 @@
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (ulong)
+    VexCL:         2.37321e+08 keys/sec
+
+Scan (uint)
+    VexCL:         3.77505e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (ulong)
+    VexCL:         2.37693e+08 keys/sec
+
+Scan (uint)
+    VexCL:         3.77986e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (ulong)
+    VexCL:         2.36027e+08 keys/sec
+
+Scan (uint)
+    VexCL:         3.77984e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (ulong)
+    VexCL:         2.36955e+08 keys/sec
+
+Scan (uint)
+    VexCL:         3.78473e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (ulong)
+    VexCL:         2.3747e+08 keys/sec
+
+Scan (uint)
+    VexCL:         3.78773e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (ulong)
+    VexCL:         2.26326e+08 keys/sec
+
+Scan (uint)
+    VexCL:         3.78873e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (ulong)
+    VexCL:         2.26874e+08 keys/sec
+
+Scan (uint)
+    VexCL:         3.79188e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (ulong)
+    VexCL:         2.28055e+08 keys/sec
+
+Scan (uint)
+    VexCL:         3.79374e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (ulong)
+    VexCL:         2.2641e+08 keys/sec
+
+Scan (uint)
+    VexCL:         3.79511e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (ulong)
+    VexCL:         2.2747e+08 keys/sec
+
+Scan (uint)
+    VexCL:         3.79689e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (ulong)
+    VexCL:         2.28033e+08 keys/sec
+
+Scan (uint)
+    VexCL:         3.79875e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (ulong)
+    VexCL:         2.27369e+08 keys/sec
+
+Scan (uint)
+    VexCL:         3.79968e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (ulong)
+    VexCL:         2.26624e+08 keys/sec
+
+Scan (uint)
+    VexCL:         3.79945e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (ulong)
+    VexCL:         2.27181e+08 keys/sec
+
+Scan (uint)
+    VexCL:         3.79932e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (ulong)
+    VexCL:         2.26768e+08 keys/sec
+
+Scan (uint)
+    VexCL:         3.80128e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Sort (ulong)
+    VexCL:         2.26531e+08 keys/sec
+
+Scan (uint)
+    VexCL:         3.80163e+09 keys/sec
+
+
+

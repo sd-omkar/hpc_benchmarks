@@ -1,5 +1,5 @@
 CC		:= g++
-CFLAGS		:= -O3 -std=gnu++11 -DHAVE_BOOST_COMPUTE=1
+CFLAGS		:= -O3 -std=gnu++11
 INC_BOOST	:= /usr/local/boost/1.53.0/include/
 LIB_BOOST	:= /usr/local/boost/1.53.0/lib/ 
 INC_CL		:= /opt/AMDAPPSDK-2.9-1/include/

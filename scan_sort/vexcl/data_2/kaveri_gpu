@@ -1,0 +1,272 @@
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (ulong)
+    VexCL:         6.95351e+07 keys/sec
+    STL:           1.27722e+07 keys/sec
+
+Scan (uint)
+    VexCL:         1.07191e+09 keys/sec
+    CPU:           8.3689e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (ulong)
+    VexCL:         6.95874e+07 keys/sec
+    STL:           1.2576e+07 keys/sec
+
+Scan (uint)
+    VexCL:         1.07533e+09 keys/sec
+    CPU:           8.34825e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (ulong)
+    VexCL:         6.96678e+07 keys/sec
+    STL:           1.23825e+07 keys/sec
+
+Scan (uint)
+    VexCL:         1.06474e+09 keys/sec
+    CPU:           8.21931e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (ulong)
+    VexCL:         6.97173e+07 keys/sec
+    STL:           1.21972e+07 keys/sec
+
+Scan (uint)
+    VexCL:         1.0656e+09 keys/sec
+    CPU:           8.4565e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (ulong)
+    VexCL:         6.96672e+07 keys/sec
+    STL:           1.20767e+07 keys/sec
+
+Scan (uint)
+    VexCL:         1.07116e+09 keys/sec
+    CPU:           8.33845e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (ulong)
+    VexCL:         6.56701e+07 keys/sec
+    STL:           1.21549e+07 keys/sec
+
+Scan (uint)
+    VexCL:         1.07191e+09 keys/sec
+    CPU:           8.44641e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (ulong)
+    VexCL:         6.57917e+07 keys/sec
+    STL:           1.20795e+07 keys/sec
+
+Scan (uint)
+    VexCL:         1.06108e+09 keys/sec
+    CPU:           8.36998e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (ulong)
+    VexCL:         6.57719e+07 keys/sec
+    STL:           1.18481e+07 keys/sec
+
+Scan (uint)
+    VexCL:         1.07277e+09 keys/sec
+    CPU:           8.4467e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (ulong)
+    VexCL:         6.57724e+07 keys/sec
+    STL:           1.19773e+07 keys/sec
+
+Scan (uint)
+    VexCL:         1.08048e+09 keys/sec
+    CPU:           8.40925e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (ulong)
+    VexCL:         6.58127e+07 keys/sec
+    STL:           1.19811e+07 keys/sec
+
+Scan (uint)
+    VexCL:         1.07348e+09 keys/sec
+    CPU:           8.42656e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (ulong)
+    VexCL:         6.57774e+07 keys/sec
+    STL:           1.18433e+07 keys/sec
+
+Scan (uint)
+    VexCL:         1.07168e+09 keys/sec
+    CPU:           8.48541e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (ulong)
+    VexCL:         6.57938e+07 keys/sec
+    STL:           1.17537e+07 keys/sec
+
+Scan (uint)
+    VexCL:         1.07232e+09 keys/sec
+    CPU:           8.41804e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (ulong)
+    VexCL:         6.57977e+07 keys/sec
+    STL:           1.19192e+07 keys/sec
+
+Scan (uint)
+    VexCL:         1.07013e+09 keys/sec
+    CPU:           8.48785e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (ulong)
+    VexCL:         6.5753e+07 keys/sec
+    STL:           1.16834e+07 keys/sec
+
+Scan (uint)
+    VexCL:         1.07134e+09 keys/sec
+    CPU:           8.45251e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (ulong)
+    VexCL:         6.58482e+07 keys/sec
+    STL:           1.17345e+07 keys/sec
+
+Scan (uint)
+    VexCL:         1.06941e+09 keys/sec
+    CPU:           8.42478e+08 keys/sec
+
+
+
+Error: No root privilege. Please check with the system-admin.
+Error: No root privilege. Please check with the system-admin.
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Spectre (AMD Accelerated Parallel Processing)
+
+Sort (ulong)
+    VexCL:         6.57992e+07 keys/sec
+    STL:           1.15461e+07 keys/sec
+
+Scan (uint)
+    VexCL:         1.07334e+09 keys/sec
+    CPU:           8.43775e+08 keys/sec
+
+
+

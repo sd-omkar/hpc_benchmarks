@@ -1,0 +1,240 @@
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         2.00921e+07 keys/sec
+    STL:           1.4161e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.83702e+08 keys/sec
+    CPU:           9.86787e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         2.00544e+07 keys/sec
+    STL:           1.42331e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.84784e+08 keys/sec
+    CPU:           9.26697e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         2.00402e+07 keys/sec
+    STL:           1.40422e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.95996e+08 keys/sec
+    CPU:           1.23175e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         2.00131e+07 keys/sec
+    STL:           1.39515e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.01587e+08 keys/sec
+    CPU:           1.17922e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         2.03147e+07 keys/sec
+    STL:           1.3796e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.07742e+08 keys/sec
+    CPU:           1.00112e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         1.89718e+07 keys/sec
+    STL:           1.40115e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.19887e+08 keys/sec
+    CPU:           9.21421e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         1.93699e+07 keys/sec
+    STL:           1.40651e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.18729e+08 keys/sec
+    CPU:           9.31107e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         1.95477e+07 keys/sec
+    STL:           1.37668e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.20025e+08 keys/sec
+    CPU:           9.30646e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         1.94528e+07 keys/sec
+    STL:           1.39204e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.25519e+08 keys/sec
+    CPU:           1.00861e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         1.94728e+07 keys/sec
+    STL:           1.39296e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.27994e+08 keys/sec
+    CPU:           9.29939e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         1.94217e+07 keys/sec
+    STL:           1.38095e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.27743e+08 keys/sec
+    CPU:           9.33015e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         1.9721e+07 keys/sec
+    STL:           1.35055e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.3529e+08 keys/sec
+    CPU:           9.29389e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         1.97729e+07 keys/sec
+    STL:           1.35274e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.33189e+08 keys/sec
+    CPU:           9.34801e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         1.94122e+07 keys/sec
+    STL:           1.3362e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.35123e+08 keys/sec
+    CPU:           9.41479e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         1.93282e+07 keys/sec
+    STL:           1.35703e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.3303e+08 keys/sec
+    CPU:           9.30913e+08 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         1.93909e+07 keys/sec
+    STL:           1.34414e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.37607e+08 keys/sec
+    CPU:           9.36762e+08 keys/sec
+
+
+

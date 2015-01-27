@@ -1,0 +1,240 @@
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         2.64505e+07 keys/sec
+    STL:           1.42842e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.28766e+08 keys/sec
+    CPU:           1.32088e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         2.90373e+07 keys/sec
+    STL:           1.43627e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.32202e+08 keys/sec
+    CPU:           1.26974e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         2.97243e+07 keys/sec
+    STL:           1.41158e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.34332e+08 keys/sec
+    CPU:           1.34623e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         2.91268e+07 keys/sec
+    STL:           1.40055e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.39428e+08 keys/sec
+    CPU:           1.3581e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         2.83787e+07 keys/sec
+    STL:           1.38804e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.42764e+08 keys/sec
+    CPU:           1.24262e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         2.75767e+07 keys/sec
+    STL:           1.40745e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.42078e+08 keys/sec
+    CPU:           1.24532e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         2.83535e+07 keys/sec
+    STL:           1.3994e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.46031e+08 keys/sec
+    CPU:           1.3025e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         2.78001e+07 keys/sec
+    STL:           1.37756e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.48761e+08 keys/sec
+    CPU:           1.32636e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         2.93055e+07 keys/sec
+    STL:           1.38901e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.54372e+08 keys/sec
+    CPU:           1.30874e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         2.98733e+07 keys/sec
+    STL:           1.38979e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.55254e+08 keys/sec
+    CPU:           1.32253e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         3.02958e+07 keys/sec
+    STL:           1.37993e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.52734e+08 keys/sec
+    CPU:           1.32752e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         3.09905e+07 keys/sec
+    STL:           1.36752e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.59523e+08 keys/sec
+    CPU:           1.3067e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         3.02106e+07 keys/sec
+    STL:           1.36826e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.56245e+08 keys/sec
+    CPU:           1.30446e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         2.93884e+07 keys/sec
+    STL:           1.33553e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.55437e+08 keys/sec
+    CPU:           1.30909e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         3.00903e+07 keys/sec
+    STL:           1.36557e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.56087e+08 keys/sec
+    CPU:           1.31888e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Sort (ulong)
+    VexCL:         2.96087e+07 keys/sec
+    STL:           1.34239e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.6085e+08 keys/sec
+    CPU:           1.31831e+09 keys/sec
+
+
+
