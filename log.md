@@ -1,3 +1,16 @@
+**01/26**
+
+Omkar working on scan, sort and reduce ; and SAXPY – also start on Blaze
+
+SPMV - Hammad has results from VexCL ; Ang has from ViennaCL 
+Naveen working on SPMV – mainly using CUDA and MKL libraries. 
+OpenCL is done partly – interchange Hammad and Ang’s results
+
+Vennila will work on SPMV, reduce, sort and reduce - using PETSc on nodes with MPI
+
+Dominic will work on AMPI and PETSc – one node and then multiple nodes (scaling analysis + architecture analysis) – comare against Vennila’s results
+
+
 **01/02**
 
 Checked-in results for reductions of array of floats. TODO:
