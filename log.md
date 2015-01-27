@@ -8,6 +8,7 @@ With:
  - VexCL (CPU + GPU + CUDA) 
  - MKL (Intel CPUs + Phi)
  - Blaze (OMP)  
+
 Run:  
  - Reduce (float, double)
  - Scan, Sort (int, long)
