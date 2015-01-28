@@ -2,14 +2,14 @@
 
 Current plan of action:  
 
-##Omkar [WHAT DATA ARE YOU GOING TO USE?]:  
+##Omkar:  
 - With: 
  - Thrust (OMP + CUDA)
  - VexCL (CPU + GPU + CUDA) 
  - MKL (Intel CPUs + Phi)
  - Blaze (OMP)  
 
-- Run
+- Run on random generated vectors of size 10M to 25M
  - Reduce (float, double)
  - SAXPY (float, double)
  - Scan, Sort (int, long)
