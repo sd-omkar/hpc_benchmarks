@@ -28,13 +28,18 @@ Naveen:
 
 Dominik: Use AMPI with PETSc:
  - Carry out smpv, saxpy, reduce, sort, scan on one node (shared memory)
-- Carry out smpv, saxpy, reduce, sort, scan on multiple nodes
-- Carry out scaling analysis
+ - Carry out smpv, saxpy, reduce, sort, scan on multiple nodes
+ - Carry out scaling analysis
   * Increase problem size
   * For multi-node, mix up hardware architectures (AMD w/ Intel)  
  
-Vennila: ???
-
+Vennila:  
+ - using MPI with PETSc to carry out on one node  
+  * SpMV 
+  * Reduce 
+  * Sort 
+  * Prefix scan
+  * Saxpy
 
 **01/02**
 
