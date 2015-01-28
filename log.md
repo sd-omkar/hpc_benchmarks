@@ -20,7 +20,10 @@ Current plan of action:
  - Blaze for SPMV with fording matrices
 
 ##Ang [IS THIS ON THE GPU ONLY?]:  
- - SPMV with ViennaCL. Data used: Hammad's fording matrices and matrices from theUF collection
+ - SPMV with ViennaCL, cuSparse and CUSP. Data used: Hammad's fording matrices and matrices from theUF collection
+  * Benchmarking CUSP on K20x, and Intel Xeon
+  * Benchmarking cuSparse on K20x
+  * Benchmarking ViennaCL on K20x and Intel Xeon-Phi
 
 ##Naveen [CUDA IS THRUST, RIGHT? WHAT PLATFORMS ARE YOU GOING TO USE?]:  
  - SPMV in CUDA and MKL libraries
