@@ -39,7 +39,7 @@ int main (int argc, char *argv[]) {
   // Initialize vectors
   thrust::host_vector<double> h_data(size);
   thrust::host_vector<int> h_scan(size);
-  thrust::host_vector<long> h_sort(size);
+  thrust::host_vector<int> h_sort(size);
   //double h_sum, d_sum;
 
   // Timing varibles
@@ -131,10 +131,8 @@ int main (int argc, char *argv[]) {
   */
 
   // Sort
-  std::uniform_int_distribution<long> rnd_long;
-
-  thrust::generate(h_sort.begin(), h_sort.end(), [&]() { return rnd_long(rng); });
-  thrust::device_vector<long> d_sort = h_sort;
+  thrust::generate(h_sort.begin(), h_sort.end(), [&]() { return rnd_int(rng); });
+  thrust::device_vector<int> d_sort = h_sort;
   thrust::sort(d_sort.begin(), d_sort.end());
   
   cudaEventRecord(start_sort, NULL);
