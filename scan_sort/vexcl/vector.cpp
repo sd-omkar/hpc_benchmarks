@@ -677,7 +677,7 @@ void benchmark_sort(
     const size_t M = 16;
 
     typedef typename std::conditional<
-        std::is_same<float, real>::value, cl_ulong, cl_uint
+        std::is_same<float, real>::value, cl_uint, cl_ulong
         >::type key_type;
 
     std::default_random_engine rng( std::rand() );
@@ -978,7 +978,7 @@ int main(int argc, char *argv[]) {
             "benchmark exclusive scan (on/off)"
             )
         ("bm_cpu",
-            po::value<bool>(&options.bm_cpu)->default_value(true),
+            po::value<bool>(&options.bm_cpu)->default_value(false),
             "benchmark host CPU performance (on/off)"
             )
         ;

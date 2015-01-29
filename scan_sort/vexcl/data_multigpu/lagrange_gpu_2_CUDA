@@ -1,0 +1,224 @@
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         6.18541e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.82572e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         6.30346e+07 keys/sec
+
+Scan (uint)
+    VexCL:         2.91692e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         6.34763e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.01619e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         6.53275e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.07166e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         6.30726e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.11491e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         6.61609e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.13582e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         6.65558e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.18063e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         6.38966e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.29732e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         6.72634e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.32126e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         6.6896e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.38883e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         6.73313e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.42341e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         6.76829e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.43679e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         6.47748e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.45879e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         6.59535e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.49344e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         6.47721e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.52163e+09 keys/sec
+
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm
+2. Tesla K20Xm
+
+Sort (uint)
+    VexCL:         6.45512e+07 keys/sec
+
+Scan (uint)
+    VexCL:         3.52622e+09 keys/sec
+
+
+

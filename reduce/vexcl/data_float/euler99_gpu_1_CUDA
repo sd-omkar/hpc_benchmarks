@@ -4,21 +4,21 @@ Profiling "float" performance
 1. Tesla K40c
 
 Reduction (float): 10485760
-  OpenCL:	    GFLOPS:    42.4534	    Bandwidth: 124.538
-  C++:	    GFLOPS:    1.68414
+  OpenCL:	    GFLOPS:    42.442	    Bandwidth: 169.768
+  C++:	    GFLOPS:    1.69085
   residue: 0.012933
 
 
 
 
-[Profile:           1.340 sec.] (100.00%)
-[ self:             0.291 sec.] ( 21.74%)
-[  float:           1.048 sec.] ( 78.26%)
-[    Reduction:     1.048 sec.] ( 78.26%)
-[     self:         0.177 sec.] ( 13.19%)
-[      Copy:        0.043 sec.] (  3.22%)
-[      OpenCL:      0.032 sec.] (  2.36%)
-[      C++:         0.797 sec.] ( 59.49%)
+[Profile:           1.334 sec.] (100.00%)
+[ self:             0.292 sec.] ( 21.91%)
+[  float:           1.042 sec.] ( 78.09%)
+[    Reduction:     1.042 sec.] ( 78.09%)
+[     self:         0.174 sec.] ( 13.07%)
+[      Copy:        0.042 sec.] (  3.14%)
+[      OpenCL:      0.032 sec.] (  2.37%)
+[      C++:         0.794 sec.] ( 59.51%)
 
 ----------------------------------------------------------
 Profiling "float" performance
@@ -26,21 +26,21 @@ Profiling "float" performance
 1. Tesla K40c
 
 Reduction (float): 11534336
-  OpenCL:	    GFLOPS:    42.7788	    Bandwidth: 128.154
-  C++:	    GFLOPS:    1.69405
+  OpenCL:	    GFLOPS:    42.756	    Bandwidth: 171.024
+  C++:	    GFLOPS:    1.69035
   residue: 0.0153526
 
 
 
 
-[Profile:           1.421 sec.] (100.00%)
-[ self:             0.278 sec.] ( 19.54%)
-[  float:           1.143 sec.] ( 80.46%)
-[    Reduction:     1.143 sec.] ( 80.46%)
-[     self:         0.191 sec.] ( 13.45%)
-[      Copy:        0.046 sec.] (  3.24%)
+[Profile:           1.422 sec.] (100.00%)
+[ self:             0.277 sec.] ( 19.45%)
+[  float:           1.145 sec.] ( 80.55%)
+[    Reduction:     1.145 sec.] ( 80.55%)
+[     self:         0.191 sec.] ( 13.46%)
+[      Copy:        0.046 sec.] (  3.23%)
 [      OpenCL:      0.035 sec.] (  2.43%)
-[      C++:         0.872 sec.] ( 61.34%)
+[      C++:         0.873 sec.] ( 61.43%)
 
 ----------------------------------------------------------
 Profiling "float" performance
@@ -48,21 +48,21 @@ Profiling "float" performance
 1. Tesla K40c
 
 Reduction (float): 12582912
-  OpenCL:	    GFLOPS:    40.0774	    Bandwidth: 128.636
-  C++:	    GFLOPS:    1.68718
+  OpenCL:	    GFLOPS:    40.2597	    Bandwidth: 161.039
+  C++:	    GFLOPS:    1.69002
   residue: 0.0173206
 
 
 
 
-[Profile:           1.529 sec.] (100.00%)
-[ self:             0.276 sec.] ( 18.06%)
-[  float:           1.253 sec.] ( 81.94%)
-[    Reduction:     1.253 sec.] ( 81.94%)
-[     self:         0.208 sec.] ( 13.60%)
-[      Copy:        0.050 sec.] (  3.28%)
-[      OpenCL:      0.040 sec.] (  2.63%)
-[      C++:         0.955 sec.] ( 62.44%)
+[Profile:           1.526 sec.] (100.00%)
+[ self:             0.278 sec.] ( 18.19%)
+[  float:           1.249 sec.] ( 81.81%)
+[    Reduction:     1.249 sec.] ( 81.81%)
+[     self:         0.208 sec.] ( 13.63%)
+[      Copy:        0.048 sec.] (  3.12%)
+[      OpenCL:      0.040 sec.] (  2.62%)
+[      C++:         0.953 sec.] ( 62.44%)
 
 ----------------------------------------------------------
 Profiling "float" performance
@@ -70,21 +70,21 @@ Profiling "float" performance
 1. Tesla K40c
 
 Reduction (float): 13631488
-  OpenCL:	    GFLOPS:    43.0277	    Bandwidth: 128.549
-  C++:	    GFLOPS:    1.69634
+  OpenCL:	    GFLOPS:    43.0023	    Bandwidth: 172.009
+  C++:	    GFLOPS:    1.69473
   residue: 0.0190157
 
 
 
 
-[Profile:           1.627 sec.] (100.00%)
-[ self:             0.278 sec.] ( 17.12%)
-[  float:           1.348 sec.] ( 82.88%)
-[    Reduction:     1.348 sec.] ( 82.88%)
-[     self:         0.225 sec.] ( 13.83%)
-[      Copy:        0.054 sec.] (  3.34%)
+[Profile:           1.628 sec.] (100.00%)
+[ self:             0.278 sec.] ( 17.07%)
+[  float:           1.350 sec.] ( 82.93%)
+[    Reduction:     1.350 sec.] ( 82.93%)
+[     self:         0.226 sec.] ( 13.86%)
+[      Copy:        0.054 sec.] (  3.33%)
 [      OpenCL:      0.041 sec.] (  2.49%)
-[      C++:         1.029 sec.] ( 63.23%)
+[      C++:         1.030 sec.] ( 63.25%)
 
 ----------------------------------------------------------
 Profiling "float" performance
@@ -92,21 +92,21 @@ Profiling "float" performance
 1. Tesla K40c
 
 Reduction (float): 14680064
-  OpenCL:	    GFLOPS:    43.1282	    Bandwidth: 128.636
-  C++:	    GFLOPS:    1.68432
+  OpenCL:	    GFLOPS:    43.1112	    Bandwidth: 172.445
+  C++:	    GFLOPS:    1.69795
   residue: 0.0204764
 
 
 
 
-[Profile:           1.735 sec.] (100.00%)
-[ self:             0.275 sec.] ( 15.87%)
-[  float:           1.459 sec.] ( 84.13%)
-[    Reduction:     1.459 sec.] ( 84.13%)
-[     self:         0.242 sec.] ( 13.94%)
+[Profile:           1.727 sec.] (100.00%)
+[ self:             0.277 sec.] ( 16.04%)
+[  float:           1.450 sec.] ( 83.96%)
+[    Reduction:     1.450 sec.] ( 83.96%)
+[     self:         0.242 sec.] ( 13.99%)
 [      Copy:        0.058 sec.] (  3.37%)
-[      OpenCL:      0.044 sec.] (  2.51%)
-[      C++:         1.116 sec.] ( 64.31%)
+[      OpenCL:      0.044 sec.] (  2.52%)
+[      C++:         1.107 sec.] ( 64.07%)
 
 ----------------------------------------------------------
 Profiling "float" performance
@@ -114,21 +114,21 @@ Profiling "float" performance
 1. Tesla K40c
 
 Reduction (float): 15728640
-  OpenCL:	    GFLOPS:    40.317	    Bandwidth: 128.747
-  C++:	    GFLOPS:    1.69588
+  OpenCL:	    GFLOPS:    40.3063	    Bandwidth: 161.225
+  C++:	    GFLOPS:    1.69876
   residue: 0.0217675
 
 
 
 
-[Profile:           1.835 sec.] (100.00%)
+[Profile:           1.833 sec.] (100.00%)
 [ self:             0.277 sec.] ( 15.11%)
-[  float:           1.558 sec.] ( 84.89%)
-[    Reduction:     1.558 sec.] ( 84.89%)
-[     self:         0.258 sec.] ( 14.08%)
-[      Copy:        0.063 sec.] (  3.41%)
-[      OpenCL:      0.050 sec.] (  2.72%)
-[      C++:         1.187 sec.] ( 64.68%)
+[  float:           1.556 sec.] ( 84.89%)
+[    Reduction:     1.556 sec.] ( 84.88%)
+[     self:         0.261 sec.] ( 14.23%)
+[      Copy:        0.060 sec.] (  3.27%)
+[      OpenCL:      0.050 sec.] (  2.73%)
+[      C++:         1.185 sec.] ( 64.66%)
 
 ----------------------------------------------------------
 Profiling "float" performance
@@ -136,21 +136,21 @@ Profiling "float" performance
 1. Tesla K40c
 
 Reduction (float): 16777216
-  OpenCL:	    GFLOPS:    43.2117	    Bandwidth: 129.008
-  C++:	    GFLOPS:    1.68636
+  OpenCL:	    GFLOPS:    43.204	    Bandwidth: 172.816
+  C++:	    GFLOPS:    1.69925
   residue: 0.0228714
 
 
 
 
-[Profile:           1.943 sec.] (100.00%)
-[ self:             0.278 sec.] ( 14.31%)
-[  float:           1.665 sec.] ( 85.69%)
-[    Reduction:     1.665 sec.] ( 85.68%)
-[     self:         0.275 sec.] ( 14.17%)
-[      Copy:        0.067 sec.] (  3.43%)
-[      OpenCL:      0.050 sec.] (  2.56%)
-[      C++:         1.273 sec.] ( 65.53%)
+[Profile:           1.928 sec.] (100.00%)
+[ self:             0.277 sec.] ( 14.34%)
+[  float:           1.652 sec.] ( 85.66%)
+[    Reduction:     1.652 sec.] ( 85.66%)
+[     self:         0.275 sec.] ( 14.28%)
+[      Copy:        0.063 sec.] (  3.26%)
+[      OpenCL:      0.050 sec.] (  2.58%)
+[      C++:         1.264 sec.] ( 65.54%)
 
 ----------------------------------------------------------
 Profiling "float" performance
@@ -158,21 +158,21 @@ Profiling "float" performance
 1. Tesla K40c
 
 Reduction (float): 17825792
-  OpenCL:	    GFLOPS:    43.3612	    Bandwidth: 129.002
-  C++:	    GFLOPS:    1.6955
+  OpenCL:	    GFLOPS:    43.3538	    Bandwidth: 173.415
+  C++:	    GFLOPS:    1.70034
   residue: 0.0272426
 
 
 
 
-[Profile:           2.038 sec.] (100.00%)
-[ self:             0.276 sec.] ( 13.57%)
-[  float:           1.761 sec.] ( 86.43%)
-[    Reduction:     1.761 sec.] ( 86.43%)
-[     self:         0.292 sec.] ( 14.34%)
-[      Copy:        0.071 sec.] (  3.47%)
-[      OpenCL:      0.053 sec.] (  2.58%)
-[      C++:         1.346 sec.] ( 66.04%)
+[Profile:           2.134 sec.] (100.00%)
+[ self:             0.377 sec.] ( 17.67%)
+[  float:           1.757 sec.] ( 82.33%)
+[    Reduction:     1.757 sec.] ( 82.33%)
+[     self:         0.292 sec.] ( 13.69%)
+[      Copy:        0.071 sec.] (  3.31%)
+[      OpenCL:      0.053 sec.] (  2.47%)
+[      C++:         1.342 sec.] ( 62.87%)
 
 ----------------------------------------------------------
 Profiling "float" performance
@@ -180,21 +180,21 @@ Profiling "float" performance
 1. Tesla K40c
 
 Reduction (float): 18874368
-  OpenCL:	    GFLOPS:    41.9773	    Bandwidth: 133.598
-  C++:	    GFLOPS:    1.68604
+  OpenCL:	    GFLOPS:    41.9394	    Bandwidth: 167.758
+  C++:	    GFLOPS:    1.69638
   residue: 0.0330568
 
 
 
 
-[Profile:           2.151 sec.] (100.00%)
-[ self:             0.279 sec.] ( 12.95%)
-[  float:           1.872 sec.] ( 87.05%)
-[    Reduction:     1.872 sec.] ( 87.05%)
-[     self:         0.309 sec.] ( 14.38%)
-[      Copy:        0.072 sec.] (  3.36%)
-[      OpenCL:      0.058 sec.] (  2.68%)
-[      C++:         1.433 sec.] ( 66.63%)
+[Profile:           2.123 sec.] (100.00%)
+[ self:             0.278 sec.] ( 13.09%)
+[  float:           1.845 sec.] ( 86.91%)
+[    Reduction:     1.845 sec.] ( 86.91%)
+[     self:         0.306 sec.] ( 14.42%)
+[      Copy:        0.057 sec.] (  2.70%)
+[      OpenCL:      0.058 sec.] (  2.71%)
+[      C++:         1.424 sec.] ( 67.08%)
 
 ----------------------------------------------------------
 Profiling "float" performance
@@ -202,21 +202,21 @@ Profiling "float" performance
 1. Tesla K40c
 
 Reduction (float): 19922944
-  OpenCL:	    GFLOPS:    43.4484	    Bandwidth: 129.494
-  C++:	    GFLOPS:    1.69445
+  OpenCL:	    GFLOPS:    43.4556	    Bandwidth: 173.822
+  C++:	    GFLOPS:    1.69942
   residue: 0.0383258
 
 
 
 
-[Profile:           2.245 sec.] (100.00%)
-[ self:             0.276 sec.] ( 12.31%)
-[  float:           1.969 sec.] ( 87.69%)
-[    Reduction:     1.969 sec.] ( 87.69%)
-[     self:         0.326 sec.] ( 14.53%)
-[      Copy:        0.079 sec.] (  3.51%)
-[      OpenCL:      0.059 sec.] (  2.61%)
-[      C++:         1.505 sec.] ( 67.04%)
+[Profile:           2.239 sec.] (100.00%)
+[ self:             0.275 sec.] ( 12.27%)
+[  float:           1.964 sec.] ( 87.73%)
+[    Reduction:     1.964 sec.] ( 87.73%)
+[     self:         0.326 sec.] ( 14.57%)
+[      Copy:        0.079 sec.] (  3.52%)
+[      OpenCL:      0.059 sec.] (  2.62%)
+[      C++:         1.501 sec.] ( 67.02%)
 
 ----------------------------------------------------------
 Profiling "float" performance
@@ -224,21 +224,21 @@ Profiling "float" performance
 1. Tesla K40c
 
 Reduction (float): 20971520
-  OpenCL:	    GFLOPS:    43.7488	    Bandwidth: 129.423
-  C++:	    GFLOPS:    1.68826
+  OpenCL:	    GFLOPS:    43.7401	    Bandwidth: 174.96
+  C++:	    GFLOPS:    1.69884
   residue: 0.0431337
 
 
 
 
-[Profile:           2.356 sec.] (100.00%)
-[ self:             0.279 sec.] ( 11.84%)
-[  float:           2.077 sec.] ( 88.16%)
-[    Reduction:     2.077 sec.] ( 88.16%)
-[     self:         0.343 sec.] ( 14.55%)
-[      Copy:        0.083 sec.] (  3.52%)
-[      OpenCL:      0.061 sec.] (  2.60%)
-[      C++:         1.590 sec.] ( 67.48%)
+[Profile:           2.341 sec.] (100.00%)
+[ self:             0.274 sec.] ( 11.69%)
+[  float:           2.068 sec.] ( 88.31%)
+[    Reduction:     2.068 sec.] ( 88.31%)
+[     self:         0.343 sec.] ( 14.65%)
+[      Copy:        0.083 sec.] (  3.55%)
+[      OpenCL:      0.061 sec.] (  2.62%)
+[      C++:         1.580 sec.] ( 67.49%)
 
 ----------------------------------------------------------
 Profiling "float" performance
@@ -246,21 +246,21 @@ Profiling "float" performance
 1. Tesla K40c
 
 Reduction (float): 22020096
-  OpenCL:	    GFLOPS:    40.9565	    Bandwidth: 129.2
-  C++:	    GFLOPS:    1.69113
+  OpenCL:	    GFLOPS:    40.963	    Bandwidth: 163.852
+  C++:	    GFLOPS:    1.70185
   residue: 0.0474239
 
 
 
 
-[Profile:           2.462 sec.] (100.00%)
-[ self:             0.279 sec.] ( 11.32%)
-[  float:           2.183 sec.] ( 88.68%)
-[    Reduction:     2.183 sec.] ( 88.68%)
-[     self:         0.360 sec.] ( 14.63%)
-[      Copy:        0.087 sec.] (  3.54%)
-[      OpenCL:      0.069 sec.] (  2.80%)
-[      C++:         1.667 sec.] ( 67.71%)
+[Profile:           2.449 sec.] (100.00%)
+[ self:             0.277 sec.] ( 11.32%)
+[  float:           2.172 sec.] ( 88.68%)
+[    Reduction:     2.172 sec.] ( 88.68%)
+[     self:         0.360 sec.] ( 14.70%)
+[      Copy:        0.087 sec.] (  3.55%)
+[      OpenCL:      0.069 sec.] (  2.81%)
+[      C++:         1.656 sec.] ( 67.63%)
 
 ----------------------------------------------------------
 Profiling "float" performance
@@ -268,21 +268,21 @@ Profiling "float" performance
 1. Tesla K40c
 
 Reduction (float): 23068672
-  OpenCL:	    GFLOPS:    43.9138	    Bandwidth: 129.404
-  C++:	    GFLOPS:    1.68841
+  OpenCL:	    GFLOPS:    43.918	    Bandwidth: 175.672
+  C++:	    GFLOPS:    1.70055
   residue: 0.0514162
 
 
 
 
-[Profile:           2.561 sec.] (100.00%)
-[ self:             0.277 sec.] ( 10.81%)
-[  float:           2.284 sec.] ( 89.19%)
-[    Reduction:     2.284 sec.] ( 89.19%)
-[     self:         0.377 sec.] ( 14.71%)
-[      Copy:        0.091 sec.] (  3.56%)
-[      OpenCL:      0.067 sec.] (  2.63%)
-[      C++:         1.749 sec.] ( 68.29%)
+[Profile:           2.549 sec.] (100.00%)
+[ self:             0.277 sec.] ( 10.86%)
+[  float:           2.272 sec.] ( 89.14%)
+[    Reduction:     2.272 sec.] ( 89.14%)
+[     self:         0.377 sec.] ( 14.80%)
+[      Copy:        0.091 sec.] (  3.57%)
+[      OpenCL:      0.067 sec.] (  2.64%)
+[      C++:         1.736 sec.] ( 68.13%)
 
 ----------------------------------------------------------
 Profiling "float" performance
@@ -290,21 +290,21 @@ Profiling "float" performance
 1. Tesla K40c
 
 Reduction (float): 24117248
-  OpenCL:	    GFLOPS:    43.9358	    Bandwidth: 129.555
-  C++:	    GFLOPS:    1.69248
+  OpenCL:	    GFLOPS:    43.9346	    Bandwidth: 175.738
+  C++:	    GFLOPS:    1.70403
   residue: 0.0550759
 
 
 
 
-[Profile:           2.661 sec.] (100.00%)
-[ self:             0.278 sec.] ( 10.45%)
-[  float:           2.383 sec.] ( 89.55%)
-[    Reduction:     2.383 sec.] ( 89.55%)
-[     self:         0.393 sec.] ( 14.78%)
-[      Copy:        0.095 sec.] (  3.58%)
-[      OpenCL:      0.070 sec.] (  2.64%)
-[      C++:         1.824 sec.] ( 68.55%)
+[Profile:           2.649 sec.] (100.00%)
+[ self:             0.277 sec.] ( 10.45%)
+[  float:           2.372 sec.] ( 89.55%)
+[    Reduction:     2.372 sec.] ( 89.55%)
+[     self:         0.395 sec.] ( 14.91%)
+[      Copy:        0.095 sec.] (  3.59%)
+[      OpenCL:      0.070 sec.] (  2.65%)
+[      C++:         1.812 sec.] ( 68.40%)
 
 ----------------------------------------------------------
 Profiling "float" performance
@@ -312,21 +312,21 @@ Profiling "float" performance
 1. Tesla K40c
 
 Reduction (float): 25165824
-  OpenCL:	    GFLOPS:    42.11	    Bandwidth: 129.374
-  C++:	    GFLOPS:    1.68807
+  OpenCL:	    GFLOPS:    42.1175	    Bandwidth: 168.47
+  C++:	    GFLOPS:    1.70324
   residue: 0.0584831
 
 
 
 
-[Profile:           2.774 sec.] (100.00%)
-[ self:             0.279 sec.] ( 10.04%)
-[  float:           2.496 sec.] ( 89.96%)
-[    Reduction:     2.496 sec.] ( 89.96%)
-[     self:         0.411 sec.] ( 14.83%)
-[      Copy:        0.100 sec.] (  3.59%)
-[      OpenCL:      0.076 sec.] (  2.76%)
-[      C++:         1.908 sec.] ( 68.78%)
+[Profile:           2.756 sec.] (100.00%)
+[ self:             0.278 sec.] ( 10.08%)
+[  float:           2.478 sec.] ( 89.92%)
+[    Reduction:     2.478 sec.] ( 89.92%)
+[     self:         0.411 sec.] ( 14.91%)
+[      Copy:        0.099 sec.] (  3.60%)
+[      OpenCL:      0.076 sec.] (  2.78%)
+[      C++:         1.891 sec.] ( 68.63%)
 
 ----------------------------------------------------------
 Profiling "float" performance
@@ -334,19 +334,19 @@ Profiling "float" performance
 1. Tesla K40c
 
 Reduction (float): 26214400
-  OpenCL:	    GFLOPS:    43.946	    Bandwidth: 129.443
-  C++:	    GFLOPS:    1.6939
+  OpenCL:	    GFLOPS:    43.9584	    Bandwidth: 175.833
+  C++:	    GFLOPS:    1.5823
   residue: 0.0616106
 
 
 
 
-[Profile:           2.865 sec.] (100.00%)
-[ self:             0.276 sec.] (  9.64%)
-[  float:           2.588 sec.] ( 90.36%)
-[    Reduction:     2.588 sec.] ( 90.36%)
-[     self:         0.428 sec.] ( 14.92%)
-[      Copy:        0.104 sec.] (  3.62%)
-[      OpenCL:      0.076 sec.] (  2.67%)
-[      C++:         1.981 sec.] ( 69.15%)
+[Profile:           3.007 sec.] (100.00%)
+[ self:             0.279 sec.] (  9.29%)
+[  float:           2.728 sec.] ( 90.71%)
+[    Reduction:     2.728 sec.] ( 90.71%)
+[     self:         0.428 sec.] ( 14.22%)
+[      Copy:        0.103 sec.] (  3.44%)
+[      OpenCL:      0.076 sec.] (  2.54%)
+[      C++:         2.121 sec.] ( 70.52%)
 
