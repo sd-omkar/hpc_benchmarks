@@ -12,7 +12,9 @@ Current plan of action:
 - Run on random generated vectors of size 10M to 25M
  - Reduce (float, double)
  - SAXPY (float, double)
- - Scan, Sort (int, long)
+ - Scan, Sort (int, long)  
+
+- TODO: Setup github workflow
 
 ##Hammad [HOW IS BULLET 2 DIFFERENT THAN 1? IS DATA DIFFERENT?]:  
  - OpenCL for sort, scan, reduce, saxpy and SPMV using VexCL (using the VexCL benchmark)
