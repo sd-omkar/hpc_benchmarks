@@ -13,6 +13,29 @@ Current plan of action:
  - Reduce (float, double)
  - SAXPY (float, double)
  - Scan, Sort (int, long)
+ 
+Thesis outline:
+ - Profiling  
+  * Identifying bottlenecks with Perf, Vtune, Oprof
+  * CPU Metrics measured - Cache misses, branches, cycles
+  * FLOPs metrics
+  * Memory metrics - mem load instructions, page faults
+  * Getting useful information out of profiling data  
+ - Benchmarking  
+  * System and setup specifications
+  * Platforms and libraries
+  * Operations - Reduce, Scan, Sort, SAXPY
+  * Results
+  * Co-relating profiling data with benchmarking results  
+ - Software setup  
+  * Github structure
+  * Makefiles and compilation workflows
+  * How to run tests, on what data
+  * Capturing results
+  * Plotting and analyzing results
+  * Automating the process, creating benchmark suite  
+ - Lessons learnt and recommendation
+ - Future work
 
 ##Hammad [HOW IS BULLET 2 DIFFERENT THAN 1? IS DATA DIFFERENT?]:  
  - OpenCL for sort, scan, reduce, saxpy and SPMV using VexCL (using the VexCL benchmark)
