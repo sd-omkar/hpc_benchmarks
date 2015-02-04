@@ -5,7 +5,7 @@ Weekly meeting:
  - EVERYONE: To have a scripts to automate generation of results and plots
  - EVERYONE: Show results next week
  - Omkar to setup directory structure on github
- - Meet again next Tuesday
+ - Meet again next Tuesday 02/10
 
 **01/26**
 
