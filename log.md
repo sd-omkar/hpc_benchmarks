@@ -1,3 +1,12 @@
+**02/03**
+
+Weekly meeting:
+ - Naveen to use input datasets from Euler shared space
+ - EVERYONE: To have a scripts to automate generation of results and plots
+ - EVERYONE: Show results next week
+ - Omkar to setup directory structure on github
+ - Meet again next Tuesday
+
 **01/26**
 
 Current plan of action:  
