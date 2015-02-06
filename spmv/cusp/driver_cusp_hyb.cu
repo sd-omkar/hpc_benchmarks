@@ -57,7 +57,7 @@ int main(int argc, char** argv)
 	string         fileMat;
 
 	if (argc < 2) {
-		cerr << "Usage: ./driver_cusp_csr ${MATRIX_FILE_NAME}" << endl;
+		cerr << "Usage: ./driver_cusp_hyb ${MATRIX_FILE_NAME}" << endl;
 		exit(-1);
 	}
 
