@@ -34,7 +34,7 @@ int main (int argc, char *argv[]) {
     }
 
     // Select device
-    cudaSetDevice(0);
+    cudaSetDevice(1);
 
     // Get size
     int size = 1024 * 1024 * (10 + atoi(argv[1]));

@@ -1,9 +1,9 @@
 CC		:= g++
-CFLAGS		:= -O3 -std=gnu++11 -DHAVE_BOOST_COMPUTE=1
+CFLAGS		:= -O3 -std=gnu++11
 INC_BOOST	:= /usr/local/boost/1.53.0/include/
-INC_CL		:= /opt/intel/opencl-sdk/include/CL/
-LIB_CL		:= /opt/intel/opencl/lib64/
 LIB_BOOST	:= /usr/local/boost/1.53.0/lib/ 
+INC_CL		:= /opt/AMDAPPSDK-2.9-1/include
+LIB_CL		:= /opt/AMDAPPSDK-2.9-1/lib/x86_64/
 
 all: ocl
 
