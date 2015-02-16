@@ -30,6 +30,7 @@
 #  pragma warning(disable : 4267)
 #endif
 
+#define RUNS 25
 //---------------------------------------------------------------------------
 struct Options {
     bool bm_saxpy;
@@ -86,7 +87,7 @@ std::pair<double,double> benchmark_saxpy(
         )
 {
     const size_t N = (10 + n_size) * 1024 * 1024;
-    const size_t M = 1024/16;
+    const size_t M = RUNS;
     double time_elapsed;
 
     std::vector<real> A(N, 0);
@@ -1008,7 +1009,7 @@ int main(int argc, char *argv[]) {
             if (ctx) run_tests<float>(ctx, prof, n_size);
         }
 
-        //std::cout << prof << std::endl;
+        std::cout << prof << std::endl;
     } catch (const vex::error &e) {
         std::cerr << e << std::endl;
         return 1;

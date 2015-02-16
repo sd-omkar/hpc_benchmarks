@@ -1,0 +1,160 @@
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Vector SAXPY (float)
+    GFLOPS:    25.2224
+    Bandwidth: 151.334
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Vector SAXPY (float)
+    GFLOPS:    24.9151
+    Bandwidth: 149.491
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Vector SAXPY (float)
+    GFLOPS:    24.8399
+    Bandwidth: 149.039
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Vector SAXPY (float)
+    GFLOPS:    24.5314
+    Bandwidth: 147.188
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Vector SAXPY (float)
+    GFLOPS:    24.4289
+    Bandwidth: 146.574
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Vector SAXPY (float)
+    GFLOPS:    24.4783
+    Bandwidth: 146.87
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Vector SAXPY (float)
+    GFLOPS:    24.1019
+    Bandwidth: 144.611
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Vector SAXPY (float)
+    GFLOPS:    24.2549
+    Bandwidth: 145.529
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Vector SAXPY (float)
+    GFLOPS:    23.8654
+    Bandwidth: 143.192
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Vector SAXPY (float)
+    GFLOPS:    23.7419
+    Bandwidth: 142.452
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Vector SAXPY (float)
+    GFLOPS:    23.9546
+    Bandwidth: 143.727
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Vector SAXPY (float)
+    GFLOPS:    22.5303
+    Bandwidth: 135.182
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Vector SAXPY (float)
+    GFLOPS:    23.255
+    Bandwidth: 139.53
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Vector SAXPY (float)
+    GFLOPS:    23.5787
+    Bandwidth: 141.472
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Vector SAXPY (float)
+    GFLOPS:    23.4683
+    Bandwidth: 140.81
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770
+
+Vector SAXPY (float)
+    GFLOPS:    23.1943
+    Bandwidth: 139.166
+
+

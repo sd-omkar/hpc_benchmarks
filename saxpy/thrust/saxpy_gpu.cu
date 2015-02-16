@@ -34,7 +34,7 @@ int main (int argc, char *argv[]) {
     }
 
     // Select device
-    cudaSetDevice(1);
+    cudaSetDevice(0);
 
     // Get size
     int size = 1024 * 1024 * (10 + atoi(argv[1]));
@@ -56,8 +56,8 @@ int main (int argc, char *argv[]) {
 
     // SAXPY
     // Y <- A*X + Y 
-    thrust::device_vector<double> d_X = h_X;
-    thrust::device_vector<double> d_Y = h_Y;
+    thrust::device_vector<float> d_X = h_X;
+    thrust::device_vector<float> d_Y = h_Y;
     thrust::transform(d_X.begin(), d_X.end(),
                       d_Y.begin(), d_Y.begin(),
                       saxpy_functor(A));
