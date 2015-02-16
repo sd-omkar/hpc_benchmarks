@@ -5,11 +5,13 @@ mainmodule main
 
 	extern module row_slice;
 	extern module row;
+	extern module multi_row_slice;
  	
 	mainchare Main
 	{
 		entry Main(CkArgMsg* msg);
 		entry void setResult(int row, double res);
+		entry void setResultMultiRow(int nRows, int firstRow, double res[nRows]);
 		entry void stageFinished();
 	};
 };

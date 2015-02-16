@@ -134,18 +134,21 @@ void csrImport(char* inFile, int &nnz, int &N, int &rowMaxNnz, double* &vals, in
 	if (res!=nnz)
 	{
 		CkPrintf("FATAL: Could not read nnz values. Read %d. Terminating.\n", res);
+		CkPrintf("Expected %d values/col_idxs and %d row_starts.\n", nnz, N + 1);
 		CkExit();
 	}
 	res = fread(&col_idx[0], sizeof(int), nnz, f);
 	if (res!=nnz)
 	{
 		CkPrintf("FATAL: Could not read nnz col_idx's. Read %d. Terminating.\n", res);
+		CkPrintf("Expected %d values/col_idxs and %d row_starts.\n", nnz, N + 1);
 		CkExit();
 	}
 	res = fread(&row_start[0], sizeof(int), N + 1, f);
 	if (res!=N+1)
 	{
 		CkPrintf("FATAL: Could not read N+1 row_start's. Read %d. Terminating.\n", res);
+		CkPrintf("Expected %d values/col_idxs and %d row_starts.\n", nnz, N + 1);
 		CkExit();
 	}
 	fclose(f);
@@ -155,7 +158,7 @@ void csrImport(char* inFile, int &nnz, int &N, int &rowMaxNnz, double* &vals, in
 		if (row_start[i + 1] - row_start[i] > rowMaxNnz)
 			rowMaxNnz = row_start[i + 1] - row_start[i];
 
-	CkPrintf("Successfully read '%s' (%d rows, %d nonzeroes, %d max nonzeroes per row).\n", inFile, N, nnz, rowMaxNnz);
+	CkPrintf("Successfully read '%s'.\n%d rows, %d nonzeroes, %d max nonzeroes per row.\n", inFile, N, nnz, rowMaxNnz);
 }
 
 void sloppyMmImport(char* inFile, int &nnz, int &N, int &rowMaxNnz, double* &vals, int* &col_idx, int* &row_start)
@@ -219,18 +222,23 @@ void sloppyMmImport(char* inFile, int &nnz, int &N, int &rowMaxNnz, double* &val
 	f.close();
 }
 
-int getOptions(int argc, char** argv, bool &randomize, bool &keepMatrix, bool &binary, int &N, int &nnz, int &runs,
-	char *inputFile, int &sliceSize, int &maxSlices)
+int getOptions(int argc, char** argv, bool &randomize, bool &keepMatrix, bool &binary, bool &randomVector, 
+	int &N, int &nnz, int &runs, char *inputFile, char *vectorInput, int &sliceSize, int &maxSlices, int &mode)
 {
 	int c;
 
-	randomize = false;
+	/*
+	 * Defaults
+	 */
 	keepMatrix = false;
+	randomVector = true;
 	bool readFile = false;
+	bool useSingleSlice = false;
+	bool useMultiSlice = false;
 
 	//CkPrintf("Parsing options.\n");
 
-	while ((c = getopt(argc, argv, "ri:I:N:e:s:S:kn:")) != -1)
+	while ((c = getopt(argc, argv, "ri:I:N:e:s:S:kn:x:m:")) != -1)
 	{
 		switch (c)
 		{
@@ -261,6 +269,8 @@ int getOptions(int argc, char** argv, bool &randomize, bool &keepMatrix, bool &b
 		case 's':
 			//CkPrintf("Slicing size: %s\n", optarg);
 			sliceSize = atoi(optarg);
+			useSingleSlice = true;
+			mode = SINGLE_SLICE;
 			break;
 		case 'S':
 			//CkPrintf("Max slices: %s\n", optarg);
@@ -272,30 +282,49 @@ int getOptions(int argc, char** argv, bool &randomize, bool &keepMatrix, bool &b
 		case 'n':
 			runs = atoi(optarg);
 			break;
+		case 'x':
+			randomVector = false;
+			strncpy(vectorInput, optarg, 256);
+			break;
+		case 'm':
+			sliceSize = atoi(optarg);
+			useMultiSlice = true;
+			mode = MULTI_SLICE;
+			break;
 		case '?':
 		default:
-			CkPrintf("Usage: %s -i input(ascii) [opts]  OR\n"
-				"       %s -I input(binary) [opts] OR \n"
-				"       %s -r -N size -e entries [opts] \n"
-				"[opts] can be: -n number of runs\n"
-				"               -k keep generated matrix in file\n"
-				"               -s slice size\n"
-				"               -S max slices\n", argv[0], argv[0], argv[0]);
+			CkPrintf("Usage: %s -i input(ascii) [opts] [slice] OR\n"
+				"       %s -I input(binary) [opts] [slice] OR \n"
+				"       %s -r -N size -e entries [opts] [slice] \n\n"
+				"[opts] can be:   -n number of runs\n"
+				"                 -x input file to operand vector\n"
+				"                 -k keep generated matrix in file\n"
+				"[slice] can be one of\n"
+				"                 -s slice size (Single row slicing)\n"
+				"             OR  -m slice size (Multi row slicing)\n"
+				" and optionally  -S max slices (both variants)\n"
+				, argv[0], argv[0], argv[0]);
 			return EXIT_FAILURE;
 		}
 	}
 
+	/* check validity */
 	if (randomize && readFile
 		|| !(randomize || readFile)
-		|| (randomize && (N == 0 || nnz == 0)))
+		|| (randomize && (N == 0 || nnz == 0))
+		|| (useMultiSlice && useSingleSlice))
 	{
-		CkPrintf("Usage: %s -i input(ascii) [opts]  OR\n"
-			"       %s -I input(binary) [opts] OR \n"
-			"       %s -r -N size -e entries [opts] \n"
-			"[opts] can be: -n number of runs\n"
-			"               -k keep generated matrix in file\n"
-			"               -s slice size\n"
-			"               -S max slices\n", argv[0], argv[0], argv[0]);
+		CkPrintf("Usage: %s -i input(ascii) [opts] [slice] OR\n"
+			"       %s -I input(binary) [opts] [slice] OR \n"
+			"       %s -r -N size -e entries [opts] [slice] \n\n"
+			"[opts] can be:   -n number of runs\n"
+			"                 -x input file to operand vector\n"
+			"                 -k keep generated matrix in file\n"
+			"[slice] can be one of\n"
+			"                 -s slice size (Single row slicing)\n"
+			"             OR  -m slice size (Multi row slicing)\n"
+			" and optionally  -S max slices (both variants)\n"
+			, argv[0], argv[0], argv[0]);
 		return EXIT_FAILURE;
 	}
 
@@ -309,18 +338,20 @@ Main::Main(CkArgMsg* msg)
 	int i, j;
 
 	/*
-	 * Parameters and settings
+	 * Default parameters and settings
 	 */
 	int sliceSize = 128;
-	int maxSlices = 1;
+	int maxSlices = 250000;
+	bool randomize = false;
 	
 	_runs = 1;
+	_sliceMode = NO_SLICE;
 
 	double *vals;
 	double density;
 	int *col_idx, *row_start;
 	int rowMaxNnz;
-	bool randomize;
+	bool randomVector;
 	bool keepMatrix;
 	bool binInput=false;
 
@@ -329,8 +360,8 @@ Main::Main(CkArgMsg* msg)
 	 */
 	_N = 0;
 	_nnz = 0;
-	if (EXIT_FAILURE == getOptions(msg->argc, msg->argv, randomize, keepMatrix, binInput,
-		_N, _nnz, _runs, _inputFile, sliceSize, maxSlices))
+	if (EXIT_FAILURE == getOptions(msg->argc, msg->argv, randomize, keepMatrix, binInput, randomVector,
+		_N, _nnz, _runs, _inputFile, _vectorInput, sliceSize, maxSlices, _sliceMode))
 		CkExit();
 	delete msg;
 
@@ -343,7 +374,6 @@ Main::Main(CkArgMsg* msg)
 		csrImport(_inputFile, _nnz, _N, rowMaxNnz, vals, col_idx, row_start);
 	else
 		sloppyMmImport(_inputFile, _nnz, _N, rowMaxNnz, vals, col_idx, row_start);
-
 
 	density = 1.*_nnz / _N / _N;
 
@@ -365,10 +395,54 @@ Main::Main(CkArgMsg* msg)
 		CkPrintf("\n");
 	}
 
+	/* 
+	 * Init vector
+	 */
 	::x.resize(_N);
-	if(!randomize) srand(time(NULL));
-	for (i = 0; i < _N; i++)
-		x[i] = double(1.* rand()/RAND_MAX + 1.0e-10); // randomly init x
+	if (!randomize && randomVector)
+	{
+		srand(time(NULL));
+		for (i = 0; i < _N; i++)
+			x[i] = double(1.* rand() / RAND_MAX + 1.0e-10); // randomly init x
+	}
+	else if (!randomVector)
+	{
+		FILE* vecFile = NULL;
+		vecFile = fopen(_vectorInput, "rb");
+		if (vecFile==NULL)
+		{
+			CkPrintf("FATAL: Vector input file %s could not be read. Terminating.\n", _vectorInput);
+			CkExit();
+		}
+
+		int N_vec, res;
+		res = fread(&N_vec, sizeof(int), 1, vecFile);
+
+		if (res != 1)
+		{
+			CkPrintf("FATAL: could not read size of input vector.\n");
+			CkExit();
+		}
+		if (N_vec > _N) CkPrintf("Warning: input vector of size %d (expected %d).\n", N_vec, _N);
+		else if (N_vec < _N)
+		{
+			CkPrintf("FATAL: input vector too small! (%d instead of %d entries)\n", N_vec, _N);
+			CkExit();
+		}
+
+		for (i = 0; i < _N; i++)
+		{
+			res = fread(&x[i], sizeof(double), 1, vecFile);
+			if (res != 1)
+			{
+				CkPrintf("Warning: vector file possibly corrupt. Read %d instead of %d entries.\n", i, N_vec);
+				break;
+			}
+		}
+
+		fclose(vecFile);
+		CkPrintf("Using vector '%s'.\n", _vectorInput);
+	}
 
 	/*
 	 * Validation of data
@@ -379,102 +453,185 @@ Main::Main(CkArgMsg* msg)
 	 * Sequential test
 	 */
 	_y = new double[_N];								// allocate result array
+	for (i = 0; i < _N; i++) _y[i] = 0.;				// null result array
 
 	double tSeqStart = CkWallTimer();
 	for (i = 0; i < _N; i++)
 	{
-		_y[i] = 0.;
 		for (j = row_start[i]; j < row_start[i + 1]; j++)
 		{
 			_y[i] += vals[j] * x[col_idx[j]];
 		}
 	}
 	CkPrintf("Time for sequential calculation: %f\n", CkWallTimer() - tSeqStart);
+	for (i = 0; i < _N; i++) _y[i] = 0.;				// null result array
 
 
 	/*
-	 * General initializiation (don't touch)
+	 * General initializiation
 	 */
 	::mainProxy = thisProxy;
 	_curStage = STAGE_INIT;
-	_totalChares = 0;
+	_totalChares = 1;
 	_charesFinished = 0;
 	_runsFinished = 0;
 
-	int numSlices = ceil(1. * rowMaxNnz / sliceSize);
+	int numSlices = 1;
+	
 	if (maxSlices > 1) CkPrintf("Desired numSlices (MAX of %d): %d\n", maxSlices, numSlices);
 	else CkPrintf("Not using slicing.\n");
-	while (numSlices > maxSlices)
-	{
-		sliceSize *= 2;
-		numSlices = ceil(1. * rowMaxNnz / sliceSize);
-	}
 
-	if (numSlices > 1)
+	do
 	{
-		CkPrintf("Creating chares (%d rows with %d slices each of size %d).\n", _N, numSlices, sliceSize);
+		if (_sliceMode == SINGLE_SLICE)
+		{
+			numSlices = ceil(1. * rowMaxNnz / sliceSize);
+			_totalChares = _N*numSlices;
+		}
+		else if (_sliceMode == MULTI_SLICE)
+		{
+			numSlices = ceil(1. * _nnz / sliceSize);
+			_totalChares = numSlices;
+		}
+	} while (numSlices > maxSlices);
+
+	double tGenStart = CkWallTimer();
+	if (_sliceMode == SINGLE_SLICE && numSlices > 1)
+	{
+		CkPrintf("SINGLE ROW SLICING: Creating chares (%d rows with %d slices each of size %d).\n", _N, numSlices, sliceSize);
 		_sliceArray = CProxy_RowSlice::ckNew(_N, numSlices);	// init 2D array of row chares
-		_useSlice = true;
 	}
-	else
+	else if (_sliceMode == MULTI_SLICE)
+	{
+		CkPrintf("MULTI ROW SLICING: Creating chares (%d slices each with %d entries).\n", numSlices, sliceSize);
+		_multiRowSliceArray = CProxy_MultiRowSlice::ckNew(numSlices);
+	}
+	else if (_sliceMode == NO_SLICE)
 	{
 		CkPrintf("Creating chares (%d rows, unsliced).\n", _N);
 		_rowArray = CProxy_Row::ckNew(_N);
-		_useSlice = false;
 	}
-	for (i = 0; i < _N; i++) _y[i] = 0.;				// null result array
-
-	_totalChares = _N*numSlices;
-	CkPrintf("Ok. Initializing chares..\n");
+	else
+	{
+		CkPrintf("FATAL: Something weird happened with slice options.\n");
+		CkExit();
+	}
+	CkPrintf("Time for chare generation: %fs. Initializing chares..\n", CkWallTimer()-tGenStart);
 
 	/*
-	 * Distribute data to row chares.
+	 * Distribute data to chares.
 	 * Chares will report back to stageFinished() after initialization.
 	 */
-	for (i = 0; i < _N; i++)
+	if (_sliceMode == MULTI_SLICE)
 	{
-		//CkPrintf("i = %d, len(row_start)= %d\n", i, _N + 1);
-		int rowNnz = row_start[i + 1] - row_start[i]; // total number of nonzeroes in row
-		int firstColIdx = row_start[i];				  // index (for val/col_idx arrays) of first nonzero entry
+		/*
+		 * Fucking hell this piece of code needs some GOOD explanation.
+		 * Took two hours to figure the row_start-stuff out.
+		 */
+		int curRow = 0;
+		int curVal = 0;
+		int rowStartIdx = 0;
 
-		if (!_useSlice)
+		// try to distribute nonzero entries to the slices homogeneously,
+		// i.e. letting the smallest chare(s) having only one entry less than
+		// fully populated ones.
+		// extraCapacity is thus the number of slices with (sliceSize-1) entries.
+		int extraCapacity = sliceSize * numSlices - _nnz;
+		CkAssert(extraCapacity >= 0 && extraCapacity < numSlices);
+
+		for (i = 0; i < numSlices; i++) // fully populated chares
 		{
-			_rowArray[i].init(i, rowNnz, &vals[firstColIdx], &col_idx[firstColIdx]);
+			int firstRow = curRow;
+			int firstVal = curVal;
+
+			// determine number of entries for this chare
+			int thisNnz;
+			if (i >= numSlices - extraCapacity)
+				thisNnz = sliceSize - 1;
+			else thisNnz = sliceSize;
+
+
+			// determine number of row breaks for this chare
+			// (row break right before at the first element doesn't count toward this
+			//  as it doesn't increase the chare's number of rows. It increases
+			//  first and current row, however.)
+			int nRows = 1;
+			if (row_start[curRow + 1] == firstVal)
+			{
+				++firstRow;
+				++curRow;
+			}
+
+			for (curVal = firstVal + 1; curVal < firstVal + thisNnz; curVal++)
+			{
+				if (row_start[curRow + 1] == curVal) // row break
+				{
+					++curRow;
+					++nRows;
+				}
+			}
+
+			CkPrintf("INIT'N CHARE %d WITH nRows=%d, nnz=%d, firstRow=%d (firstVal=%d).\nvals=", i, nRows, thisNnz, firstRow, firstVal);
+			for (j = 0; j < thisNnz; j++) CkPrintf(" %f", vals[firstVal+j]);
+			CkPrintf("\ncol_idx=");
+			for (j = 0; j < thisNnz; j++) CkPrintf(" %d", col_idx[firstVal + j]);
+			CkPrintf("\nrow_start=");
+			for (j = 0; j < nRows - 1; j++) CkPrintf(" %d", row_start[firstRow + 1]);
+			CkPrintf("\n");
+
+			_multiRowSliceArray[i].init(nRows, thisNnz, firstRow, firstVal, &vals[firstVal], &col_idx[firstVal],
+				&row_start[firstRow + 1]);
+
+			curVal = firstVal + thisNnz;
 		}
-		else
+	}
+	else
+	{
+		for (i = 0; i < _N; i++)
 		{
-			int nnzLeft = rowNnz;
-			int startCol = firstColIdx;
-			j = 0;
+			//CkPrintf("i = %d, len(row_start)= %d\n", i, _N + 1);
+			int rowNnz = row_start[i + 1] - row_start[i]; // total number of nonzeroes in row
+			int firstColIdx = row_start[i];				  // index (for val/col_idx arrays) of first nonzero entry
 
-			// init chunks of size sliceSize
-			while (nnzLeft >= sliceSize)
+			if (_sliceMode == NO_SLICE)
 			{
-				//CkPrintf("CALL 'SLICE' ROWSLICE_INIT WITH num=%d, nnz=%d.\n", i, sliceSize);
-				_sliceArray(i, j).init(i, sliceSize, &vals[startCol], &col_idx[startCol]);
+				_rowArray[i].init(i, rowNnz, &vals[firstColIdx], &col_idx[firstColIdx]);
+			}
+			else if (_sliceMode == SINGLE_SLICE)
+			{
+				int nnzLeft = rowNnz;
+				int startCol = firstColIdx;
+				j = 0;
 
-				nnzLeft -= sliceSize;
-				++j;
-				startCol = j*sliceSize + firstColIdx;
-				//CkPrintf("Initd row %d slice %d (%d nonzeroes left).\n", i, j, nnzLeft);
-			}
-			// init the rest
-			if (nnzLeft > 0)
-			{
-				//CkPrintf("CALL 'REST' ROWSLICE_INIT WITH num=%d, nnz=%d.\n", i, nnzLeft);
-				_sliceArray(i, j).init(i, nnzLeft, &vals[startCol], &col_idx[startCol]);
-				//CkPrintf("Initd row %d slice %d (%d nonzeroes left).\n", i, j, nnzLeft);
-				++j; // important, to not overwrite this chare down below!
-			}
-			// init blank unused chares
-			for (j; j < numSlices; j++)
-			{
-				_sliceArray(i, j).initBlank(i);
-				//CkPrintf("Initd row %d slice %d BLANK.\n", i, j, nnzLeft);
+				// init chunks of size sliceSize
+				while (nnzLeft >= sliceSize)
+				{
+					//CkPrintf("CALL 'SLICE' ROWSLICE_INIT WITH num=%d, nnz=%d.\n", i, sliceSize);
+					_sliceArray(i, j).init(i, sliceSize, &vals[startCol], &col_idx[startCol]);
+
+					nnzLeft -= sliceSize;
+					++j;
+					startCol = j*sliceSize + firstColIdx;
+					//CkPrintf("Initd row %d slice %d (%d nonzeroes left).\n", i, j, nnzLeft);
+				}
+				// init the rest
+				if (nnzLeft > 0)
+				{
+					//CkPrintf("CALL 'REST' ROWSLICE_INIT WITH num=%d, nnz=%d.\n", i, nnzLeft);
+					_sliceArray(i, j).init(i, nnzLeft, &vals[startCol], &col_idx[startCol]);
+					//CkPrintf("Initd row %d slice %d (%d nonzeroes left).\n", i, j, nnzLeft);
+					++j; // important, to not overwrite this chare down below!
+				}
+				// init blank unused chares
+				for (j; j < numSlices; j++)
+				{
+					_sliceArray(i, j).initBlank(i);
+					//CkPrintf("Initd row %d slice %d BLANK.\n", i, j, nnzLeft);
+				}
 			}
 		}
 	}
-
+	
 	// cleanup
 	delete[] vals;
 	delete[] col_idx;
@@ -496,10 +653,12 @@ void Main::finalize()
 {
 	int i;
 	double tTotal = CkWallTimer() - _tStart;
+	int flops_per_entry = 2;
 	if (_runs > 1)
 	{
 		CkPrintf("Finished %d runs after %f seconds (%f seconds per run)\n", _runs, tTotal, tTotal / _runs);
-		CkPrintf("%.2f MFlops (%.3E operations in %f seconds)\n", 1.*_runs*_nnz / tTotal / 1.e6, 1.*_runs*_nnz, tTotal);
+		CkPrintf("%.2f MFlops (%.3E operations in %f seconds, %d Flops per entry)\n",
+			flops_per_entry*_runs*_nnz / tTotal / 1.e6, flops_per_entry*_runs*_nnz, tTotal, flops_per_entry);
 	}
 	else CkPrintf("Finished after %f seconds.\n", tTotal);
 	if (_N <= 20)
@@ -530,8 +689,9 @@ void Main::nextStage()
 	case(STAGE_CALCULATE):
 		CkPrintf("Initializiation finished. Starting calculation (%d runs)...\n", _runs);
 		_tStart = CkWallTimer();
-		if (_useSlice) _sliceArray.calc();
-		else _rowArray.calc();
+		if (_sliceMode == SINGLE_SLICE) _sliceArray.calc();
+		else if (_sliceMode == NO_SLICE) _rowArray.calc();
+		else if (_sliceMode == MULTI_SLICE) _multiRowSliceArray.calc();
 		break;
 	case(STAGE_DONE) :
 		++_runsFinished;
@@ -542,8 +702,9 @@ void Main::nextStage()
 			_charesFinished = 0;
 			for (i = 0; i < _N; i++)
 				_y[i] = 0.;
-			if (_useSlice) _sliceArray.calc();
-			else _rowArray.calc();
+			if (_sliceMode == SINGLE_SLICE) _sliceArray.calc();
+			else if (_sliceMode == NO_SLICE) _rowArray.calc();
+			else if (_sliceMode == MULTI_SLICE) _multiRowSliceArray.calc();
 		}
 		else this->nextStage();
 		break;
@@ -557,24 +718,27 @@ void Main::nextStage()
 
 void Main::setResult(int row, double res)
 {
-	++_charesFinished;
 	_y[row] += res;
-	//CkPrintf("Rcvd result contribution %f from row %d. (%d/%d)\n", res, row, _charesFinished, _totalChares);
-#ifdef VERBOSE
-	if (_charesFinished == _totalChares || _charesFinished % int(_totalChares/10) == 0)
-		CkPrintf("%d/%d finished (%.1f%%)\n", _charesFinished, _totalChares, 100.*_charesFinished / _totalChares);
-#endif
-	if (_charesFinished == _totalChares)
-		this->nextStage();
+	this->stageFinished();
+}
+
+void Main::setResultMultiRow(int nRows, int firstRow, double *res)
+{
+	for (int i = 0; i < nRows; i++)
+	{
+		CkPrintf("Partial result for row %d: %f\n", i + firstRow, res[i]);
+		_y[i + firstRow] += res[i];
+	}
+	this->stageFinished();
 }
 
 void Main::stageFinished()
 {
 	++_charesFinished;
-#ifdef VERBOSE
-	if (_charesFinished == _totalChares || _charesFinished % int(_totalChares / 10) == 0)
+//#ifdef VERBOSE
+	//if (_charesFinished == _totalChares || _charesFinished % int(_totalChares / 10) == 0)
 		CkPrintf("%d/%d finished (%.1f%%)\n", _charesFinished, _totalChares, 100.*_charesFinished / _totalChares);
-#endif
+//#endif
 	if (_charesFinished == _totalChares)
 		this->nextStage();
 }

@@ -1,6 +1,8 @@
 #ifndef __ROW_SLICE_H_
 #define __ROW_SLICE_H_
 
+#include "row_slice.decl.h"
+
 class RowSlice : public CBase_RowSlice
 {
 public:

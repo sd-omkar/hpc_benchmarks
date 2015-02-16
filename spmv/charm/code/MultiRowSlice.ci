@@ -1,0 +1,9 @@
+module multi_row_slice
+{
+	array [1D] MultiRowSlice
+	{
+		entry MultiRowSlice();
+		entry void calc();
+		entry void init(int nRows, int nnz, int firstRow, int firstIdx, double vals[nnz], int col_idx[nnz], int row_start[nRows-1]);
+	};
+};

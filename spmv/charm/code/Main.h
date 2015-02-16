@@ -9,6 +9,13 @@ enum Stages
 	STAGE_QUIT
 };
 
+enum Mode
+{
+	NO_SLICE,
+	SINGLE_SLICE,
+	MULTI_SLICE
+};
+
 class Main : public CBase_Main
 {
 public:
@@ -19,11 +26,13 @@ public:
 	void finalize();
 	void stageFinished();
 	void setResult(int row, double res);
+	void setResultMultiRow(int nRows, int firstRow, double *res);
 
 
 private:
 	void nextStage();
 
+	CProxy_MultiRowSlice _multiRowSliceArray;
 	CProxy_RowSlice _sliceArray;
 	CProxy_Row _rowArray;
 
@@ -31,12 +40,12 @@ private:
 	int _charesFinished;
 	int _curStage;
 	int _runs, _runsFinished;
+	int _sliceMode;
 
 	double _tStart;
 	double *_y;
 
-	bool _useSlice;
-	char _inputFile[256];
+	char _inputFile[256], _vectorInput[256];
 };
 
 #endif //__MAIN_H_
