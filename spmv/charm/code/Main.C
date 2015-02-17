@@ -515,7 +515,7 @@ Main::Main(CkArgMsg* msg)
 	}
 	else if (_sliceMode == MULTI_SLICE)
 	{
-		CkPrintf("MULTI ROW SLICING: Creating chares (%d slices each with %d entries).\n", numSlices, sliceSize);
+		CkPrintf("MULTI ROW SLICING: Creating chares (%d slices each with up to %d entries).\n", numSlices, sliceSize);
 		_multiRowSliceArray = CProxy_MultiRowSlice::ckNew(numSlices);
 	}
 	else if (_sliceMode == NO_SLICE)
@@ -561,6 +561,8 @@ Main::Main(CkArgMsg* msg)
 			if (i >= numSlices - extraCapacity)
 				thisNnz = sliceSize - 1;
 			else thisNnz = sliceSize;
+
+			if (thisNnz>_nnz) thisNnz = _nnz;
 
 
 			// determine number of row breaks for this chare

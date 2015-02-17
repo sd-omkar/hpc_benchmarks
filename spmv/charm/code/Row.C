@@ -39,7 +39,7 @@ void Row::init(int num, int nnz, double *vals, int *col_idx)
 		_vals[j] = vals[j];
 		_col_idx[j] = col_idx[j];
 	}
-
+	
 	//if (num % 500 == 0)
 	//{
 	//	CkPrintf("row %d, nnz=%d, vals=", _rowNum, _nnz);

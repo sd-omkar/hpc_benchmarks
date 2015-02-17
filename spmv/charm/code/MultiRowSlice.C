@@ -40,10 +40,15 @@ void MultiRowSlice::init(int nRows, int nnz, int firstRow, int firstIdx, double 
 	_nnz = nnz;
 	_firstRow = firstRow;
 
+	/*CkPrintf("Chare %d allocating local fields. nnz=%d, nRows=%d\n", thisIndex, nnz, nRows);
+	CkExit();*/
+
 	_vals = new double[nnz];
 	_col_idx = new int[nnz];
 	_row_start = new int[nRows + 1];
 	_myRes = new double[nRows];
+
+	//CkPrintf("Ok.\n");
 
 	for (j = 0; j < nnz; j++)
 	{
