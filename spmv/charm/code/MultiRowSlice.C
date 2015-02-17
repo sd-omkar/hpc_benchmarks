@@ -29,11 +29,11 @@ void MultiRowSlice::init(int nRows, int nnz, int firstRow, int firstIdx, double 
 {
 	int j;
 
-	CkPrintf("CHARE %d INIT CALLED WITH nRows=%d, nnz=%d, firstRow=%d, firstVal=%d\nvals=",
-		thisIndex, nRows, nnz, firstRow, firstIdx);
-	for (j = 0; j < nnz; j++) CkPrintf(" %f", vals[j]);
-	CkPrintf("\ncol_idx=");
-	for (j = 0; j < nnz; j++) CkPrintf(" %d", col_idx[j]);
+	//CkPrintf("CHARE %d INIT CALLED WITH nRows=%d, nnz=%d, firstRow=%d, firstVal=%d\nvals=",
+	//	thisIndex, nRows, nnz, firstRow, firstIdx);
+	//for (j = 0; j < nnz; j++) CkPrintf(" %f", vals[j]);
+	//CkPrintf("\ncol_idx=");
+	//for (j = 0; j < nnz; j++) CkPrintf(" %d", col_idx[j]);
 
 
 	_nRows = nRows;
@@ -63,9 +63,9 @@ void MultiRowSlice::init(int nRows, int nnz, int firstRow, int firstIdx, double 
 	}
 
 
-	CkPrintf("\nlocal_row_start="); 
-	for (j = 0; j < nRows + 1; j++) CkPrintf(" %d", _row_start[j]);
-	CkPrintf("\n");
+	//CkPrintf("\nlocal_row_start="); 
+	//for (j = 0; j < nRows + 1; j++) CkPrintf(" %d", _row_start[j]);
+	//CkPrintf("\n");
 
 	::mainProxy.stageFinished();
 }
@@ -87,7 +87,7 @@ void MultiRowSlice::calc()
 		for (j = _row_start[i]; j < _row_start[i + 1]; j++)
 		{
 			_myRes[i] += _vals[j] * x[_col_idx[j]];
-			CkPrintf("%f (val %f, x index %d, x[%d]=%f)\n", _myRes[i], _vals[j], _col_idx[j], _col_idx[j], x[_col_idx[j]]);
+			//CkPrintf("%f (val %f, x index %d, x[%d]=%f)\n", _myRes[i], _vals[j], _col_idx[j], _col_idx[j], x[_col_idx[j]]);
 		}
 	}
 

@@ -40,6 +40,11 @@ public:
 		_n = n;
 	}
 
+	inline int size()
+	{
+		return _n;
+	}
+
 	double &operator[](int i)
 	{
 		return _data[i];
