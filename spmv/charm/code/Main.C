@@ -131,21 +131,21 @@ void csrImport(char* inFile, int &nnz, int &N, int &rowMaxNnz, double* &vals, in
 	res = fread(&vals[0], sizeof(double), nnz, f);
 	if (res!=nnz)
 	{
-		CkPrintf("FATAL: Could not read nnz values. Read %d. Terminating.\n", res);
+		CkPrintf("FATAL: Could not read %d values. Read %d. Terminating.\n", nnz, res);
 		CkPrintf("Expected %d values/col_idxs and %d row_starts.\n", nnz, N + 1);
 		CkExit();
 	}
 	res = fread(&col_idx[0], sizeof(int), nnz, f);
 	if (res!=nnz)
 	{
-		CkPrintf("FATAL: Could not read nnz col_idx's. Read %d. Terminating.\n", res);
+		CkPrintf("FATAL: Could not read %d col_idx's. Read %d. Terminating.\n", nnz, res);
 		CkPrintf("Expected %d values/col_idxs and %d row_starts.\n", nnz, N + 1);
 		CkExit();
 	}
 	res = fread(&row_start[0], sizeof(int), N + 1, f);
 	if (res!=N+1)
 	{
-		CkPrintf("FATAL: Could not read N+1 row_start's. Read %d. Terminating.\n", res);
+		CkPrintf("FATAL: Could not read %d row_start's. Read %d. Terminating.\n", N+1, res);
 		CkPrintf("Expected %d values/col_idxs and %d row_starts.\n", nnz, N + 1);
 		CkExit();
 	}
@@ -795,8 +795,8 @@ void Main::nextStage()
 		break;
 	case(STAGE_QUIT):
 	default:
-		if (_sliceMode & VALIDATE ) this->compareResults(true);
 		CkPrintf("Calculation finished.\n");
+		if (_sliceMode & VALIDATE ) this->compareResults(true);
 		this->finalize();
 		break;
 	}
@@ -823,7 +823,7 @@ void Main::compareResults(bool forceOutput)
 	int errors;
 	double delta, res;
 	bool valid = true;
-	double EPS = 1.e-14;
+	double EPS = 1.e-10;
 
 	errors = 0; delta = 0.;
 	for (i = 0; i < _N; i++)

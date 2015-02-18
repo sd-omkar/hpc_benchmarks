@@ -41,6 +41,8 @@ def convert_vec(input, output):
 def convert(input, output):
 	max_row = 0
 	nnz = 0
+	dimensions_given = False
+	firstLine = True
 	
 	with open(input, 'r') as f:
 		print "Parsing %s." % input
@@ -60,6 +62,17 @@ def convert(input, output):
 			except ValueError:
 				print "ERROR in %s: Could not read values from line: '%s'. Stopping." % (input,line.strip())
 				return 1
+				
+			if(firstLine and row!=1 and col!=1):
+			# probably this is the format where in the first non-comment line,
+			# the total number of rows and columns are listed.
+				max_row = row-1
+				nnz = int(value)
+				dimensions_given = True
+				print "Using MM format."
+				break
+				
+			firstLine = False
 			
 			# from 1-based to 0-based
 			row -= 1; col -= 1;
@@ -73,10 +86,14 @@ def convert(input, output):
 	cols = numpy.empty(nnz, int)
 	values = numpy.empty(nnz, float)
 
+	firstLine = True
 	with open(input, 'r') as f:
 		count = 0
 		for line in f:
 			if(line.startswith("%")): continue
+			if(firstLine and dimensions_given):
+				firstLine = False
+				continue
 			
 			read_args = line.strip().split()
 	
