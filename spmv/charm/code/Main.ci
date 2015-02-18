@@ -10,8 +10,9 @@ mainmodule main
 	mainchare Main
 	{
 		entry Main(CkArgMsg* msg);
-		entry void setResult(int row, double res);
-		entry void setResultMultiRow(int nRows, int firstRow, double res[nRows]);
+		entry void setResultNoSlice(int row, double res);
+		entry void setResultRowSlice(int row, double res);
+		entry void setResultMultiRowSlice(int nRows, int firstRow, double res[nRows]);
 		entry void stageFinished();
 	};
 };

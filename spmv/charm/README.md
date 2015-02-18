@@ -1,13 +1,11 @@
-# Charm++ SpMV implementation #
+# Charm++ SpMV #
 
 ----------
-D.Heller Feb' 2015
-
-dominik.heller1@gmail.com
+D.Heller - February 2015 - dominik.heller1@gmail.com
 
 ## Overview ##
 
-This code comprises an implementation of Sparse Matrix-Vector multiply using CSR matrix format.
+This code comprises an implementation of Sparse Matrix-Vector multiply using the CSR matrix format.
 
 Matrices can be read in COO-/matrix market ASCII format (`-i input.mtx`), in a binary pure CSR format (`-I input.csr`) or generated randomly with a given size and number of nonzeros (`-r -N rows -e entries`). Use `-k` if you want to keep the generated matrix, which will be saved in CSR format.
 
@@ -27,7 +25,7 @@ Each chare holds a fixed amount of *sliceSize* consecutive nonzero-entries, rega
 
 ## Command line options ##
 
-Usage:
+Usage of the `spmv` program:
 
 - Use binary CSR input: `spmv -I input_bin.csr`      [`opts`] [`slice`]
 - Use ASCII COO input: `spmv -i input_ascii.mtx`    [`opts`] [`slice`]
@@ -41,6 +39,10 @@ Usage:
   * Row slicing: `-s size`
   * Multi row slicing: `-m size`
   * To specify a maximum total number of chares: `-S maxChares`
+
+**charmrun:** To run the program on more than one CPU, you must use the `charmrun` environment (roughly comparable to `mpirun`).
+For example, to use on all CPUs on a 16 core SMP node, run `./charmrun +p16 ./spmv ARGS` where *ARGS* are any of the aforementioned arguments for `spmv`.
+Check the Charm++ documentation for further functionality.
 
 
 **Note:** Using COO input is currently not correctly implemented as actually the transposed matrix is read and used for calculation.

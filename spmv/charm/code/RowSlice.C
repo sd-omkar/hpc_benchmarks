@@ -27,6 +27,7 @@ RowSlice::~RowSlice()
 
 void RowSlice::init(int num, int nnz, double *vals, int *col_idx)
 {
+	//CkPrintf("ROW_SLICE chare %d.init() called.\n", thisIndex);
 	int j;
 
 	//CkPrintf("ROWSLICE_INIT CALLED WITH num=%d, nnz=%d.\n", num, nnz);
@@ -61,6 +62,7 @@ void RowSlice::initBlank(int num)
 
 void RowSlice::calc()
 {
+	//CkPrintf("ROW_SLICE chare %d.calc() called.\n", thisIndex);
 	int j;
 	_myRes = 0.;
 	//CkPrintf("row %d, nnz=%d, vals=", _rowNum, _nnz);
@@ -74,7 +76,7 @@ void RowSlice::calc()
 	}
 
 	//CkPrintf("Row %d reporting result: %f\n", _rowNum, _myRes);
-	::mainProxy.setResult(_rowNum, _myRes);
+	::mainProxy.setResultRowSlice(_rowNum, _myRes);
 }
 
 #include "row_slice.def.h"

@@ -27,6 +27,7 @@ MultiRowSlice::~MultiRowSlice()
 
 void MultiRowSlice::init(int nRows, int nnz, int firstRow, int firstIdx, double *vals, int *col_idx, int *row_start)
 {
+	//CkPrintf("MULT_SLICE chare %d.init() called.\n", thisIndex);
 	int j;
 
 	//CkPrintf("CHARE %d INIT CALLED WITH nRows=%d, nnz=%d, firstRow=%d, firstVal=%d\nvals=",
@@ -77,6 +78,7 @@ void MultiRowSlice::init(int nRows, int nnz, int firstRow, int firstIdx, double 
 
 void MultiRowSlice::calc()
 {
+	//CkPrintf("MULT_SLICE chare %d.calc() called.\n", thisIndex);
 	/*
 	 * Basically this is a CSR SpMV over a sparse submatrix here.
 	 */
@@ -89,6 +91,7 @@ void MultiRowSlice::calc()
 
 	for (i = 0; i < _nRows; i++)
 	{
+		_myRes[i] = 0.;
 		for (j = _row_start[i]; j < _row_start[i + 1]; j++)
 		{
 			_myRes[i] += _vals[j] * x[_col_idx[j]];
@@ -97,7 +100,7 @@ void MultiRowSlice::calc()
 	}
 
 	//CkPrintf("Row %d reporting result: %f\n", _rowNum, _myRes);
-	::mainProxy.setResultMultiRow(_nRows, _firstRow, _myRes);
+	::mainProxy.setResultMultiRowSlice(_nRows, _firstRow, _myRes);
 }
 
 #include "multi_row_slice.def.h"

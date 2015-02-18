@@ -11,9 +11,11 @@ enum Stages
 
 enum Mode
 {
-	NO_SLICE,
-	SINGLE_SLICE,
-	MULTI_SLICE
+	UNKNOWN =			0,
+	NO_SLICE =			1 << 0,
+	ROW_SLICE =			1 << 1,
+	MULTI_SLICE =		1 << 2,
+	VALIDATE =			1 << 8
 };
 
 class Main : public CBase_Main
@@ -25,12 +27,15 @@ public:
 
 	void finalize();
 	void stageFinished();
-	void setResult(int row, double res);
-	void setResultMultiRow(int nRows, int firstRow, double *res);
+	void setResultNoSlice(int row, double res);
+	void setResultRowSlice(int row, double res);
+	void setResultMultiRowSlice(int nRows, int firstRow, double *res);
 
 
 private:
+	void compareResults(bool forceOutput=false);
 	void nextStage();
+	void nullResultArrays();
 
 	CProxy_MultiRowSlice _multiRowSliceArray;
 	CProxy_RowSlice _sliceArray;
@@ -43,7 +48,8 @@ private:
 	int _sliceMode;
 
 	double _tStart;
-	double *_y;
+	double *_yNoSlice, *_yRowSlice, *_yMultiRowSlice;
+	double *_ySeq;
 
 	char _inputFile[256], _vectorInput[256];
 };

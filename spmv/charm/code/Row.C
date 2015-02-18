@@ -27,6 +27,7 @@ Row::~Row()
 
 void Row::init(int num, int nnz, double *vals, int *col_idx)
 {
+	//CkPrintf("NO_SLICE chare %d.init() called.\n", thisIndex);
 	int j;
 	
 	_rowNum = num;
@@ -56,7 +57,7 @@ void Row::init(int num, int nnz, double *vals, int *col_idx)
 
 void Row::calc()
 {
-	//CkPrintf("Haha doing nothing.\n");
+	//CkPrintf("NO_SLICE chare %d.calc() called.\n", thisIndex);
 	int j;
 	_myRes = 0.;
 	
@@ -71,7 +72,7 @@ void Row::calc()
 	}
 
 	//CkPrintf("Myres: %f\n", _myRes);
-	::mainProxy.setResult(_rowNum, _myRes);
+	::mainProxy.setResultNoSlice(_rowNum, _myRes);
 }
 
 #include "row.def.h"
