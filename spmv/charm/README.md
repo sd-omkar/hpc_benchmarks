@@ -16,11 +16,17 @@ In Charm++ the parallel program flow is realized with chares (C++ objects) runni
 The present implementation allows three different strategies for this:
 
 - **No slicing** (default):
-One chare represents exactly one row in the matrix.
+One chare represents exactly one row in the matrix, regardless of how many entries are in that row.
 - **Row slicing** (`-s sliceSize`):
 Each row is distributed over several chares with a given maximum number of nonzero-entries *sliceSize*. In theory, for sliceSize=1, you would have one chare for each and every entry in the matrix.
 - **Multi row slicing** (`-m sliceSize`):
 Each chare holds a fixed amount of *sliceSize* consecutive nonzero-entries, regardless of over how many rows these values are scattered in the matrix.
+
+
+## Compile ##
+
+Just edit the Charm++ path in the `Makefile`.
+Afterwards, `make` should do the trick.
 
 
 ## Command line options ##
