@@ -34,11 +34,13 @@ Usage of the `spmv` program:
   * Do multiple runs and display FLOPS: `-n runs`
   * Specify operand vector instead of random one (binary only): `-x vector.vec`
   * Save randomly generated matrix in CSR-format (`-r` only): `-k`
+  * Validate results by comparing all slice methods to the sequential result: `-v`
+    (High memory requirement!)
 - [slice]
   To specify that each chare shall hold at most *size* values, use
   * Row slicing: `-s size`
   * Multi row slicing: `-m size`
-  * To specify a maximum total number of chares: `-S maxChares`
+  * **CURRENTLY IGNORED** --- To specify a maximum total number of chares: `-S maxChares`
 
 **charmrun:** To run the program on more than one CPU, you must use the `charmrun` environment (roughly comparable to `mpirun`).
 For example, to use on all CPUs on a 16 core SMP node, run `./charmrun +p16 ./spmv ARGS` where *ARGS* are any of the aforementioned arguments for `spmv`.
@@ -48,6 +50,16 @@ Check the Charm++ documentation for further functionality.
 **Note:** Using COO input is currently not correctly implemented as actually the transposed matrix is read and used for calculation.
 For unsymmetric matrices, COO input will yield wrong results.
 Please use CSR input whenever possibly, you can use `convert.py` for easy conversion.
+
+## Examples ##
+
+- Generate a randomized 1,000x1,000 matrix with 100,000 nonzero entries and store it in CSR format: `spmv -r -N 1000 -e 100000 -k`
+- Validate results: `spmv -I rnd1000_100000.csr -v`
+- Do 10,000 test runs: `spmv -I rnd1000_100000.csr -n 10000`
+- Do test runs using multi row splicing: `spmv -I rnd1000_100000 -n 10000 -m 12500` (compare MFlops!)
+- Multiply matrix `small4x4.mtx` with vector `1_4.vec` (results will be displayed for very small systems): `spmv -i small4x4.mtx -x 1_4.vec`
+- Convert an ASCII COO matrix to binary CSR representation: `python convert.py my_large_matrix.mtx my_csr_matrix.csr`
+- Convert any number of COO matrices: `python convert.py input/*.mtx input_bin/`
 
 
 ## Benchmarking ##
