@@ -61,7 +61,7 @@ Please use CSR input whenever possibly, you can use `convert.py` for easy conver
 
 - Generate a randomized 1,000x1,000 matrix with 100,000 nonzero entries and store it in CSR format: `spmv -r -N 1000 -e 100000 -k`
 - Validate results: `spmv -I rnd1000_100000.csr -v`
-- Do 10,000 test runs: `spmv -I rnd1000_100000.csr -n 10000`
+- Do 10,000 test runs on 16 cores: `charmrun +p16 ./spmv -I rnd1000_100000.csr -n 10000`
 - Do test runs using multi row splicing: `spmv -I rnd1000_100000 -n 10000 -m 12500` (compare MFlops!)
 - Multiply matrix `small4x4.mtx` with vector `1_4.vec` (results will be displayed for very small systems): `spmv -i small4x4.mtx -x 1_4.vec`
 - Convert an ASCII COO matrix to binary CSR representation: `python convert.py my_large_matrix.mtx my_csr_matrix.csr`
@@ -80,6 +80,7 @@ Please note that FLOPS are only displayed for *-n runs* &ge; 2.
 * Currently, the result vector is not saved in any way. Vectors for small systems (*N* < 20) are written to stdout.
 * Be wary about memory requirements, especially with `-s` single row slicing. For very large matrices with low density, try to use `-m` multi row slicing, which is the best performing method anyway.
 * Inappropriate choice of slice sizes may lead to bad_allocs and other problems, you might need to experiment. For a start, try `-m 2048` and increase to up to 12500. Higher values usually increase performance.
+* Randomized matrices are really random. They aren't structured in any way and usually have one very densely filled row at the end. Using real-world matrices for serious benchmarking is advised.
 
 
 ## File formats ##
