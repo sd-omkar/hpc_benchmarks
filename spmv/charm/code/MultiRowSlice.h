@@ -32,7 +32,6 @@ public:
 	void init(int nRows, int nnz, int firstRow, int firstIdx, double *vals, int *col_idx, int *row_start);
 
 private:
-	//int *_rowNums; /* row numbers in global matrix; one per nnz entry */
 	int _nnz;	 /* number of nonzeros in this slice */
 	int _nRows;  /* number of rows this slice spans over */
 	int _firstRow; /* global row index of first nonzero entry, "offset" for result vector */

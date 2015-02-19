@@ -27,7 +27,6 @@ Row::~Row()
 
 void Row::init(int num, int nnz, double *vals, int *col_idx)
 {
-	//CkPrintf("NO_SLICE chare %d.init() called.\n", thisIndex);
 	int j;
 	
 	_rowNum = num;
@@ -41,37 +40,19 @@ void Row::init(int num, int nnz, double *vals, int *col_idx)
 		_col_idx[j] = col_idx[j];
 	}
 	
-	//if (num % 500 == 0)
-	//{
-	//	CkPrintf("row %d, nnz=%d, vals=", _rowNum, _nnz);
-	//	for (j = 0; j < _nnz; j++)
-	//		CkPrintf(" %f", _vals[j]);
-	//	CkPrintf("\n");
-	//}
-	//CkPrintf("x=");
-	//for (j = 0; j < x.size(); j++)
-	//	CkPrintf(" %f", x[j]);
-	//CkPrintf("\n");
 	::mainProxy.stageFinished();
 }
 
 void Row::calc()
 {
-	//CkPrintf("NO_SLICE chare %d.calc() called.\n", thisIndex);
 	int j;
 	_myRes = 0.;
-	
-	//CkPrintf("row %d, nnz=%d, vals=", _rowNum, _nnz);
-	//for (j = 0; j < _nnz; j++)
-	//	CkPrintf(" %d", _vals[j]);
-	//CkPrintf("\n");
 
 	for (j = 0; j < _nnz; j++)
 	{
 		_myRes += _vals[j] * x[_col_idx[j]];
 	}
 
-	//CkPrintf("Myres: %f\n", _myRes);
 	::mainProxy.setResultNoSlice(_rowNum, _myRes);
 }
 

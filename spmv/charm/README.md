@@ -75,6 +75,13 @@ Feel free to use and adjust to your needs.
 Please note that FLOPS are only displayed for *-n runs* &ge; 2.
 
 
+## Known issues ##
+
+* Currently, the result vector is not saved in any way. Vectors for small systems (*N* < 20) are written to stdout.
+* Be wary about memory requirements, especially with `-s` single row slicing. For very large matrices with low density, try to use `-m` multi row slicing, which is the best performing method anyway.
+* Inappropriate choice of slice sizes may lead to bad_allocs and other problems, you might need to experiment. For a start, try `-m 2048` and increase to up to 12500. Higher values usually increase performance.
+
+
 ## File formats ##
 
 This program uses very simple parsers and expects data to be provided precisely in the correct format.
@@ -95,7 +102,7 @@ No comments are allowed and it is assumed that the matrix is quadratic and conta
 Please avoid using COO input when possible, as i) in fact the transposed matrix will be read and processed (see above), ii) ASCII files are large in size and slow to read. Use `convert.py` for easy and correct conversion to CSR format.
 
 ### CSR-/binary input (`-I`): ###
-This binary format reflects the internal memory representation of a CSR matrix and thus can be read quickly and comprises small file sizes.
+This binary format reflects the internal memory representation of a CSR matrix and thus can be read quickly and features small file sizes.
 
 The parser opens input files in binary mode and reads the following values in this order:
 
@@ -115,7 +122,7 @@ Operand vectors can currently only be read in a dense binary format.
 Expected values and their order are as follows:
 
 - `N` size of vector (*int*)
-- `x[i]` (i = 1, ..., `N`), vector entries
+- `x[i]` (i = 1, ..., `N`), vector entries (*double*)
 
 You can convert ASCII vectors, provided they are just doubles separated by whitespaces, using `convert.py -v input output`.
 
@@ -129,4 +136,4 @@ This script allows conversion from COO matrices to the more efficient CSR format
 
 `input` may contain wildcards and `output` may be a folder.
 
-Unlike when using the COO format directly as an input file for `spmv`, matrices converted by `convert.py` *will not* be transposed, they produce correct results.
+Unlike when using the COO format directly as an input file for `spmv -i`, matrices converted by `convert.py` will *not* be transposed, they produce correct results.
