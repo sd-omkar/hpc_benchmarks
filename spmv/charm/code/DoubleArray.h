@@ -8,20 +8,20 @@ private:
 	double *_data;
 
 public:
-	DoubleArray()
+	DoubleArray() : _data(NULL)
 	{
 
 	}
 
-	DoubleArray(int n)
+	DoubleArray(int n) : _data(NULL)
 	{
-		_data = NULL;
 		resize(n);
 	}
 
 	~DoubleArray()
 	{
-		delete[] _data;
+		if(_data!=NULL)
+			delete[] _data;
 	}
 
 	void pup(PUP::er &p)
