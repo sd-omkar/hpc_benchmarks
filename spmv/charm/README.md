@@ -23,9 +23,19 @@ Each row is distributed over several chares with a given maximum number of nonze
 Each chare holds a fixed amount of *sliceSize* consecutive nonzero-entries, regardless of over how many rows these values are scattered in the matrix.
 
 
+## Getting Charm++
+
+The following steps should set you up:
+
+`git clone http://charm.cs.uiuc.edu/gerrit/charm`  
+`git checkout charm-6.6.1`  
+`./build charm++ multicore-linux64 --with-production` (in charm directory)
+
+This will build a single-node version of Charm++. Check the documentation if you need other architectures, compile options, or anything else.
+
 ## Compile ##
 
-Just edit the Charm++ path in the `Makefile`.
+Just edit the Charm++ path in the `Makefile`.  
 Afterwards, `make` should do the trick.
 
 
