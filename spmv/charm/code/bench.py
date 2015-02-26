@@ -15,7 +15,7 @@ count = 0
 			
 for ncores in range(1,16+1):
 	for f in inFiles:
-		cmd = "./charmrun +p%d ./spmv -I %s.csr -n %d -s 256 -S 16 > bench/%s.log" % (ncores, f, runs[f], str(runs[f])+"runs_of_"+f+"_"+str(ncores)+"core")
+		cmd = "./charmrun +p%d ./spmv -I %s.csr -n %d -m 2048 > bench/%s.log" % (ncores, f, runs[f], str(runs[f])+"runs_of_"+f+"_"+str(ncores)+"core")
 		print cmd
 		os.system(cmd)
 		count += 1
