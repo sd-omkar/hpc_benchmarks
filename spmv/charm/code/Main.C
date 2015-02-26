@@ -327,6 +327,12 @@ int getOptions(int argc, char** argv, bool &randomize, bool &keepMatrix, bool &b
 }
 
 // entry point of application
+/*
+ * Main() chare constructor is the entry point of the application and the single most
+ * complicated routine in the code.
+ * It reads program option, creates and initializes chares and then waits for them to
+ * signal successful initialization by calling Main::stageFinished() one by one.
+ */
 Main::Main(CkArgMsg* msg)
 {
 	int i, j;
@@ -391,7 +397,7 @@ Main::Main(CkArgMsg* msg)
 	}
 
 	/* 
-	 * Init vector
+	 * Init operand vector
 	 */
 	bool readNonNull = false;
 
@@ -449,7 +455,7 @@ Main::Main(CkArgMsg* msg)
 
 
 	/*
-	 * Sequential test
+	 * Sequential test SpMV
 	 */
 	_ySeq = new double[_N];						// allocate result array
 	for (i = 0; i < _N; i++) _ySeq[i] = 0.;		// null result array
@@ -469,6 +475,10 @@ Main::Main(CkArgMsg* msg)
 		delete[] _ySeq;
 
 
+	/*
+	 * General initializiation
+	 */
+
 	// allocate and null other result array(s)
 	_yNoSlice = NULL;
 	_yRowSlice = NULL;
@@ -483,11 +493,7 @@ Main::Main(CkArgMsg* msg)
 
 	this->nullResultArrays();
 
-
-	/*
-	 * General initializiation
-	 */
-	::mainProxy = thisProxy;
+	::mainProxy = thisProxy; // set global readonly mainProxy to provide a handle to self
 	_curStage = STAGE_INIT;
 	_totalChares = 0;
 	_charesFinished = 0;
@@ -581,7 +587,6 @@ Main::Main(CkArgMsg* msg)
 
 			if (thisNnz>_nnz) thisNnz = _nnz;
 
-
 			// determine number of row breaks for this chare
 			// (row break right before at the first element doesn't count toward this
 			//  as it doesn't increase the chare's number of rows. It increases
@@ -608,6 +613,8 @@ Main::Main(CkArgMsg* msg)
 			curVal = firstVal + thisNnz;
 		}
 	}
+
+	// no slice and row slice initialization is probably much easier to understand.
 	if (_sliceMode & NO_SLICE || _sliceMode & ROW_SLICE)
 	{
 		for (i = 0; i < _N; i++)
@@ -655,12 +662,15 @@ Main::Main(CkArgMsg* msg)
 	delete[] row_start;
 }
 
-// constructor for migration
+// constructor for migration - not implemented
 Main::Main(CkMigrateMessage* msg)
 {
 
 }
 
+/*
+ * Cleanup arrays.
+ */
 Main::~Main()
 {
 	if (_ySeq != NULL) delete[] _ySeq;
@@ -669,6 +679,10 @@ Main::~Main()
 	if (_yMultiRowSlice != NULL) delete[] _yMultiRowSlice;
 }
 
+/*
+ * Program is finished, just write final output statistics and quit.
+ * If you want to save the result vector, you should insert that here.
+ */
 void Main::finalize()
 {
 	int i;
@@ -714,6 +728,9 @@ void Main::finalize()
 	CkExit();
 }
 
+/*
+ * This routine controls main program flow after the initialization done in Main() constructor.
+ */
 void Main::nextStage()
 {
 	int i;
@@ -763,11 +780,14 @@ void Main::nextStage()
 	}
 }
 
+/*
+ * Null result arrays once before each run.
+ */
 void Main::nullResultArrays()
 {
 	int i;
 
-	if (_sliceMode & NO_SLICE)
+	if (_sliceMode & NO_SLICE) // in theory this one is not needed, as each chare just *sets* a single result component.
 		for (i = 0; i < _N; i++)
 			_yNoSlice[i] = 0.;
 	if (_sliceMode & ROW_SLICE)
@@ -778,6 +798,10 @@ void Main::nullResultArrays()
 			_yMultiRowSlice[i] = 0.;
 }
 
+/*
+ * Compare results for sequential, no slice, row slice and multi row slice modes.
+ * High memory requirements, only working for small or moderately sized systems!
+ */
 void Main::compareResults(bool forceOutput)
 {
 	int i;
@@ -826,18 +850,30 @@ void Main::compareResults(bool forceOutput)
 	}
 }
 
+/*
+ * Set Result no slice mode:
+ *  Each chare returns a single complete result vector component.
+ */
 void Main::setResultNoSlice(int row, double res)
 {
 	_yNoSlice[row] += res;
 	this->stageFinished();
 }
 
+/*
+ * Set Result row slice mode:
+ *  Each chare returns a partial result vector component, sum these up.
+ */
 void Main::setResultRowSlice(int row, double res)
 {
 	_yRowSlice[row] += res;
 	this->stageFinished();
 }
 
+/*
+ * Set Result Multi-row slice mode:
+ *  Each chare returns a vector with multiple partial result vector components.
+ */
 void Main::setResultMultiRowSlice(int nRows, int firstRow, double *res)
 {
 	for (int i = 0; i < nRows; i++)
@@ -847,6 +883,10 @@ void Main::setResultMultiRowSlice(int nRows, int firstRow, double *res)
 	this->stageFinished();
 }
 
+/*
+ * Synchronize all chares before moving on to the next step (either "postprocessing"/cleanup, or
+ *  doing the next run for benchmarking).
+ */
 void Main::stageFinished()
 {
 	++_charesFinished;

@@ -88,8 +88,9 @@ Please note that FLOPS are only displayed for *-n runs* &ge; 2.
 ## Known issues ##
 
 * Currently, the result vector is not saved in any way. Vectors for small systems (*N* < 20) are written to stdout.
-* Be wary about memory requirements, especially with `-s` single row slicing. For very large matrices with low density, try to use `-m` multi row slicing, which is the best performing method anyway.
-* Inappropriate choice of slice sizes may lead to bad_allocs and other problems, you might need to experiment. For a start, try `-m 2048` and increase to up to 12500. Higher values usually increase performance.
+* Be wary about memory requirements, especially with `-s` single row slicing and `-v` validation mode. For very large matrices with low density, try to use `-m` multi row slicing, which is the best performing method anyway.
+* Inappropriate choice of slice sizes may lead to bad_allocs and other problems, you might need to experiment. For a start, try `-m 1024` and increase to up to 12500 or until segfaults occur. Higher values usually increase performance, as long as NNZ >> slice size.
+I'm not sure about these segfaults, there might be a bug. Chares should be able to handle more than 12500 entries in theory.
 * Randomized matrices are really random. They aren't structured in any way and usually have one very densely filled row at the end. Using real-world matrices for serious benchmarking is advised.
 
 

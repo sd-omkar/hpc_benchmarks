@@ -1,6 +1,14 @@
 #ifndef __DOUBLE_ARRAY_H_
 #define __DOUBLE_ARRAY_H_
 
+/*
+ * This class is needed to be able to provide the operand vector
+ * as a readonly global variable to all chares.
+ * Pointers are not allowed to be global-readonly (think of distributed memory topologies)
+ * and thus we have to provide a PUPable object which can be serialized into a message and
+ * is sent to all SMP nodes once.
+ */
+
 class DoubleArray
 {
 private:

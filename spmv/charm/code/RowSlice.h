@@ -19,11 +19,11 @@ public:
 
 private:
 	int _rowNum; /* row number in global matrix */
-	int _nnz;	 /* number of nonzeros in this row */
+	int _nnz;	 /* number of nonzeros in this slice */
 
 	double *_vals; /* nonzero value array for this row */
 	int *_col_idx; /* column indices for this row's entries */
-	double _myRes; /* result y[_rowNum] from y=A*x */
+	double _myRes; /* partial result for y[_rowNum] from y=A*x */
 };
 
 #endif //__ROW_SLICE_H_
