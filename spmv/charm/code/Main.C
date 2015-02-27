@@ -215,7 +215,7 @@ void sloppyMmImport(char* inFile, int &nnz, int &N, int &rowMaxNnz, double* &val
 	f.close();
 }
 
-int getOptions(int argc, char** argv, bool &randomize, bool &keepMatrix, bool &binary, bool &randomVector,
+int getOptions(int argc, char** argv, bool &randomize, bool &keepMatrix, bool &binary, bool &randomVector, bool &forceSliceSize,
 	int &N, int &nnz, int &runs, char *inputFile, char *vectorInput, int &sliceSizeRow, int &sliceSizeMult, int &maxSlices,
 	int &mode)
 {
@@ -226,12 +226,14 @@ int getOptions(int argc, char** argv, bool &randomize, bool &keepMatrix, bool &b
 	 */
 	keepMatrix = false;
 	randomVector = true;
+	forceSliceSize = false;
+
 	bool readFile = false;
 	bool useSingleSlice = false;
 	bool useMultiSlice = false;
 	bool validate = false;
-
-	while ((c = getopt(argc, argv, "ri:I:N:e:s:S:kn:x:m:v")) != -1)
+	
+	while ((c = getopt(argc, argv, "ri:I:N:e:s:S:kn:x:m:vf")) != -1)
 	{
 		switch (c)
 		{
@@ -277,6 +279,9 @@ int getOptions(int argc, char** argv, bool &randomize, bool &keepMatrix, bool &b
 		case 'v':
 			mode |= VALIDATE | NO_SLICE | ROW_SLICE | MULTI_SLICE;
 			break;
+		case 'f':
+			forceSliceSize = true;
+			break;
 		case '?':
 		default:
 			CkPrintf("Usage: %s -i input(ascii) [opts] [slice] OR\n"
@@ -286,6 +291,7 @@ int getOptions(int argc, char** argv, bool &randomize, bool &keepMatrix, bool &b
 				"                 -x input file to operand vector\n"
 				"                 -k keep generated matrix in file\n"
 				"                 -v validate results by testing all slice methods (high memory usage)\n"
+				"                 -f force the given slice size, even if possibly not being optimal\n"
 				"[slice] can be one of\n"
 				"                 -s slice size (Single row slicing)\n"
 				"             OR  -m slice size (Multi row slicing)\n"
@@ -313,6 +319,7 @@ int getOptions(int argc, char** argv, bool &randomize, bool &keepMatrix, bool &b
 			"                 -x input file to operand vector\n"
 			"                 -k keep generated matrix in file\n"
 			"                 -v validate results by testing all slice methods (high memory usage)\n"
+			"                 -f force the given slice size, even if possibly not being optimal\n"
 			"[slice] can be one of\n"
 			"                 -s slice size (Single row slicing)\n"
 			"             OR  -m slice size (Multi row slicing)\n"
@@ -343,6 +350,7 @@ Main::Main(CkArgMsg* msg)
 	int sliceSizeRow = 1024, sliceSizeMult = 2048;
 	int maxSlices = 250000; // currently ignored!!
 	bool randomize = false;
+	bool forceSliceSize = false;
 	
 	_runs = 1;
 	_sliceMode = UNKNOWN;
@@ -362,7 +370,7 @@ Main::Main(CkArgMsg* msg)
 	 */
 	_N = 0;
 	_nnz = 0;
-	if (EXIT_FAILURE == getOptions(msg->argc, msg->argv, randomize, keepMatrix, binInput, randomVector,
+	if (EXIT_FAILURE == getOptions(msg->argc, msg->argv, randomize, keepMatrix, binInput, randomVector, forceSliceSize,
 		_N, _nnz, _runs, _inputFile, _vectorInput, sliceSizeRow, sliceSizeMult, maxSlices, _sliceMode))
 		CkExit();
 	delete msg;
@@ -524,16 +532,32 @@ Main::Main(CkArgMsg* msg)
 		}
 		else if (_sliceMode == MULTI_SLICE)
 		{
-			// make sure that there are at least as many chares as processors are being used.
-			// if required, lower slice size to achieve that.
 			numSlicesMult = ceil(1. * _nnz / sliceSizeMult);
 			_totalChares = numSlicesMult;
 
-			if (numSlicesMult < CkNumPes())
+			// make sure that there are at least as many chares as processors are being used.
+			// if required, lower slice size to achieve that.
+			if (!forceSliceSize && numSlicesMult < CkNumPes())
 			{
 				CkPrintf("NOTE: Too few chares (%d) for %d processors.\n", numSlicesMult, CkNumPes());
 				
 				numSlicesMult = CkNumPes();
+				sliceSizeMult = ceil(1. * _nnz / numSlicesMult);
+				_totalChares = numSlicesMult;
+
+				CkPrintf("      Using %d chares of size %d instead.\n", _totalChares, sliceSizeMult);
+			}
+
+			// if the number of Chares is not significantly (10x) larger than the number of
+			// NumPes, try to establish a integer multiplier between Chares and cores by
+			// increasing the Chare number to the next multiple of the core number.
+			else if (!forceSliceSize && numSlicesMult < 10 * CkNumPes())
+			{
+				CkPrintf("NOTE: Number of chares (%d) not significantly larger than %d CPUs.\n", numSlicesMult, CkNumPes());
+				double ratio = 1. * numSlicesMult / CkNumPes();
+				int iratio = ceil(ratio);
+
+				numSlicesMult = iratio * CkNumPes();
 				sliceSizeMult = ceil(1. * _nnz / numSlicesMult);
 				_totalChares = numSlicesMult;
 
