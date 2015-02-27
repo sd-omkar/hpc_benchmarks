@@ -524,8 +524,21 @@ Main::Main(CkArgMsg* msg)
 		}
 		else if (_sliceMode == MULTI_SLICE)
 		{
+			// make sure that there are at least as many chares as processors are being used.
+			// if required, lower slice size to achieve that.
 			numSlicesMult = ceil(1. * _nnz / sliceSizeMult);
 			_totalChares = numSlicesMult;
+
+			if (numSlicesMult < CkNumPes())
+			{
+				CkPrintf("NOTE: Too few chares (%d) for %d processors.\n", numSlicesMult, CkNumPes());
+				
+				numSlicesMult = CkNumPes();
+				sliceSizeMult = ceil(1. * _nnz / numSlicesMult);
+				_totalChares = numSlicesMult;
+
+				CkPrintf("      Using %d chares of size %d instead.\n", _totalChares, sliceSizeMult);
+			}
 		}
 	}
 
