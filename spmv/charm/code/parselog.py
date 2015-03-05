@@ -13,8 +13,9 @@ import os
 #   Just use 'parselog.py > myResults.csv' for easy viewing in Excel.
 #
 #
-dir = "bench/"
-
+dir = "bench"
+if len(sys.argv) > 1:
+	dir = sys.argv[1]
 
 
 
@@ -25,11 +26,13 @@ dir = "bench/"
 #
 files = os.listdir(dir)
 
-lookFor = {"flops":"MFlops", "dimensions":"max nonzeroes per row"}
+lookFor = {"flops":"MFlops", "dimensions":"max nonzeroes per row",
+		   "slice":"slices each with up to",
+		   "time":"seconds per run"}
 outputLines = {}
 
 print '"sep= "'
-print "FILE ROWS NNZ MAX_NNZ_PER_ROW MFLOPS"
+print "FILE ROWS NNZ MAX_NNZ_PER_ROW MFLOPS SLICE CHARES RUNS TIME"
 
 for fn in files:
 	with open(os.path.join(dir, fn), "r") as f:
@@ -63,7 +66,24 @@ for fn in files:
 			nnz = int(dimWords[2])
 			max_row_nnz = int(dimWords[4])
 			
-			print fn, rows, nnz, max_row_nnz, mflops
+			# extract number of chares, slice size
+			# sample line: ' MULTI ROW SLICING: Creating 1889 chares (1889 slices each with up to 2048 entries).'
+			#				   [0] [1]    [2]     [3]     [4]  [5]     [6]  [7]    [8] [9]         [12]  [13]
+			sliceWords = outputLines["slice"].strip().split()
+			
+			chares = int(sliceWords[4])
+			slice = int(sliceWords[12])
+			
+			# extract wall time for calculation
+			# sample line: 'Finished 13750 runs after 80.34 seconds (0.005843 seconds per run)'
+			#                  [0]     [1]  [2]   [3]  [4]   [5]    ...
+			timeWords = outputLines["time"].strip().split()
+			
+			runs = int(timeWords[1])
+			walltime = float(timeWords[4])
+			
+			
+			print fn, rows, nnz, max_row_nnz, mflops, slice, chares, runs, walltime
 		
 		except:
 			print fn, "FAILURE"

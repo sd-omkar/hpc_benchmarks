@@ -82,9 +82,15 @@ Please use CSR input whenever possibly, you can use `convert.py` for easy conver
 
 Two very simple benchmarking scripts `bench.py`, `bench2.py` are provided.
 Feel free to use and adjust to your needs.
-Please note that FLOPS are only displayed for *-n runs* &ge; 2.
+Please note that Flops are only displayed for *-n runs* &ge; 2.
 
-In addition, the script `parselog.py` allows to parse `spmv`'s output for MFlops results and rows/nnz matrix dimension metrics, which can be exported to a CSV file for convenient viewing in Excel. See the comments in the code for information on how to use `parselog` exactly. 
+In addition, the script `parselog.py` allows to parse `spmv`'s output for MFlops results, matrix dimension metrics and other statistics, which can be exported to a CSV file for convenient viewing in Excel. See the comments in the code for information on how to use `parselog` exactly.
+
+**Sample benchmarking process:**  
+	1. Deploy some input matrices anywhere and make a subfolder `bench` in the directory where `spmv` is.  
+	2. Edit `bench2.py` to have the list of input files in variable `inFiles`.  
+	3. Run `bench2.py`, logs will be written to subfolder `bench`.  
+	4. Run `parselog.py > results.csv` to save statistics, open in Excel.
 
 
 ## Known issues ##
