@@ -88,9 +88,9 @@ In addition, the script `parselog.py` allows to parse `spmv`'s output for MFlops
 
 **Sample benchmarking process:**  
 	1. Deploy some input matrices anywhere and make a subfolder `bench` in the directory where `spmv` is.  
-	2. Edit `bench2.py` to have the list of input files in variable `inFiles`.  
-	3. Run `bench2.py`, logs will be written to subfolder `bench`.  
-	4. Run `parselog.py > results.csv` to save statistics, open in Excel.
+	2. Edit `bench.py` to have the list of input files you want to use in variable `inFiles`. Set the subfolder where you want your logs to be written (`outdir1`), make sure it exists.  
+	3. Run `bench.py`.  
+	4. Run `parselog.py outdir > results.csv` to save statistics where outdir is the folder specified in `bench.py`, open in Excel.
 
 
 ## Known issues ##
