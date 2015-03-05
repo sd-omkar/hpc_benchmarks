@@ -1,0 +1,9 @@
+module row
+{
+	array [1D] Row
+	{
+		entry Row();
+		entry void init(int num, int nnz, double vals[nnz], int col_idx[nnz]);
+		entry void calc();
+	};
+};

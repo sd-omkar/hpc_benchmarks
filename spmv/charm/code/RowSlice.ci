@@ -1,0 +1,10 @@
+module row_slice
+{
+	array [2D] RowSlice
+	{
+		entry RowSlice();
+		entry void calc();
+		entry void init(int num, int nnz, double vals[nnz], int col_idx[nnz]);
+		entry void initBlank(int num);
+	};
+};
