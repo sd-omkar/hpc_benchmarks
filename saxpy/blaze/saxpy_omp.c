@@ -4,7 +4,7 @@
 #include <blaze/Math.h>
 #include <sys/time.h>
 
-#define RUNS 50
+#define RUNS 1
 
 using blaze::DynamicVector;
 using namespace std;
@@ -17,7 +17,7 @@ int main (int argc, char *argv[]) {
     }
 
     // Get size
-    int size = 1024 * 1024 * (10 + atoi(argv[1]));
+    int size = 1024 * 1024 * (atoi(argv[1]));
 
     // Initialize vectors
     DynamicVector<float> a(size), b(size), c(size);
@@ -46,10 +46,11 @@ int main (int argc, char *argv[]) {
     time_saxpy = (end.tv_usec + 1e6 * end.tv_sec)
                   - (start.tv_usec + 1e6 * start.tv_sec);
 
+    cout << "===========" << endl;
     cout << "SAXPY time: " << time_saxpy / 1e3 / RUNS << " ms" << endl;
     double time_sec = time_saxpy / RUNS / 1e6;
     double gflops = 2 * size / time_sec / 1e9;
-    cout << "N: " << size << "\tGFLOPS: " << gflops << endl;
+    cout << "N: " << size << "\nGFLOPS: " << gflops << endl;
 
     return 0;
 }

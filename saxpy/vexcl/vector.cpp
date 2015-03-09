@@ -30,7 +30,7 @@
 #  pragma warning(disable : 4267)
 #endif
 
-#define RUNS 25
+#define RUNS 1
 //---------------------------------------------------------------------------
 struct Options {
     bool bm_saxpy;
@@ -86,7 +86,7 @@ std::pair<double,double> benchmark_saxpy(
         const vex::Context &ctx, vex::profiler<> &prof, int n_size=0
         )
 {
-    const size_t N = (10 + n_size) * 1024 * 1024;
+    const size_t N = (n_size) * 1024 * 1024;
     const size_t M = RUNS;
     double time_elapsed;
 
@@ -113,9 +113,12 @@ std::pair<double,double> benchmark_saxpy(
     double bwidth = (3.0 * N * M * sizeof(real)) / time_elapsed / 1e9;
 
     std::cout
-        << "Vector SAXPY (" << vex::type_name<real>() << ")"
-        << "\n    GFLOPS:    " << gflops
-        << "\n    Bandwidth: " << bwidth
+        << "==========="
+        //<< "\nVector SAXPY (" << vex::type_name<real>() << ")"
+        << "\nN: " << N
+        << "\nTime: " << time_elapsed * 1e3 / M << " ms"
+        << "\nGFLOPS: " << gflops
+        //<< "\n    Bandwidth: " << bwidth
         << std::endl;
 
     if (options.bm_cpu) {
@@ -221,7 +224,7 @@ std::pair<double, double> benchmark_reductor(
         const vex::Context &ctx, vex::profiler<> &prof, int n_size=0
         )
 {
-    const size_t N = (10 + n_size) * 1024 * 1024;
+    const size_t N = (n_size) * 1024 * 1024;
     const size_t M = 1024 / 16;
     double time_flops;
     double time_bw;
@@ -852,11 +855,13 @@ void benchmark_scan(
 template <typename real>
 void run_tests(const vex::Context &ctx, vex::profiler<> &prof, int n_size)
 {
+    /*
     std::cout
         << "----------------------------------------------------------\n"
         << "Profiling \"" << vex::type_name<real>() << "\" performance\n"
         << "----------------------------------------------------------\n"
         << ctx << std::endl;
+    */
 
     std::ostringstream fname;
     fname << "profile_" << vex::type_name<real>() << ".dat";
@@ -1009,7 +1014,7 @@ int main(int argc, char *argv[]) {
             if (ctx) run_tests<float>(ctx, prof, n_size);
         }
 
-        std::cout << prof << std::endl;
+        //std::cout << prof << std::endl;
     } catch (const vex::error &e) {
         std::cerr << e << std::endl;
         return 1;
