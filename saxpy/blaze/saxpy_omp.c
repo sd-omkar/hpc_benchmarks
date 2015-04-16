@@ -46,11 +46,17 @@ int main (int argc, char *argv[]) {
     time_saxpy = (end.tv_usec + 1e6 * end.tv_sec)
                   - (start.tv_usec + 1e6 * start.tv_sec);
 
-    cout << "===========" << endl;
-    cout << "SAXPY time: " << time_saxpy / 1e3 / RUNS << " ms" << endl;
+    cout << "name = " << "saxpy" << endl;
+    cout << "input = " << "vector" << endl;
+    cout << "datatype = " << "float" << endl;
+    cout << "dim_x = " << size << endl;
+    cout << "dim_y = " << 1 << endl;
+    cout << "NNZ = " << size << endl;
+    cout << "value_type = " << "GFLOPS" << endl;
+    //cout << "SAXPY time: " << time_saxpy / 1e3 / RUNS << " ms" << endl;
     double time_sec = time_saxpy / RUNS / 1e6;
     double gflops = 2 * size / time_sec / 1e9;
-    cout << "N: " << size << "\nGFLOPS: " << gflops << endl;
+    cout << "value = " << gflops << endl;
 
     return 0;
 }
