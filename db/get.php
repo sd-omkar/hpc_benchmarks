@@ -88,6 +88,25 @@ if (!empty($table)) {
 		}
 		print "</table>";
 	}
+	
+	else if ($table == 'sources') {
+		$stmt = $db->prepare('SELECT * FROM sources');
+		$results = $stmt->execute();
+		print "<table border='1'>";
+		print "<tr>
+				<td>source_id</td>
+				<td>URL</td>
+				<td>Commit Hash</td>
+				</tr>";
+		while ($row = $results->fetchArray()) {
+			print "<tr>
+					<td>".$row['source_id']."</td>
+					<td>".$row['URL']."</td>
+					<td>".$row['commit_hash']."</td>
+					</tr>";
+		}
+		print "</table>";
+	}
 }
 
 ?>

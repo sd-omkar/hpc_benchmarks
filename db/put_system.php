@@ -17,9 +17,9 @@ $library_ver = $_POST['library_ver'];
 $backend = $_POST['backend'];
 $backend_ver = $_POST['backend_ver'];
 
-if (!empty($os) & !empty($compiler) & !empty($version) &
-	!empty($flags) & !empty($library) & !empty($library_ver) &
-	!empty($backend) & !empty($backend_ver)) {
+if (!empty($os) and !empty($compiler) and !empty($version) and
+	!empty($flags) and !empty($library) and !empty($library_ver) and
+	!empty($backend) and !empty($backend_ver)) {
 	$db = new MyDB();
 	
 	$stmt = $db->prepare("insert into systems 

@@ -15,8 +15,8 @@ $memory = $_POST['memory'];
 $cores = $_POST['cores'];
 $details = $_POST['type'];
 
-if (!empty($type) & !empty($accl_name) & !empty($arch) &
-	!empty($memory) & !empty($cores) & !empty($details)) {
+if (!empty($type) and !empty($accl_name) and !empty($arch) and
+	!empty($memory) and !empty($cores) and !empty($details)) {
 	$db = new MyDB();
 	
 	$stmt = $db->prepare("insert into accelerators 

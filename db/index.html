@@ -14,6 +14,7 @@
   <option value="hosts"> Hosts </option>
   <option value="accelerators"> Accelerators </option>
   <option value="systems"> Systems </option>
+  <option value="sources"> Sources </option>
 </select>
 <input type="submit" value="GO!">
 </p>
@@ -83,6 +84,13 @@
 <p> Backend: <input type="text" name="backend"><br> </p>
 <p> Backend Version: <input type="text" name="backend_ver"><br> </p>
 <p> <input type="submit" value="INSERT system"> </p>
+</form>
+
+<form action="put_source.php" method="post">
+<b>Insert new Source</b>
+<p> URL: <input type="text" name="url"><br> </p>
+<p> Commit Hash: <input type="text" name="hash"><br> </p>
+<p> <input type="submit" value="INSERT source"> </p>
 </form>
 
 </div>
