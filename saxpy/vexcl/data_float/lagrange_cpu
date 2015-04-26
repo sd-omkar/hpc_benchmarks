@@ -1,0 +1,160 @@
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    3.54398
+    Bandwidth: 21.2639
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    3.20176
+    Bandwidth: 19.2105
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    2.60985
+    Bandwidth: 15.6591
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    2.7973
+    Bandwidth: 16.7838
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    2.89913
+    Bandwidth: 17.3948
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    2.85976
+    Bandwidth: 17.1586
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    2.81831
+    Bandwidth: 16.9098
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    2.78631
+    Bandwidth: 16.7179
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    2.88754
+    Bandwidth: 17.3252
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    2.73463
+    Bandwidth: 16.4078
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    2.92066
+    Bandwidth: 17.5239
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    2.23056
+    Bandwidth: 13.3833
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    2.81043
+    Bandwidth: 16.8626
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    2.72093
+    Bandwidth: 16.3256
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    2.70735
+    Bandwidth: 16.2441
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1.       Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    2.78807
+    Bandwidth: 16.7284
+
+

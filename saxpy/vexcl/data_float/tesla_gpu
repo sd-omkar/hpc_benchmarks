@@ -1,0 +1,160 @@
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    25.2443
+    Bandwidth: 151.466
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    24.7383
+    Bandwidth: 148.43
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    24.7132
+    Bandwidth: 148.279
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    24.3829
+    Bandwidth: 146.297
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    24.3729
+    Bandwidth: 146.237
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    24.1862
+    Bandwidth: 145.117
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    23.9258
+    Bandwidth: 143.555
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    24.1965
+    Bandwidth: 145.179
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    23.7994
+    Bandwidth: 142.796
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    23.6943
+    Bandwidth: 142.166
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    23.8307
+    Bandwidth: 142.984
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    22.5176
+    Bandwidth: 135.106
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    23.2305
+    Bandwidth: 139.383
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    23.6044
+    Bandwidth: 141.626
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    23.4002
+    Bandwidth: 140.401
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. GeForce GTX 770 (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    23.153
+    Bandwidth: 138.918
+
+
