@@ -72,7 +72,7 @@ int main(int argc, char** argv)
 
 	fileMat = argv[1];
 
-	cout << fileMat << endl;
+	//cout << fileMat << endl;
 
 	// Get matrix and rhs.
 	Matrix A;
@@ -122,7 +122,33 @@ int main(int argc, char** argv)
 		}
 	}
 	elapsed /= counter;
-	cout << "cuSparse HYB: " << elapsed << endl;
+	//cout << "cuSparse HYB: " << elapsed << endl;
+
+	long int rows,cols,temp,NNZ=0;
+	std::ifstream infile(fileMat.c_str());
+	string line;
+	bool flag=false;
+	while (std::getline(infile, line)){
+		if(!flag && line.substr(0,1).compare("%")!=0){
+			std::istringstream iss(line);
+			iss>>rows>>cols>>temp;
+    			flag=true;
+		}	
+		if(flag)
+			NNZ++;
+	}
+
+	cout<<"name = SPMV"<<endl;
+	while(fileMat.find("/")!=string::npos){
+		fileMat = fileMat.substr(fileMat.find("/")+1,fileMat.length());
+	}
+        cout<<"input = "<<fileMat<<endl;
+	cout<<"datatype = double"<<endl;
+  	cout<<"dim_x = "<<rows<<endl;
+	cout<<"dim_y = "<<cols<<endl;
+	cout<<"NNZ = "<<NNZ-1<<endl;
+	cout<<"value_type = GFLOPS"<<endl;
+	cout<<"value = "<<(2*NNZ*1e-9)/(elapsed*1e-3)<<endl;
 
 	cusparseDestroyMatDescr(descrA);
 	cusparseDestroyHybMat(hybA);

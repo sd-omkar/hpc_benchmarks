@@ -9,7 +9,7 @@ systems = Table('Systems', md, autoload=True)
 sources = Table('Sources', md, autoload=True)
 
 i = systems.insert()
-i.execute(OS='Linux', compiler='nvcc', version=6.0, flags='-O3', library='ViennaCL', library_ver=1.6, backend='CUDA', backend_ver=5.5)
+i.execute(OS='Linux', compiler='nvcc', version=6.0, flags='-O3', library='CuSparse', library_ver=1.0, backend='CUDA', backend_ver=5.5)
 
 '''
 # Insert new host
