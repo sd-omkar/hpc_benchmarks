@@ -1,0 +1,44 @@
+1. Settiing up the environment
+All the python scripts need sqlalchemy package. This package
+can be installed locally in a virtual environment.
+  # git pull
+  # git checkout devel_omkar
+  # cd benchmarks/db
+  # virtualenv -p <path to python2.7> dirname
+  # source dirname/bin/activate
+  # pip install sqlalchemy
+
+2. Writing config.json
+This config file stores the DB location and few ID's that are 
+required by insert script. Populate both the URLs for the DB.
+To get the IDs, use get.py script.
+
+3. Get existing data
+Use the script get.py to get existing data and their row IDs.
+  # get.py [hosts|accelerators|systems|sources]
+
+4. Insert new static data
+If the records are not found, use put.py script to create them.
+Open the file and look at some examples on how to insert. Once
+the file is ready, just execute the script.
+
+5. Running the insert script
+On some machines, it will not be possible to work with sqlalchemy.
+So for inserts, use insert_plain.py. There are 2 requirement for 
+the script to work.
+  a. config.json needs to have all 5 IDs and correct DB location.
+  b. STDOUT from benchmarks needs to be in exact format as:
+    name = 'test name'
+    input = 'vector or matrix name'
+    datatype = 'float/double'
+    dim_x = #int
+    dim_y = #int
+    NNZ = #int
+    value_type = 'GFLOPS or keys/sec'
+    value = #float
+
+Insert script can be run as:
+  # ./insert_plain.py ./benchmark arguemt
+
+Note that ./ are required. Argument for vector benchmarks will be
+size of the vector and for SpMV the name of matrix file.:w

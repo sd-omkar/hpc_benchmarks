@@ -1,0 +1,160 @@
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    27.2751
+    Bandwidth: 163.651
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    27.2509
+    Bandwidth: 163.506
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    27.1957
+    Bandwidth: 163.174
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    27.2005
+    Bandwidth: 163.203
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    27.1099
+    Bandwidth: 162.659
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    27.0441
+    Bandwidth: 162.264
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    27.1626
+    Bandwidth: 162.976
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    27.0502
+    Bandwidth: 162.301
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    27.0182
+    Bandwidth: 162.109
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    27.1332
+    Bandwidth: 162.799
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    27.0884
+    Bandwidth: 162.53
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    26.9637
+    Bandwidth: 161.782
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    27.0697
+    Bandwidth: 162.418
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    27.0119
+    Bandwidth: 162.072
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    26.8582
+    Bandwidth: 161.149
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Tesla K20Xm (NVIDIA CUDA)
+
+Vector SAXPY (float)
+    GFLOPS:    26.9931
+    Bandwidth: 161.958
+
+

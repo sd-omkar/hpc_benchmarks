@@ -1,0 +1,19 @@
+CC		:= g++
+CFLAGS		:= -O3 -std=c++11 -DVEXCL_BACKEND_CUDA=1
+INC_CL		:= /opt/intel/opencl-sdk/include/CL/
+LIB_CL		:= /opt/intel/opencl/lib64/
+INC_BOOST	:= /usr/local/boost/1.53.0/include/
+LIB_BOOST	:= /usr/local/boost/1.53.0/lib/
+INC_CUDA	:= /usr/local/cuda/6.5.11/cuda/include/
+LIB_CUDA	:= /usr/local/cuda/6.5.11/cuda/lib64/
+
+all: ocl
+
+ocl:
+	$(CC) $(CFLAGS) -I$(INC_CL) -I$(INC_BOOST) -I$(INC_CUDA) -o ocl.out vector.cpp -L$(LIB_CL) -lOpenCL -L$(LIB_BOOST) -lboost_program_options -lboost_system -lboost_thread -lboost_filesystem -lcuda -L$(LIB_CUDA) -lcusparse
+
+bench:
+	$(CC) $(CFLAGS) -I$(INC_CL) -I$(INC_BOOST) -o bench.out benchmark.cpp -L$(LIB_CL) -lOpenCL -L$(LIB_BOOST) -lboost_program_options -lboost_system -lboost_thread
+
+clean:
+	rm -fv *.out

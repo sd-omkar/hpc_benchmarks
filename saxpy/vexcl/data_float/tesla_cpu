@@ -1,0 +1,160 @@
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    7.84424
+    Bandwidth: 47.0654
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    7.777
+    Bandwidth: 46.662
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    7.75384
+    Bandwidth: 46.523
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    7.8017
+    Bandwidth: 46.8102
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    7.89673
+    Bandwidth: 47.3804
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    7.8867
+    Bandwidth: 47.3202
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    7.78784
+    Bandwidth: 46.7271
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    7.82478
+    Bandwidth: 46.9487
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    7.80187
+    Bandwidth: 46.8112
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    7.77064
+    Bandwidth: 46.6239
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    7.88499
+    Bandwidth: 47.3099
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    7.8564
+    Bandwidth: 47.1384
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    7.7726
+    Bandwidth: 46.6356
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    7.8791
+    Bandwidth: 47.2746
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    7.92521
+    Bandwidth: 47.5513
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    7.90154
+    Bandwidth: 47.4092
+
+

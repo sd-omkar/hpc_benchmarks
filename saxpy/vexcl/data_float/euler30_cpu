@@ -1,0 +1,160 @@
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Vector SAXPY (float)
+    GFLOPS:    29.4941
+    Bandwidth: 176.964
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Vector SAXPY (float)
+    GFLOPS:    29.8278
+    Bandwidth: 178.967
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Vector SAXPY (float)
+    GFLOPS:    28.1194
+    Bandwidth: 168.717
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Vector SAXPY (float)
+    GFLOPS:    20.9891
+    Bandwidth: 125.935
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Vector SAXPY (float)
+    GFLOPS:    16.5887
+    Bandwidth: 99.5323
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Vector SAXPY (float)
+    GFLOPS:    14.2255
+    Bandwidth: 85.3533
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Vector SAXPY (float)
+    GFLOPS:    13.2046
+    Bandwidth: 79.2276
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Vector SAXPY (float)
+    GFLOPS:    12.0042
+    Bandwidth: 72.025
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Vector SAXPY (float)
+    GFLOPS:    10.9482
+    Bandwidth: 65.6892
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Vector SAXPY (float)
+    GFLOPS:    10.248
+    Bandwidth: 61.4878
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Vector SAXPY (float)
+    GFLOPS:    9.84779
+    Bandwidth: 59.0868
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Vector SAXPY (float)
+    GFLOPS:    9.51577
+    Bandwidth: 57.0946
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Vector SAXPY (float)
+    GFLOPS:    9.50261
+    Bandwidth: 57.0157
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Vector SAXPY (float)
+    GFLOPS:    9.59246
+    Bandwidth: 57.5547
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Vector SAXPY (float)
+    GFLOPS:    9.3444
+    Bandwidth: 56.0664
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. AMD Opteron(TM) Processor 6274                  (AMD Accelerated Parallel Processing)
+
+Vector SAXPY (float)
+    GFLOPS:    9.47827
+    Bandwidth: 56.8696
+
+

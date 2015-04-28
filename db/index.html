@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>GET or PUT</title>
+</head>
+<body style="font-size:12;font-family:verdana">
+
+<div style="width:100%;"> <!-- Main Div -->
+
+<div style="float:left; width:50%;">
+
+<p><b>Get existing data: </b>
+<form action="get.php" method="post">
+<select name="table">
+  <option value="hosts"> Hosts </option>
+  <option value="accelerators"> Accelerators </option>
+  <option value="systems"> Systems </option>
+  <option value="sources"> Sources </option>
+</select>
+<input type="submit" value="GO!">
+</p>
+</form>
+
+<br><br><p><b> Quick Queries </b>
+
+<form action="quick_accl.php" method="post">
+<p>By accelerator:
+<select name="accl">
+  <option value="1"> Xeon E5-2690v2 </option>
+  <option value="2"> Core i7-5960X </option>
+  <option value="3"> Opteron 6274 </option>
+  <option value="4"> GTX 770 </option>
+  <option value="5"> Tesla K20Xm </option>
+  <option value="6"> Tesla K40c </option>
+  <option value="7"> A10-7850K </option>
+  <option value="8"> Xeon Phi 5110P </option>
+</select>
+<input type="submit" value="GO!">
+</p>
+</form>
+
+<form action="quick_bench.php" method="post">
+<p>By benchmark:
+<select name="bench">
+  <option value="reduction"> Reduction </option>
+  <option value="sort"> Sort </option>
+  <option value="inclusive scan"> Inclusive scan </option>
+  <option value="saxpy"> SAXPY </option>
+</select>
+<input type="submit" value="GO!">
+</p>
+</form>
+
+<br><br><p><b> Detailed queries, filter by </b>
+
+</div>
+
+<div style="float:right; width:50%;">
+
+<form action="put_host.php" method="post">
+<b>Insert new Host</b>
+<p> Hostname: <input type="text" name="hostname"><br> </p>
+<p> <input type="submit" value="INSERT host"> </p>
+</form>
+
+<form action="put_accl.php" method="post">
+<br><b>Insert new Accelerator</b>
+<p> Type: <input type="text" name="type"><br> </p>
+<p> Accelerator Name: <input type="text" name="accl_name"><br> </p>
+<p> Architecture: <input type="text" name="arch"><br> </p>
+<p> Memory: <input type="text" name="memory"><br> </p>
+<p> Cores: <input type="text" name="cores"><br> </p>
+<p> Details: <input type="text" name="details"><br> </p>
+<p> <input type="submit" value="INSERT accelerator"> </p>
+</form>
+
+<form action="put_system.php" method="post">
+<br><b>Insert new System</b>
+<p> Operating System: <input type="text" name="os"><br> </p>
+<p> Compiler: <input type="text" name="compiler"><br> </p>
+<p> Compiler Version: <input type="text" name="version"><br> </p>
+<p> Flags: <input type="text" name="flags"><br> </p>
+<p> Library: <input type="text" name="library"><br> </p>
+<p> Library Version: <input type="text" name="library_ver"><br> </p>
+<p> Backend: <input type="text" name="backend"><br> </p>
+<p> Backend Version: <input type="text" name="backend_ver"><br> </p>
+<p> <input type="submit" value="INSERT system"> </p>
+</form>
+
+<form action="put_source.php" method="post">
+<b>Insert new Source</b>
+<p> URL: <input type="text" name="url"><br> </p>
+<p> Commit Hash: <input type="text" name="hash"><br> </p>
+<p> <input type="submit" value="INSERT source"> </p>
+</form>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    15.532
+    Bandwidth: 93.1921
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    15.8116
+    Bandwidth: 94.8694
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    16.2824
+    Bandwidth: 97.6943
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    16.5205
+    Bandwidth: 99.1228
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    16.6708
+    Bandwidth: 100.025
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    6.94803
+    Bandwidth: 41.6882
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    11.7265
+    Bandwidth: 70.3592
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    15.5819
+    Bandwidth: 93.4911
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    15.7137
+    Bandwidth: 94.2823
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    15.8472
+    Bandwidth: 95.0832
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    12.0969
+    Bandwidth: 72.5815
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    15.7612
+    Bandwidth: 94.5673
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    15.5241
+    Bandwidth: 93.1448
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    11.6512
+    Bandwidth: 69.9073
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    11.4716
+    Bandwidth: 68.8293
+
+
+----------------------------------------------------------
+Profiling "float" performance
+----------------------------------------------------------
+1. Intel(R) Many Integrated Core Acceleration Card (Intel(R) OpenCL)
+
+Vector SAXPY (float)
+    GFLOPS:    10.4391
+    Bandwidth: 62.6344
+
+

@@ -2,7 +2,7 @@ BOOST  := /usr/include/boost/
 CL_INC := /opt/AMDAPPSDK-2.9-1/include/CL
 CL_LIB := /opt/AMDAPPSDK-2.9-1/lib/x86_64
 
-all: gpu cpu amd mic
+all: gpu intel amd mic
 
 gpu:
 	nvcc -DNUM_PLAT=0 -DNUM_DEV=0 -I/usr/local/cuda/6.5.11/cuda/include/CL/ -I/usr/local/boost/1.53.0/include/ -L/usr/local/cuda/6.5.11/cuda/lib64/ -lOpenCL reduce.cpp -o gpu.out
