@@ -1,0 +1,18 @@
+mainmodule main
+{
+	readonly CProxy_Main mainProxy;
+	readonly DoubleArray x;
+
+	extern module row_slice;
+	extern module row;
+	extern module multi_row_slice;
+ 	
+	mainchare Main
+	{
+		entry Main(CkArgMsg* msg);
+		entry void setResultNoSlice(int row, double res);
+		entry void setResultRowSlice(int row, double res);
+		entry void setResultMultiRowSlice(int nRows, int firstRow, double res[nRows]);
+		entry void stageFinished();
+	};
+};
