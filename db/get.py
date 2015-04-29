@@ -3,8 +3,13 @@
 import sys
 import sqlalchemy
 from sqlalchemy import *
+import json
 
-db = create_engine('sqlite:///perfdb', echo=False)
+# Get config data
+with open('config.json') as infile:
+    config = json.load(infile)
+
+db = create_engine(config['db_url'], echo=False)
 conn = db.connect()
 md = MetaData(db)
 

@@ -1,6 +1,6 @@
 {
-  "db_url":     "sqlite:///perfdb",
-  "db_name":    "perfdb",
+  "db_url":     "sqlite:///perfdb_sym",
+  "db_name":    "perfdb_sym",
   "host_id":    "3",
   "accl_id":    "6",
   "system_id":  "35",

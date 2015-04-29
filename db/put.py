@@ -1,7 +1,14 @@
+#!/usr/bin/env python
+
 import sqlalchemy
 from sqlalchemy import *
+import json
 
-db = create_engine('sqlite:///perfdb', echo=False)
+# Get config data
+with open('config.json') as infile:
+    config = json.load(infile)
+
+db = create_engine(config['db_url'], echo=False)
 md = MetaData(db)
 hosts = Table('Hosts', md, autoload=True)
 accl = Table('Accelerators', md, autoload=True)
