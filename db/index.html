@@ -22,7 +22,7 @@
 
 <br><br><p><b> Quick Queries </b>
 
-<form action="quick_accl.php" method="post">
+<form action="query_accl.php" method="post">
 <p>By accelerator:
 <select name="accl">
   <option value="1"> Xeon E5-2690v2 </option>
@@ -38,20 +38,25 @@
 </p>
 </form>
 
-<form action="quick_bench.php" method="post">
+<form action="query_bench.php" method="post">
 <p>By benchmark:
 <select name="bench">
   <option value="reduction"> Reduction </option>
   <option value="sort"> Sort </option>
   <option value="inclusive scan"> Inclusive scan </option>
   <option value="saxpy"> SAXPY </option>
+  <option value="spmv"> SPMV </option>
 </select>
 <input type="submit" value="GO!">
 </p>
 </form>
 
-<br><br><p><b> Detailed queries, filter by </b>
-
+<form action="query_detail.php" method="post">
+<br><br><p><b> Detailed queries </b>
+<p> SELECT <input type="text" name="select"><br> </p>
+<p> WHERE <input type="text" name="where"><br> </p>
+<p> <input type="submit" value="GO!"> </p>
+</form>
 </div>
 
 <div style="float:right; width:50%;">
