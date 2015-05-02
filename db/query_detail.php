@@ -1,41 +1,46 @@
 <?php
+error_reporting(E_ALL & ~E_NOTICE);
 
-class MyDB extends SQLite3
-   {
-      function __construct()
-      {
-         $this->open('perfdb');
-      }
-   }
-  
-$sel = $_POST['select'];
-$whe = $_POST['where'];
+class MyDB extends SQLite3 {
+    function __construct() {
+		$this->open('perfdb');
+    }
+}
 
-if (empty($sel)) $sel = '*';
-if (empty($whe)) $whe = '1=1';
+$where = $_POST['where'];
+if (empty($where)) $where = '1=1';
 
-if (!empty($sel) and !empty($whe)) {
+$sel = "";
+foreach ($_POST as $key => $value){
+	if ($key != 'where')
+		$sel .= $value.", ";
+}
+$sel .= "value_type, value";
+
+if (!empty($sel) and !empty($where)) {
 	$db = new MyDB();	
 	
-	$stmt = $db->prepare("select ".$sel." from master where ".$whe." ;");	
+	$stmt = $db->prepare("select ".$sel." from master where ".$where." ;");	
 	$results = $stmt->execute();
-	
-	$row_0 = $results->fetchArray();	
-	$num_cols = count($row_0)/2;
 	
 	print "<table border='1'>";
 	print "<tr>";
-	for ($i=0; $i<$num_cols; $i++) {
-		print "<td>".$row_0[$i]."</td>";
-	}			
+	foreach ($_POST as $key => $value){
+		if ($key != 'where')
+			print "<td><b>".$key."</td>";
+	}
+	print "<td><b> Metric Measured</td>";
+	print "<td><b> Value </td>";
 	print "</tr>";
+	
+	$num_cols = count($_POST) + 1;	
 	
 	while ($row = $results->fetchArray()) {
 		print "<tr>";
 		for ($i=0; $i<$num_cols; $i++) {
 			print "<td>".$row[$i]."</td>";
 		}
-	print "</tr>";
+		print "</tr>";
 	}
 	
 	print "</table>";

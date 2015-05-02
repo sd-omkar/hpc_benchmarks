@@ -53,8 +53,28 @@
 
 <form action="query_detail.php" method="post">
 <br><br><p><b> Detailed queries </b>
-<p> SELECT <input type="text" name="select"><br> </p>
-<p> WHERE <input type="text" name="where"><br> </p>
+<p> Select fields to show: <br>
+<input type="checkbox" name="Benchmark Name" value="name"> Benchmark Name
+<input type="checkbox" name="Card Type" value="type"> Card Type
+<input type="checkbox" name="Card Name" value="accl_name"> Card Name <br>
+<input type="checkbox" name="Architecture" value="arch"> Architecture
+<input type="checkbox" name="Memory" value="memory"> Memory
+<input type="checkbox" name="Cores" value="cores"> Cores
+<input type="checkbox" name="OS" value="OS"> OS <br>
+<input type="checkbox" name="Compiler" value="compiler"> Compiler
+<input type="checkbox" name="Compiler Version" value="version"> Compiler Version
+<input type="checkbox" name="Compiler Flags" value="flags"> Compiler Flags <br>
+<input type="checkbox" name="Library" value="library"> Library
+<input type="checkbox" name="Library Version" value="library_ver"> Library Version <br>
+<input type="checkbox" name="Backend" value="backend"> Backend
+<input type="checkbox" name="Backend Version" value="backend_ver"> Backend Version <br>
+<input type="checkbox" name="Input Type" value="input"> Input Type
+<input type="checkbox" name="Data Type" value="datatype"> Data Type <br>
+<input type="checkbox" name="X Dimension" value="dim_x"> X Dimension
+<input type="checkbox" name="Y Dimension" value="dim_y"> Y Dimension
+<input type="checkbox" name="Non-zeros" value="NNZ"> Non-zeros <br>
+<p> Filter by criteria: <br>
+<input type="text" name="where"> </p>
 <p> <input type="submit" value="GO!"> </p>
 </form>
 </div>
