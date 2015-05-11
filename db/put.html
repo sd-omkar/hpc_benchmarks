@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>GET or PUT</title>
+</head>
+<body style="font-size:12;font-family:verdana">
+
+<div style="width:100%;"> <!-- Main Div -->
+
+<div style="float:left; width:50%;">
+
+<form action="put_host.php" method="post">
+<b>Insert new Host</b>
+<p> Hostname: <input type="text" name="hostname"><br> </p>
+<p> <input type="submit" value="INSERT host"> </p>
+</form>
+
+<form action="put_accl.php" method="post">
+<br><b>Insert new Hardware</b>
+<p> Type: <input type="text" name="type"><br> </p>
+<p> Hardware Name: <input type="text" name="accl_name"><br> </p>
+<p> Architecture: <input type="text" name="arch"><br> </p>
+<p> Memory: <input type="text" name="memory"><br> </p>
+<p> Cores: <input type="text" name="cores"><br> </p>
+<p> Details: <input type="text" name="details"><br> </p>
+<p> <input type="submit" value="INSERT hardware"> </p>
+</form>
+
+<!--
+<p><b>Get existing data: </b>
+<form action="get.php" method="post">
+<select name="table">
+  <option value="hosts"> Hosts </option>
+  <option value="accelerators"> Hardware </option>
+  <option value="systems"> Systems </option>
+  <option value="sources"> Sources </option>
+</select>
+<input type="submit" value="GO!">
+</p>
+</form>
+
+<br><br><p><b> Quick Queries </b>
+
+<form action="query_accl.php" method="post">
+<p>By hardware:
+<select name="accl">
+  <option value="1"> Xeon E5-2690v2 </option>
+  <option value="2"> Core i7-5960X </option>
+  <option value="3"> Opteron 6274 </option>
+  <option value="4"> GTX 770 </option>
+  <option value="5"> Tesla K20Xm </option>
+  <option value="6"> Tesla K40c </option>
+  <option value="7"> A10-7850K </option>
+  <option value="8"> Xeon Phi 5110P </option>
+</select>
+<input type="submit" value="GO!">
+</p>
+</form>
+
+<form action="query_bench.php" method="post">
+<p>By benchmark:
+<select name="bench">
+  <option value="reduction"> Reduction </option>
+  <option value="sort"> Sort </option>
+  <option value="inclusive scan"> Inclusive scan </option>
+  <option value="saxpy"> SAXPY </option>
+  <option value="spmv"> SPMV </option>
+</select>
+<input type="submit" value="GO!">
+</p>
+</form>
+
+<form action="query_detail.php" method="post">
+<br><br><p><b> Detailed queries </b>
+<p> Select fields to show: <br>
+<input type="checkbox" name="Benchmark Name" value="name"> Benchmark Name
+<input type="checkbox" name="Hardware Type" value="type"> Hardware Type
+<input type="checkbox" name="Hardware Name" value="accl_name"> Hardware Name <br>
+<input type="checkbox" name="Architecture" value="arch"> Architecture
+<input type="checkbox" name="Memory" value="memory"> Memory
+<input type="checkbox" name="Cores" value="cores"> Cores
+<input type="checkbox" name="OS" value="OS"> OS <br>
+<input type="checkbox" name="Compiler" value="compiler"> Compiler
+<input type="checkbox" name="Compiler Version" value="version"> Compiler Version
+<input type="checkbox" name="Compiler Flags" value="flags"> Compiler Flags <br>
+<input type="checkbox" name="Library" value="library"> Library
+<input type="checkbox" name="Library Version" value="library_ver"> Library Version <br>
+<input type="checkbox" name="Backend" value="backend"> Backend
+<input type="checkbox" name="Backend Version" value="backend_ver"> Backend Version <br>
+<input type="checkbox" name="Input Type" value="input"> Input Type
+<input type="checkbox" name="Data Type" value="datatype"> Data Type <br>
+<input type="checkbox" name="X Dimension" value="dim_x"> X Dimension
+<input type="checkbox" name="Y Dimension" value="dim_y"> Y Dimension
+<input type="checkbox" name="Non-zeros" value="NNZ"> Non-zeros <br>
+<p> Filter by criteria: <br>
+<input type="text" name="where"> </p>
+<p> <input type="submit" name="action" value="Show Results"> </p>
+<p> <input type="submit" name="action" value="Get CSV"> </p>
+</form>
+-->
+
+</div>
+
+<div style="float:right; width:50%;">
+
+<form action="put_system.php" method="post">
+<br><b>Insert new System</b>
+<p> Operating System: <input type="text" name="os"><br> </p>
+<p> Compiler: <input type="text" name="compiler"><br> </p>
+<p> Compiler Version: <input type="text" name="version"><br> </p>
+<p> Flags: <input type="text" name="flags"><br> </p>
+<p> Library: <input type="text" name="library"><br> </p>
+<p> Library Version: <input type="text" name="library_ver"><br> </p>
+<p> Backend: <input type="text" name="backend"><br> </p>
+<p> Backend Version: <input type="text" name="backend_ver"><br> </p>
+<p> <input type="submit" value="INSERT system"> </p>
+</form>
+
+<form action="put_source.php" method="post">
+<b>Insert new Source</b>
+<p> URL: <input type="text" name="url"><br> </p>
+<p> Commit Hash: <input type="text" name="hash"><br> </p>
+<p> <input type="submit" value="INSERT source"> </p>
+</form>
+
+</div>
+</div>
+</body>
+</html>

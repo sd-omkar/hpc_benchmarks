@@ -12,7 +12,7 @@
 <form action="get.php" method="post">
 <select name="table">
   <option value="hosts"> Hosts </option>
-  <option value="accelerators"> Accelerators </option>
+  <option value="accelerators"> Hardware </option>
   <option value="systems"> Systems </option>
   <option value="sources"> Sources </option>
 </select>
@@ -23,7 +23,7 @@
 <br><br><p><b> Quick Queries </b>
 
 <form action="query_accl.php" method="post">
-<p>By accelerator:
+<p>By hardware:
 <select name="accl">
   <option value="1"> Xeon E5-2690v2 </option>
   <option value="2"> Core i7-5960X </option>
@@ -55,8 +55,8 @@
 <br><br><p><b> Detailed queries </b>
 <p> Select fields to show: <br>
 <input type="checkbox" name="Benchmark Name" value="name"> Benchmark Name
-<input type="checkbox" name="Card Type" value="type"> Card Type
-<input type="checkbox" name="Card Name" value="accl_name"> Card Name <br>
+<input type="checkbox" name="Hardware Type" value="type"> Hardware Type
+<input type="checkbox" name="Hardware Name" value="accl_name"> Hardware Name <br>
 <input type="checkbox" name="Architecture" value="arch"> Architecture
 <input type="checkbox" name="Memory" value="memory"> Memory
 <input type="checkbox" name="Cores" value="cores"> Cores
@@ -81,7 +81,106 @@
 </div>
 
 <div style="float:right; width:50%;">
+<table border='0'>
+<tr><td><p><b> How to filer? </b></p></td></tr>
 
+<tr>
+<td>By Benchmark:
+<td>name='reduction|prefix_scan|sort|SAXPY|SpMV'
+</tr>
+
+<tr>
+<td>By Hardware Type:
+<td>type='CPU|GPU|MIC'
+</tr>
+
+<tr>
+<td>By Hardware Name:
+<td>name='name_from_table'
+</tr>
+
+<tr>
+<td>By Architecture:
+<td>arch='Kaveri|Haswell'
+</tr>
+
+<tr>
+<td>By Memory: 
+<td>memory=8
+</tr>
+
+<tr>
+<td>By Cores: 
+<td>core=16
+</tr>
+
+<tr>
+<td>By OS: 
+<td>OS='Linx'
+</tr>
+
+<tr>
+<td>By Compiler: 
+<td>compiler='GCC'
+</tr>
+
+<tr>
+<td>By Compiler Version: 
+<td>version=4.81
+</tr>
+
+<tr>
+<td>By Compiler Flags: 
+<td>flags='-O3'
+</tr>
+
+<tr>
+<td>By Library: 
+<td>library='MKL|CUSP|VexCL'
+</tr>
+
+<tr>
+<td>By Library Version: 
+<td>library_ver=3.1
+</tr>
+
+<tr>
+<td>By Backend: 
+<td>backend='CUDA|OpenMP'
+</tr>
+
+<tr>
+<td>By Backend Version: 
+<td>backend_ver=1.2
+</tr>
+
+<tr>
+<td>By Input Type: 
+<td>input='Vector|matrix.mtx'
+</tr>
+
+<tr>
+<td>By Data Type: 
+<td>datatype='Float|Double|Integer'
+</tr>
+
+<tr>
+<td>By X Dimension: 
+<td>dim_x=1000000
+</tr>
+
+<tr>
+<td>By y Dimension: 
+<td>dim_y=2000000
+</tr>
+
+<tr>
+<td>By Non-zeros: 
+<td>NNZ=500000
+</tr>
+</table>
+</div>
+<!--
 <form action="put_host.php" method="post">
 <b>Insert new Host</b>
 <p> Hostname: <input type="text" name="hostname"><br> </p>
@@ -89,14 +188,14 @@
 </form>
 
 <form action="put_accl.php" method="post">
-<br><b>Insert new Accelerator</b>
+<br><b>Insert new Hardware</b>
 <p> Type: <input type="text" name="type"><br> </p>
-<p> Accelerator Name: <input type="text" name="accl_name"><br> </p>
+<p> Hardware Name: <input type="text" name="accl_name"><br> </p>
 <p> Architecture: <input type="text" name="arch"><br> </p>
 <p> Memory: <input type="text" name="memory"><br> </p>
 <p> Cores: <input type="text" name="cores"><br> </p>
 <p> Details: <input type="text" name="details"><br> </p>
-<p> <input type="submit" value="INSERT accelerator"> </p>
+<p> <input type="submit" value="INSERT hardware"> </p>
 </form>
 
 <form action="put_system.php" method="post">
@@ -118,8 +217,8 @@
 <p> Commit Hash: <input type="text" name="hash"><br> </p>
 <p> <input type="submit" value="INSERT source"> </p>
 </form>
+-->
 
-</div>
 </div>
 </body>
 </html>

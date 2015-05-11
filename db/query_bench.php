@@ -20,7 +20,7 @@ if (!empty($bench)) {
 	
 	print "<table border='1'>";
 	print "<tr>
-			<td>Name</td>
+			<td>Hardware</td>
 			<td>Library</td>
 			<td>Backend</td>
 			<td>Input</td>			

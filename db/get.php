@@ -11,7 +11,7 @@ class MyDB extends SQLite3
 $table = $_POST['table'];
 
 if (!empty($table)) {
-	print "Querying from $table<br><br>";
+	//print "Querying from $table<br><br>";
 
 	$db = new MyDB();
 	
@@ -39,7 +39,7 @@ if (!empty($table)) {
 		print "<tr>
 				<td>accl_id</td>
 				<td>Type</td>
-				<td>Accelerator Name</td>
+				<td>Hardware Name</td>
 				<td>Architecture</td>
 				<td>Memory (GB)</td>
 				<td>Cores</td>
