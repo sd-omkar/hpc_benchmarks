@@ -103,11 +103,19 @@ int main(int argc, char *argv[])
                     - (start.tv_usec + 1e6 * start.tv_sec);
 
       // Print timing results
-      printf("SAXPY time: %lf ms\n", time_saxpy/1e3/RUNS);
+      //printf("SAXPY time: %lf ms\n", time_saxpy/1e3/RUNS);
       double time_sec = time_saxpy / RUNS / 1e6;
       double gflops = 2 * n / time_sec / 1e9;
-      printf("N: %d\t GFLOPS: %lf\n", n, gflops);
- 
+      //printf("N: %d\t GFLOPS: %lf\n", n, gflops);
+      printf("name = saxpy\n");
+      printf("input = vector\n");
+      printf("datatype = float\n");
+      printf("dim_x = %ld\n", n);
+      printf("dim_y = %ld\n", 1);
+      printf("NNZ = %ld\n", n);
+      printf("value_type = GFLOPS\n");
+      printf("value = %lf\n", gflops);
+      
       free(x);
       free(y);
       free(c);

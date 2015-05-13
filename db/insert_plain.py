@@ -35,7 +35,7 @@ now = datetime.datetime.now()
 cursor_test.execute("insert into tests (date, name, input, datatype, dim_x, dim_y, NNZ, host_id, accl_id, source_id, system_id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
                     (now, data['name'], data['input'], data['datatype'], 
                       data['dim_x'], data['dim_y'], data['NNZ'], 
-                      config['host_id'], config['accl_id'],
+                      config['host_id'], config['hw_id'],
                       config['source_id'], config['system_id']))
 
 print "test_id = " + str(cursor_test.lastrowid)
